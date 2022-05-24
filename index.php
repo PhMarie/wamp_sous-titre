@@ -48,9 +48,9 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" as="font"
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" as="style"
       onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:400,700,300&display=swap" as="font"
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:400,700,300&display=swap" as="style"
       onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
     <!--Styles-->
     <link rel="stylesheet" href="css/bootstrap341.min.css">
