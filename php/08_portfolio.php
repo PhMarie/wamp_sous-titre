@@ -42,9 +42,9 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <div class="" id="filters">
-                        <button class="btn btn-default" data-filter=".site_web" data-toggle="tooltip" data-placement="top" title="8">Sites Web</button>
-                        <button class="btn btn-default" data-filter=".smartphone" data-toggle="tooltip" data-placement="top" title="8">Vues Smartphone</button>
-                        <button class="btn btn-default" data-filter=".tablette" data-toggle="tooltip" data-placement="top" title="8">Vues Tablette</button>
+                        <button class="btn btn-default" data-filter=".site_web" data-toggle="tooltip" data-placement="top" title="10">Sites Web</button>
+                        <button class="btn btn-default" data-filter=".smartphone" data-toggle="tooltip" data-placement="top" title="10">Vues Smartphone</button>
+                        <button class="btn btn-default" data-filter=".tablette" data-toggle="tooltip" data-placement="top" title="10">Vues Tablette</button>
                         <button class="btn btn-default" data-filter=".audio" data-toggle="tooltip" data-placement="top" title="5">Audio</button>
                     </div>
                 </div>
