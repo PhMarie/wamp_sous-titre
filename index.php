@@ -88,7 +88,8 @@
     <?php
     include 'php/10_footer.php';
     ?>
-    <link rel="stylesheet" href="css/font-awesome470.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome470.min.css"> -->
     <!-- <link rel="stylesheet"href="css/animate.css"> -->
     <link rel="stylesheet" href="css/owl.theme.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
