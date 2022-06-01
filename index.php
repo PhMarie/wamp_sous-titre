@@ -52,8 +52,9 @@
       onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:400,700,300&display=swap" as="style"
       onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
-    <!--Styles-->
-    <link rel="stylesheet" href="css/bootstrap341.min.css">
+      <!--Styles-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+      <!-- <link rel="stylesheet" href="css/bootstrap341.min.css"> -->
     <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
@@ -95,8 +96,10 @@
     <link rel="stylesheet" href="css/responsive.min.css">
 
     <!-- SCRIPT -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap341.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap341.min.js"></script> -->
     <script src="js/allscripts.min.js"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
     <script src="js/modernizr.custom.js"></script>
