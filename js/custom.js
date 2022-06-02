@@ -125,7 +125,7 @@ $(document).ready(function () {
         $('.timer2').countTo({
 
             from: 0,// the number you want to start
-            to: 70,// the number you want to reach
+            to: 71,// the number you want to reach
             speed: 250,
             refreshInterval: 1
 
