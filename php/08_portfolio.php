@@ -57,6 +57,48 @@
     <div class="gallery-inner site_web">
         <div class="caption">
             <div class="captionWrapper valign">
+                <a class="popup-link" href="img/gallery/mg-huissiers-tours.fr.webp" title="mg-huissiers-tours.fr">
+                    <div class="caption-heading">
+                        <h1>+</h1>
+                        <h4>mg-huissiers-tours.fr</h4>
+                        <h4><span class="serif">Template Bootstrap</span></h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/mg-huissiers-tours.fr-thumb.webp">
+    </div>
+    <div class="gallery-inner smartphone">
+        <div class="caption">
+            <div class="captionWrapper valign">
+                <a class="popup-link" href="img/gallery/mg-huissiers-tours.fr_sm.webp" title="mg-huissiers-tours.fr / Smartphone">
+                    <div class="caption-heading">
+                        <h1>+</h1>
+                        <h4>mg-huissiers-tours.fr</h4>
+                        <h4><span class="serif">Template Bootstrap</span></h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/mg-huissiers-tours.fr_sm-thumb.webp">
+    </div>
+    <div class="gallery-inner tablette">
+        <div class="caption">
+            <div class="captionWrapper valign">
+                <a class="popup-link" href="img/gallery/mg-huissiers-tours.fr_tab.webp" title="mg-huissiers-tours.fr / Tablette">
+                    <div class="caption-heading">
+                        <h1>+</h1>
+                        <h4>mg-huissiers-tours.fr</h4>
+                        <h4><span class="serif">Template Bootstrap</span></h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/mg-huissiers-tours.fr_tab-thumb.webp">
+    </div>
+    <div class="gallery-inner site_web">
+        <div class="caption">
+            <div class="captionWrapper valign">
                 <a class="popup-link" href="img/gallery/bobitostudio.com.webp" title="bobitostudio.com">
                     <div class="caption-heading">
                         <h1>+</h1>
@@ -270,7 +312,7 @@
     </div>
     <!-- ---------------------------------------- -->
     <!-- ---------------------------------------- -->
-    <div class="gallery-inner site_web">
+    <!-- <div class="gallery-inner site_web">
         <div class="caption">
             <div class="captionWrapper valign">
                 <a class="popup-link" href="img/gallery/huissier-nancy-djp.com.webp" title="huissier-nancy-djp.com">
@@ -311,7 +353,7 @@
             </div>
         </div>
         <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-nancy-djp.com_tab-thumb.webp">
-    </div>
+    </div> -->
     <!-- ---------------------------------------- -->
     <div class="gallery-inner site_web">
         <div class="caption">
