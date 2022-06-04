@@ -1,8 +1,4 @@
-(() => {
-  /* Rendre navbar visible sur Travaux */
-  // let element = document.getElementById("derniers-travaux");
-  console.log("coucou ");
-})()
+
 /* MY jquery.magnific-popup */
 /*! Magnific Popup - v1.1.0 - 2016-02-20
  * http://dimsemenov.com/plugins/magnific-popup/
@@ -4510,3 +4506,5 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   };
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
+
+

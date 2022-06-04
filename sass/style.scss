@@ -325,9 +325,11 @@ section.white {
 }
 /*    3. Navigation Bar  */
 .navbar {
-    padding: 20px 40px;
+    padding: 12px 40px;
     // padding-top:50px;
     color:white;
+    background: #000;
+    opacity: 0.9;
 }
 .navbarVisible {
     padding: 15px 40px;
@@ -335,13 +337,14 @@ section.white {
     opacity: 0.6;
 }
 .navbar ion-icon {
-    font-size: 64px;
+    font-size: 32px;
 }
 .topLogo {
     position:fixed;
     z-index:10;
     width:120px !important;
     height:auto !important;
+    padding: 12px 0;
 }
 /* 4. Intro  */
 #intro {

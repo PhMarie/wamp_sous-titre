@@ -1,4 +1,4 @@
-<section id="derniers-travaux" class="white">
+<section id="derniers-travaux" class="white" data-offset="-68">
     <div class="container">
         <div class="sectionHeader">
             <div class="row text-center">
