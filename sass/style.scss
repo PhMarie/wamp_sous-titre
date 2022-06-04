@@ -96,6 +96,8 @@ hr {
     width:120px;
     margin-bottom:40px;
 }
+
+
 ion-icon {
     --ionicon-stroke-width: 10px;
     font-size: 96px;
@@ -324,8 +326,16 @@ section.white {
 /*    3. Navigation Bar  */
 .navbar {
     padding: 20px 40px;
-    padding-top:50px;
+    // padding-top:50px;
     color:white;
+}
+.navbarVisible {
+    padding: 15px 40px;
+    background: #000;
+    opacity: 0.6;
+}
+.navbar ion-icon {
+    font-size: 64px;
 }
 .topLogo {
     position:fixed;

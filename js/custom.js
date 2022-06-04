@@ -1,8 +1,9 @@
 
+
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* 1.Intro Height  */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 $(document).ready(function () {
     function introHeight() {
         var wh = $(window).height();
@@ -17,11 +18,9 @@ $(document).ready(function () {
         introHeight();
     });
 
-
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* 2.Owl Carousel Init  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
     "use strict";
     var owl = $("#owl-intro");
 
