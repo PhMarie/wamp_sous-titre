@@ -1,6 +1,6 @@
 ## sous-titre.com
 # Instead of building a new `portfolio` from scratch,
-# a good excercice will be to take back this old template
+# a good exercice will be to take back this old template
 ### Possible steps to improve and why :
 - Convert all images to webp file format (compare performance)
 - Update everything I can to the maximum first : jquery, bootstrap and the 14 js lib used at that time (compare and test performance)
