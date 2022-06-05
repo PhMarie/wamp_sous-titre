@@ -1,0 +1,14 @@
+## sous-titre.com
+# Instead of building a new `portfolio` from scratch,
+# a good excercice will be to take back this old template
+### Possible steps to improve and why :
+- Convert all images to webp file format (compare performance)
+- Update everything I can to the maximum first : jquery, bootstrap and the 14 js lib used at that time (compare and test performance)
+- Integrate all the js updated into one only file : myAllscript.js (separate each lib by a comment containing "MY", compare and test performance)
+- Review each lib again, what they do and how
+- Test other relevant replacements if needed
+- Trying to upgrade bootstrap 3.x.x to the last one 5.X.X available
+- Review the old sass file to improve it
+- Review the html to improve it
+
+- More steps to add later...
