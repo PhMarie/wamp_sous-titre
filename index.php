@@ -98,8 +98,7 @@
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- <script src="js/jquery-1.11.2.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- <script src="js/bootstrap341.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <script src="js/myAllscripts-min.js"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
     <script src="js/modernizr.custom.js"></script>
