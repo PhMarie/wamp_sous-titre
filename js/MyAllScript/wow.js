@@ -1,6 +1,5 @@
-/*! WOW - v1.0.2 - 2014-10-28
- * Copyright (c) 2014 Matthieu Aussaguel; Licensed MIT */
-(function () {
+/*! WOW - v1.1.3 - 2016-05-06
+ * Copyright (c) 2016 Matthieu Aussaguel;*/ (function () {
   var a,
     b,
     c,
@@ -30,6 +29,30 @@
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           a
         );
+      }),
+      (a.prototype.createEvent = function (a, b, c, d) {
+        var e;
+        return (
+          null == b && (b = !1),
+          null == c && (c = !1),
+          null == d && (d = null),
+          null != document.createEvent
+            ? ((e = document.createEvent("CustomEvent")),
+              e.initCustomEvent(a, b, c, d))
+            : null != document.createEventObject
+            ? ((e = document.createEventObject()), (e.eventType = a))
+            : (e.eventName = a),
+          e
+        );
+      }),
+      (a.prototype.emitEvent = function (a, b) {
+        return null != a.dispatchEvent
+          ? a.dispatchEvent(b)
+          : b in (null != a)
+          ? a[b]()
+          : "on" + b in (null != a)
+          ? a["on" + b]()
+          : void 0;
       }),
       (a.prototype.addEvent = function (a, b, c) {
         return null != a.addEventListener
@@ -94,7 +117,7 @@
       })())),
     (d =
       this.getComputedStyle ||
-      function (a) {
+      function (a, b) {
         return (
           (this.getPropertyValue = function (b) {
             var c;
@@ -116,10 +139,16 @@
         null == a && (a = {}),
           (this.scrollCallback = f(this.scrollCallback, this)),
           (this.scrollHandler = f(this.scrollHandler, this)),
+          (this.resetAnimation = f(this.resetAnimation, this)),
           (this.start = f(this.start, this)),
           (this.scrolled = !0),
           (this.config = this.util().extend(a, this.defaults)),
-          (this.animationNameCache = new c());
+          null != a.scrollContainer &&
+            (this.config.scrollContainer = document.querySelector(
+              a.scrollContainer
+            )),
+          (this.animationNameCache = new c()),
+          (this.wowEvent = this.util().createEvent(this.config.boxClass));
       }
       return (
         (e.prototype.defaults = {
@@ -128,6 +157,8 @@
           offset: 0,
           mobile: !0,
           live: !0,
+          callback: null,
+          scrollContainer: null,
         }),
         (e.prototype.init = function () {
           var a;
@@ -170,7 +201,11 @@
                 (b = e[c]), this.applyStyle(b, !0);
           return (
             this.disabled() ||
-              (this.util().addEvent(window, "scroll", this.scrollHandler),
+              (this.util().addEvent(
+                this.config.scrollContainer || window,
+                "scroll",
+                this.scrollHandler
+              ),
               this.util().addEvent(window, "resize", this.scrollHandler),
               (this.interval = setInterval(this.scrollCallback, 50))),
             this.config.live
@@ -178,21 +213,21 @@
                   (function (a) {
                     return function (b) {
                       var c, d, e, f, g;
-                      for (g = [], e = 0, f = b.length; f > e; e++)
-                        (d = b[e]),
+                      for (g = [], c = 0, d = b.length; d > c; c++)
+                        (f = b[c]),
                           g.push(
                             function () {
-                              var a, b, e, f;
+                              var a, b, c, d;
                               for (
-                                e = d.addedNodes || [],
-                                  f = [],
+                                c = f.addedNodes || [],
+                                  d = [],
                                   a = 0,
-                                  b = e.length;
+                                  b = c.length;
                                 b > a;
                                 a++
                               )
-                                (c = e[a]), f.push(this.doSync(c));
-                              return f;
+                                (e = c[a]), d.push(this.doSync(e));
+                              return d;
                             }.call(a)
                           );
                       return g;
@@ -205,12 +240,16 @@
         (e.prototype.stop = function () {
           return (
             (this.stopped = !0),
-            this.util().removeEvent(window, "scroll", this.scrollHandler),
+            this.util().removeEvent(
+              this.config.scrollContainer || window,
+              "scroll",
+              this.scrollHandler
+            ),
             this.util().removeEvent(window, "resize", this.scrollHandler),
             null != this.interval ? clearInterval(this.interval) : void 0
           );
         }),
-        (e.prototype.sync = function () {
+        (e.prototype.sync = function (b) {
           return a.notSupported ? this.doSync(this.element) : void 0;
         }),
         (e.prototype.doSync = function (a) {
@@ -240,7 +279,14 @@
         (e.prototype.show = function (a) {
           return (
             this.applyStyle(a),
-            (a.className = "" + a.className + " " + this.config.animateClass)
+            (a.className = a.className + " " + this.config.animateClass),
+            null != this.config.callback && this.config.callback(a),
+            this.util().emitEvent(a, this.wowEvent),
+            this.util().addEvent(a, "animationend", this.resetAnimation),
+            this.util().addEvent(a, "oanimationend", this.resetAnimation),
+            this.util().addEvent(a, "webkitAnimationEnd", this.resetAnimation),
+            this.util().addEvent(a, "MSAnimationEnd", this.resetAnimation),
+            a
           );
         }),
         (e.prototype.applyStyle = function (a, b) {
@@ -273,6 +319,15 @@
             (a = d[b]), e.push((a.style.visibility = "visible"));
           return e;
         }),
+        (e.prototype.resetAnimation = function (a) {
+          var b;
+          return a.type.toLowerCase().indexOf("animationend") >= 0
+            ? ((b = a.target || a.srcElement),
+              (b.className = b.className
+                .replace(this.config.animateClass, "")
+                .trim()))
+            : void 0;
+        }),
         (e.prototype.customStyle = function (a, b, c, d, e) {
           return (
             b && this.cacheAnimationName(a),
@@ -289,41 +344,41 @@
         (e.prototype.vendors = ["moz", "webkit"]),
         (e.prototype.vendorSet = function (a, b) {
           var c, d, e, f;
-          f = [];
+          d = [];
           for (c in b)
-            (d = b[c]),
-              (a["" + c] = d),
-              f.push(
+            (e = b[c]),
+              (a["" + c] = e),
+              d.push(
                 function () {
-                  var b, f, g, h;
+                  var b, d, g, h;
                   for (
-                    g = this.vendors, h = [], b = 0, f = g.length;
-                    f > b;
+                    g = this.vendors, h = [], b = 0, d = g.length;
+                    d > b;
                     b++
                   )
-                    (e = g[b]),
+                    (f = g[b]),
                       h.push(
-                        (a["" + e + c.charAt(0).toUpperCase() + c.substr(1)] =
-                          d)
+                        (a["" + f + c.charAt(0).toUpperCase() + c.substr(1)] =
+                          e)
                       );
                   return h;
                 }.call(this)
               );
-          return f;
+          return d;
         }),
         (e.prototype.vendorCSS = function (a, b) {
           var c, e, f, g, h, i;
           for (
-            e = d(a),
-              c = e.getPropertyCSSValue(b),
-              i = this.vendors,
-              g = 0,
-              h = i.length;
-            h > g;
-            g++
+            h = d(a),
+              g = h.getPropertyCSSValue(b),
+              f = this.vendors,
+              c = 0,
+              e = f.length;
+            e > c;
+            c++
           )
-            (f = i[g]), (c = c || e.getPropertyCSSValue("-" + f + "-" + b));
-          return c;
+            (i = f[c]), (g = g || h.getPropertyCSSValue("-" + i + "-" + b));
+          return g;
         }),
         (e.prototype.animationName = function (a) {
           var b;
@@ -366,7 +421,10 @@
           var b, c, d, e, f;
           return (
             (c = a.getAttribute("data-wow-offset") || this.config.offset),
-            (f = window.pageYOffset),
+            (f =
+              (this.config.scrollContainer &&
+                this.config.scrollContainer.scrollTop) ||
+              window.pageYOffset),
             (e =
               f +
               Math.min(this.element.clientHeight, this.util().innerHeight()) -

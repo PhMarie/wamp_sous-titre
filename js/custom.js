@@ -1,7 +1,7 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* 1.Intro Height  */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-$(document).ready(function () {
+$(function () {
     function introHeight() {
         var wh = $(window).height();
         $('#intro').css({height: wh});
@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     introHeight();
 
-    $(window).bind('resize',function () {
+    $(window).on('resize',function () {
 
         //Update slider height on resize
         introHeight();
