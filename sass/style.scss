@@ -592,7 +592,7 @@ section.white {
 .captionWrapper h1{
     margin:0;
 }
-.gallery .gallery-inner .caption{
+.gallery .gallery-inner .caption {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -602,6 +602,7 @@ section.white {
     -webkit-transition: all 1s ease-in-out;
     text-align: center;
 }
+
 .gallery .gallery-inner:hover .caption{
     opacity: 1;
 }
@@ -612,8 +613,8 @@ section.white {
 }
 
 .gallery {
-    /*background: #4c4c4c;*/
-    background: transparent;
+    background: #4c4c4c;
+    // background: transparent;
     min-height:500px;
 }
 
@@ -646,19 +647,20 @@ section.white {
 .gallery .gallery-inner {
     float: left;
     height: auto;
-    background: #4c4c4c;
+    background: #fff;
     position: absolute;
     left: 0;
     top: 0;
     margin:0;
 }
 
-.galleryImage{
+.gallery .gallery-inner .galleryImage {
     min-width:100%;
     width: 100%;
     height: auto;
 
 }
+
 
 /* magnific popup effect */
 /* overlay at start */
