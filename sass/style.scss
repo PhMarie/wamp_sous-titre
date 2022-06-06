@@ -326,7 +326,6 @@ section.white {
 /*    3. Navigation Bar  */
 .navbar {
     padding: 12px 40px;
-    // padding-top:50px;
     color:white;
     background: #000;
     opacity: 0.9;
@@ -359,33 +358,33 @@ section.white {
     position:relative;
 }
 
-#about .smallLogo{
-    margin:0 auto;
-}
+// #about .smallLogo{
+//     margin:0 auto;
+// }
 
-#about .item {
-    padding:0 35px;
-}
+// #about .item {
+//     padding:0 35px;
+// }
 
-#about .owl-theme .owl-controls .owl-buttons div {
-    padding: 5px 9px;
-}
-#about .owl-theme .owl-buttons i{
-    margin-top: 2px;
-}
-#about .owl-theme .owl-controls .owl-buttons div {
-    position: absolute;
-    top: 30%;
-    -webkit-transform: translateY(-30%);
-    -ms-transform: translateY(-30%);
-    transform: translateY(-30%);
-}
-#about .owl-theme .owl-controls .owl-buttons .owl-prev{
-    left: 10px
-}
-#about .owl-theme .owl-controls .owl-buttons .owl-next{
-    right: 10px;
-}
+// #about .owl-theme .owl-controls .owl-buttons div {
+//     padding: 5px 9px;
+// }
+// #about .owl-theme .owl-buttons i{
+//     margin-top: 2px;
+// }
+// #about .owl-theme .owl-controls .owl-buttons div {
+//     position: absolute;
+//     top: 30%;
+//     -webkit-transform: translateY(-30%);
+//     -ms-transform: translateY(-30%);
+//     transform: translateY(-30%);
+// }
+// #about .owl-theme .owl-controls .owl-buttons .owl-prev{
+//     left: 10px
+// }
+// #about .owl-theme .owl-controls .owl-buttons .owl-next{
+//     right: 10px;
+// }
 #featuredWorks {
     padding-bottom:0;
     padding-top:0;
@@ -556,11 +555,9 @@ section.white {
     margin:0 10px;
 }
 /* 10. Outils  */
-#outils{
+#outils {
     padding-top:100px;
     padding-bottom:100px;
-}
-#outils{
     background: url(img/webp/background4.webp)  no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -569,14 +566,12 @@ section.white {
     background-position: 50% 0, 50% 0, 50% 0, 50% 0;
     background-repeat: repeat, repeat, repeat ,no-repeat;
 }
-#outils .clientLogo{
-    padding:10px;
-}
 
 #outils .clientLogo img{
+    width: 128px;
+    height: 128px;
     margin-left:auto;
     margin-right: auto;
-    padding:40px;
 }
 /* 11. Portfolio  */
 #portfolio{
@@ -927,32 +922,32 @@ iframe{
     border:0;
 }
 
-#blog .owl-theme .owl-controls .owl-buttons div {
-    padding: 5px 9px;
-}
+// #blog .owl-theme .owl-controls .owl-buttons div {
+//     padding: 5px 9px;
+// }
 
-#blog .owl-theme .owl-buttons i{
-    margin-top: 2px;
-}
+// #blog .owl-theme .owl-buttons i{
+//     margin-top: 2px;
+// }
 
-#blog .owl-theme .owl-controls .owl-buttons div {
-    position: absolute;
-    top: 45%;
-    -webkit-transform: translateY(-45%);
-    -ms-transform: translateY(-45%);
-    transform: translateY(-45%);
-    color:white;
-    font-size:30px;
-}
+// #blog .owl-theme .owl-controls .owl-buttons div {
+//     position: absolute;
+//     top: 45%;
+//     -webkit-transform: translateY(-45%);
+//     -ms-transform: translateY(-45%);
+//     transform: translateY(-45%);
+//     color:white;
+//     font-size:30px;
+// }
 
-#blog .owl-theme .owl-controls .owl-buttons .owl-prev{
-    left: 10px;
+// #blog .owl-theme .owl-controls .owl-buttons .owl-prev{
+//     left: 10px;
 
-}
+// }
 
-#blog .owl-theme .owl-controls .owl-buttons .owl-next{
-    right: 10px;
-}
+// #blog .owl-theme .owl-controls .owl-buttons .owl-next{
+//     right: 10px;
+// }
 
 #blog .blogPost img{
     width:100%;

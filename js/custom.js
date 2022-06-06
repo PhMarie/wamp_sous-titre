@@ -18,70 +18,25 @@ $(function () {
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* 2.Owl Carousel Init  */
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-    "use strict";
-    var owl = $("#owl-intro");
-
-    owl.owlCarousel({
-        // Most important owl features
-        autoPlay: 3000,
-        items : 1,
-        itemsCustom : false,
-        itemsDesktop : [1199,1],
-        itemsDesktopSmall : [980,1],
-        itemsTablet: [768,1],
-        itemsTabletSmall: false,
-        itemsMobile : [479,1],
-        singleItem : true,
-        itemsScaleUp : true,
-        navigation:	false,
-        pagination:	false,
-        transitionStyle : "backSlide"
-
-
-    });
-
-//    $("#owl-about").owlCarousel({
-//        singleItem:true,
-//        navigation: true,
-//        navigationText: [
-//            "<i class='fa fa-angle-left fa-2x'></i>",
-//            "<i class='fa fa-angle-right fa-2x'></i>"
-//        ],
-//        touchDrag:	false
-//    });
-
-
-    $("#owl-blogPost").owlCarousel({
-        singleItem: true,
-        navigation: true,
-        pagination: false,
-        navigationText: [
-            "<i class='fa fa-angle-left fa-2x'></i>",
-            "<i class='fa fa-angle-right fa-2x'></i>"
-        ],
-    });
-
-
-//    $("#owl-team").owlCarousel({
-//        items:4,
-//        navigation: false,
-//        temsCustom : false,
-//        itemsDesktop : [1199,4],
-//        itemsDesktopSmall : [980,3],
-//        itemsTablet: [768,2],
-//        itemsMobile : [479,1]
-//    });
-
-
-    $("#owl-clients").owlCarousel({
-        items:4,
-        navigation: false
-    });
-
-
-
-    $("#owl-testimonials").owlCarousel({
-        singleItem:true
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 30,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: true,
+        },
+        600: {
+          items: 3,
+          nav: false,
+        },
+        1000: {
+          items: 4,
+          nav: true,
+          loop: false,
+        },
+      },
     });
 
 
