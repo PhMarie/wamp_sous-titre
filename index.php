@@ -47,14 +47,20 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" as="style"
-      onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:400,700,300&display=swap" as="style"
-      onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700,300&display=swap">
       <!--Styles-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
       <!-- <link rel="stylesheet" href="css/bootstrap341.min.css"> -->
     <link rel="stylesheet" href="style.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93111-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-93111-3');
+    </script>
 </head>
 <body>
     <?php
@@ -120,13 +126,5 @@
             , "img/webp/bg08.webp"
         ], {duration: 4000, fade: 750});
     </script>
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93111-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-93111-3');
-    </script> -->
     </body>
 </html>
