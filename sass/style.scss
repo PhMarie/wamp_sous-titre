@@ -19,9 +19,7 @@ a:hover, a:focus {
     text-decoration: none;
     outline: 0;
 }
-.white a{
-    color: #353535;
-}
+
 section {
     position:relative;
     padding-top:50px;
@@ -251,11 +249,17 @@ h4 .serif {
 .dark h1 .serif, .dark h2 .serif, .dark h3 {
     color:#caa068;
 }
-.white h1 .serif, .white h2 .serif {
+section.white {
+    background: white url('img/section-pattern.webp') repeat;
+}
+section.white h1 .serif, section.white h2 .serif {
     color:#4c4c4c;
 }
-.white h1, .white h2 {
+section.white h1, section.white h2 {
     color:#c99f6c;
+}
+section.white a {
+    color: #353535;
 }
 .introText h1 {
     padding-top: 1rem;
@@ -308,9 +312,7 @@ h4 .serif {
     margin-top:20px;
     margin-bottom:20px;
 }
-section.white {
-    background: white url('img/section-pattern.webp') repeat;
-}
+
 .tooltip-inner {
     max-width:200px;
     color:#c99f6c;
