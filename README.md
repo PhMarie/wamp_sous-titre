@@ -10,5 +10,4 @@
 - Trying to upgrade bootstrap 3.x.x to the last one 5.X.X available
 - Review the old sass file to improve it
 - Review the html to improve it
-
-- More steps to add later...
+- See if a webpack approch is possible
