@@ -8,7 +8,8 @@
                 <li><a href="https://twitter.com/SousTitre"><i class="fa fa-twitter fa-2x"></i></a></li>
                 <li><a href="https://instagram.com/aqua_pulko/"><i class="fa fa-instagram fa-2x"></i></a></li>
             </ul>
-            <p>&copy;&nbsp;<?php Print(date("Y"));?> <a href="https://www.sous-titre.com/" >sous-titre.com</a> - <a href="include/mentions-legales.html#modal" class="js-modal">Mentions légales</a></p>
+            <p>&copy;&nbsp;<?php Print(date("Y"));?> <a href="https://www.sous-titre.com/" >sous-titre.com</a>
+            <br><a href="include/mentions-legales.html#modal" class="js-modal">Mentions légales</a></p>
             <!--Waves Container-->
             <div>
                 <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

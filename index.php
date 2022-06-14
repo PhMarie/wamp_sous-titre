@@ -109,8 +109,8 @@
     <script src="js/myAllscripts-min.js"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/borderMenu.js"></script>
+    <script src="js/custom-min.js"></script>
+    <script src="js/borderMenu-min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>

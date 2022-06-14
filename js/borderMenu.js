@@ -12,6 +12,7 @@
             support.transitions ? i.addEventListener(transEndEventName, e) : e();
         } else classie.has(i, "close") || classie.add(i, "open");
     }
+    
     var n = document.getElementById("trigger-overlay"),
         i = document.querySelector("div.overlay"),
         t = document.querySelector("div.overlay nav ul li:first-child"),
