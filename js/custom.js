@@ -220,14 +220,9 @@ $(function () {
         callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
     });
 
-
     $('#filters .btn').tooltip();
 
     $("body").fitVids();
-
-
-
-
 
 });
 
@@ -332,17 +327,11 @@ $(window).load(function() {    // makes sure the whole site is loaded
 //
 //});
 
-
-
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* Mobile bug fixes  */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
 /* LOAD animations.css only on desktop */
-
-
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/animate.css') );
@@ -356,9 +345,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     );
     wow.init();
 }
-
-
-
 
 if(Modernizr.touch){
     $('.caption .valign').css("top","40px");
@@ -382,4 +368,103 @@ $('.featuredWork').bind('touchend', function() {
 });
 
 
+/* Modal Mentions légales RGPD */
+let modal = null
+const focusableSelector = "button, a, input, textarea, select"
+let focusables = []
+let previouslyFocusElement = null
 
+const openModal = async (e) => {
+	e.preventDefault()
+	const target = e.target.getAttribute("href")
+	if (target.startsWith("#")) {
+		modal = document.querySelector(target)
+	} else {
+		modal = await loadModal(target)
+	}
+	focusables = Array.from(modal.querySelectorAll(focusableSelector))
+	previouslyFocusElement = document.querySelector(":focus")
+	modal.style.display = null
+	focusables[0].focus()
+	modal.removeAttribute("aria-hidden")
+	modal.setAttribute("aria-modal", "true")
+	modal.querySelector(".js-modal-close").addEventListener("click", closeModal)
+}
+
+const closeModal = (e) => {
+	if (modal === null) return
+	if (previouslyFocusElement !== null) previouslyFocusElement.focus()
+	e.preventDefault()
+	window.setTimeout(() => {
+		modal.style.display = "none"
+		modal = null
+	}, 500)
+	modal.setAttribute("aria-hidden", "true")
+	modal.removeAttribute("aria-modal")
+	modal
+		.querySelector(".js-modal-close")
+		.removeEventListener("click", closeModal)
+}
+
+const focusInModal = (e) => {
+	e.preventDefault()
+	let index = focusables.findIndex((f) => f === modal.querySelector(":focus"))
+	if (e.shiftKey === true) {
+		index--
+	} else {
+		index++
+	}
+	if (index >= focusables.length) {
+		index = 0
+	}
+	if (index < 0) {
+		index = focusables.length - 1
+	}
+	focusables[index].focus()
+}
+
+const loadModal = async (url) => {
+	// TODO : afficher un "loader"
+	const target = "#" + url.split("#")[1]
+	// console.log(target);
+	const existingModal = document.querySelector(target)
+	if (existingModal !== null) return existingModal
+	const html = await fetch(url).then((response) => response.text())
+	// MDN DocumentFragment
+	const fragment = document.createRange().createContextualFragment(html)
+	const element = fragment.querySelector(target)
+	if (element === null)
+		throw `L'élément ${target} n'a pas été trouvé dans la page ${url}`
+	// console.log(element);
+	document.body.append(element)
+	// on retourne element qui peut être utilisé par la suite
+	return element
+}
+
+document.querySelectorAll(".js-modal").forEach((a) => {
+	a.addEventListener("click", openModal)
+})
+
+window.addEventListener("keydown", (e) => {
+	if (e.key === "Escape" || e.key === "Esc") {
+		closeModal(e)
+	}
+	if (e.key === "Tab" && modal !== null) {
+		focusInModal(e)
+	}
+})
+/* Fin Modal Mentions légales RGPD */
+
+
+
+
+/* Waypoints Test
+http://imakewebthings.com/waypoints/
+
+ */
+var myWaypoint = new Waypoint({
+	element: document.getElementById("derniers-travaux"),
+	handler: function (direction) {
+		document.querySelector(".navbar").classList.toggle("navbarVisible")
+	},
+})

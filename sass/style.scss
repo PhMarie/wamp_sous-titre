@@ -326,13 +326,13 @@ section.white a {
 .navbar {
     padding: 12px 40px;
     color:white;
-    background: #000;
-    opacity: 0.9;
+    background: transparent;
 }
 .navbarVisible {
-    padding: 15px 40px;
     background: #000;
-    opacity: 0.6;
+    opacity: 0.9;
+    animation: fadeIn .4s both;
+    animation: slideFromTop .5s both;
 }
 .navbar ion-icon {
     font-size: 32px;
@@ -1235,5 +1235,82 @@ svg rect{
     }
     .overlay ul li {
         min-height: 34px;
+    }
+}
+/* Modal Mentions Légales */
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    box-shadow: 0 0 5px rgb(0, 110, 255);
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    animation: fadeIn .3s both;
+}
+
+.modal-wrapper {
+    overflow: auto;
+    width: 600px;
+    padding: 20px;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    background-color: #fff;
+    animation: slideFromTop .5s both;
+}
+
+.modal[aria-hidden="true"] {
+    animation: fadeOut .2s both;
+}
+
+.modal[aria-hidden="true"] .modal-wrapper {
+    animation: slideToTop .2s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideToTop {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50px);
     }
 }
