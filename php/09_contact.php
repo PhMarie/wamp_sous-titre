@@ -28,7 +28,7 @@
         <div class="container">
             <div class="sectionHeader">
                 <div class="row">
-                    <div class="col-md-4 text-center">
+                    <div class="col-sm-4 text-center">
                         <div class="triangleWrapperSmallSingle">
                             <div class="triangleBorderSmallSingle">
                                 <ion-icon name="mail-outline" style="font-size: 48px;"></ion-icon>
@@ -42,7 +42,7 @@
                             <br>
                         </p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-sm-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
                                 <ion-icon name="location-outline" style="font-size: 48px;"></ion-icon>
@@ -58,7 +58,7 @@
                             93100 Montreuil
                         </p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-sm-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
                                 <ion-icon name="time-outline" style="font-size: 48px;"></ion-icon>

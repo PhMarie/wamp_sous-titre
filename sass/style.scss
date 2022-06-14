@@ -25,6 +25,10 @@ section {
     padding-top:50px;
     padding-bottom:50px;
 }
+section#presentation ul {
+    list-style-type: none;
+    font-size: 1.8rem;
+}
 .container{
     position:relative;
 }
@@ -357,33 +361,6 @@ section.white a {
     position:relative;
 }
 
-// #about .smallLogo{
-//     margin:0 auto;
-// }
-
-// #about .item {
-//     padding:0 35px;
-// }
-
-// #about .owl-theme .owl-controls .owl-buttons div {
-//     padding: 5px 9px;
-// }
-// #about .owl-theme .owl-buttons i{
-//     margin-top: 2px;
-// }
-// #about .owl-theme .owl-controls .owl-buttons div {
-//     position: absolute;
-//     top: 30%;
-//     -webkit-transform: translateY(-30%);
-//     -ms-transform: translateY(-30%);
-//     transform: translateY(-30%);
-// }
-// #about .owl-theme .owl-controls .owl-buttons .owl-prev{
-//     left: 10px
-// }
-// #about .owl-theme .owl-controls .owl-buttons .owl-next{
-//     right: 10px;
-// }
 #featuredWorks {
     padding-bottom:0;
     padding-top:0;
@@ -1115,7 +1092,6 @@ svg rect{
     transition: color 0.2s;
     font-size: 0.5em
 }
-
 .overlay ul li {
     display: block;
     height: 16.66%;
@@ -1135,14 +1111,12 @@ svg rect{
     -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
     transition: opacity 0.5s, visibility 0s 0.5s;
 }
-
 .overlay-hugeinc.open {
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
-
 .overlay-hugeinc nav {
     -webkit-perspective: 1200px;
     perspective: 1200px;
@@ -1161,7 +1135,6 @@ svg rect{
     -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
 }
-
 .overlay-hugeinc.close nav ul {
     -webkit-transform: translateY(25%) rotateX(-35deg);
     transform: translateY(25%) rotateX(-35deg);
@@ -1223,7 +1196,6 @@ svg rect{
     .content-wave {
         height: 30vh;
     }
-
     h1 {
         font-size: 24px;
     }
@@ -1317,4 +1289,17 @@ svg rect{
     to {
         transform: translateY(-50px);
     }
+}
+
+/* The Wow-like effect */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 01;
+    transform: translateY(0);
+    transition: .3s;
 }

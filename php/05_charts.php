@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-sm-4">
                         <div class="triangleWrapperBig top-pad">
                             <div class="triangleBorderBig">
                                 <ion-icon name="barcode-outline"></ion-icon>
@@ -23,7 +23,7 @@
                         <h3><span class="timer1"></span>K+ Lignes de Code</h3>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-sm-4">
                     <div class="triangleWrapperBig top-pad">
                         <div class="triangleBorderBig">
                             <ion-icon name="people-outline"></ion-icon>
@@ -33,7 +33,7 @@
                     <h3><span class="timer2"></span> Clients</h3>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-sm-4">
                     <div class="triangleWrapperBig top-pad">
                         <div class="triangleBorderBig">
                             <ion-icon name="pricetags-outline"></ion-icon>
