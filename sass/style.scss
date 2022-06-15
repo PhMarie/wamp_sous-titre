@@ -1,3 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    box-shadow: 0 0 5px rgb(0, 110, 255);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
 body {
     overflow-x: hidden!important;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -1214,13 +1226,6 @@ svg rect{
     }
 }
 /* Modal Mentions Légales */
-* {
-    box-sizing: border-box;
-}
-
-*:focus {
-    box-shadow: 0 0 5px rgb(0, 110, 255);
-}
 
 .modal {
     position: fixed;
@@ -1254,52 +1259,21 @@ svg rect{
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+    from { opacity: 1; }
+    to { opacity: 0;  }
 }
 
 @keyframes slideFromTop {
-    from {
-        transform: translateY(-50px);
-    }
-    to {
-        transform: translateY(0);
-    }
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
 }
 
 @keyframes slideToTop {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-50px);
-    }
-}
-
-/* The Wow-like effect */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(-30px);
-}
-
-.reveal-visible {
-    opacity: 01;
-    transform: translateY(0);
-    transition: .3s;
+    from { transform: translateY(0); }
+    to { transform: translateY(-50px); }
 }

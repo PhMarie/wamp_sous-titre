@@ -211,14 +211,14 @@ $(function () {
 
 
 
-    smoothScroll.init({
-        speed: 1000, // Integer. How fast to complete the scroll in milliseconds
-        easing: 'easeInOutCubic', // Easing pattern to use
-        updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-        offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-        callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
-        callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
-    });
+    // smoothScroll.init({
+    //     speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+    //     easing: 'easeInOutCubic', // Easing pattern to use
+    //     updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+    //     offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+    //     callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+    //     callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+    // });
 
     $('#filters .btn').tooltip();
 
@@ -468,27 +468,12 @@ var myWaypoint = new Waypoint({
 		document.querySelector(".navbar").classList.toggle("navbarVisible")
 	},
 })
-var myWaypoint2 = new Waypoint({
-	element: document.getElementById("presentation"),
-	handler: function (direction) {
-		const targets = document.querySelectorAll(".reveal")
-		console.log("wayp02 !")
-		targets.forEach((target) => target.classList.toggle("reveal-visible"))
-	},
-})
+// var myWaypoint2 = new Waypoint({
+// 	element: document.getElementById("presentation"),
+// 	handler: function (direction) {
+// 		const targets = document.querySelectorAll(".reveal")
+// 		console.log("wayp02 !")
+// 		targets.forEach((target) => target.classList.toggle("reveal-visible"))
+// 	},
+// })
 
-/* Wow-like Effect
-https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API#compatibilit%C3%A9_des_navigateurs
-*/
-// var options = {
-//   root: null,
-//   rootMargin: '0px',
-//   threshold: .1
-// }
-
-// const handleIntersect = () => {
-//     console.log("handleIntersect")
-// }
-
-// let observer = new IntersectionObserver(handleIntersect, options)
-// observer.observe(document.querySelector('.reveal'))

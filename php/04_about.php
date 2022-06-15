@@ -15,7 +15,7 @@
                     <br>Je suis amené à travailler pour des entreprises, des collectivités et avec d'autres travailleurs indépendants.
                 </p>
                     <img class="img-responsive separator" src="img/separator.png" alt="Separator">
-                <div class="reveal">
+                <div>
                     <ul>
                         <li>- Développement web / CMS / Javascript</li>
                         <li>- Adaptation de template / Refonte de site Internet</li>
@@ -40,7 +40,7 @@
                     pour la saison 03 de la série d'animation des <strong>Kiwi</strong> diffusée notamment sur <a href="https://www.france.tv/france-5/kiwi/toutes-les-videos/" target="_blank"><strong>France Télévisions</strong></a> et <a href="https://www.lumni.fr/marque/kiwi" target="_blank"><strong>Lumni</strong></a>.
                 </p>
                     <img class="img-responsive separator" src="img/separator.png" alt="Separator">
-                <div class="reveal">
+                <div>
                     <ul>
                         <li>- Compositions / réadaptations de musiques</li>
                         <li>- Prises de sons chanteurs & chanteuses, comédiens & comédiennes voix off</li>
