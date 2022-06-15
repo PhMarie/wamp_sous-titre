@@ -18,7 +18,7 @@
                         <p>En fonction de vos attentes et votre budget, je vous proposerais la solution la plus adaptée au projet.</p>
                         <p>Lors des premières communications, nous survolerons le maximum de détails permettant de répondre au mieux à vos desiderata et à une expérience utilisateur utile et efficace.</p>
                         <br>
-                        <a class="btn btn-default btn-white" data-scroll href="#contact">Demander un devis</a>
+                        <a class="btn btn-default btn-white" href="#contact">Demander un devis</a>
                     </div>
                 </div>
             </div>

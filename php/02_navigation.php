@@ -17,10 +17,10 @@
     <a class="overlay-close"><i class="ion-close fa-3x"></i></a>
     <nav>
         <ul>
-            <li><a data-scroll href="#intro">Accueil</a></li>
-            <li><a data-scroll href="#services">Compétences</a></li>
-            <li><a data-scroll href="#derniers-travaux">Travaux récents</a></li>
-            <li><a data-scroll href="#contact">Contact</a></li>
+            <li><a href="#intro">Accueil</a></li>
+            <li><a href="#services">Compétences</a></li>
+            <li><a href="#derniers-travaux">Travaux récents</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </div>

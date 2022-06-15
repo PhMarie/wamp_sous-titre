@@ -56,7 +56,7 @@
         </div>
         <div class="col-xs-12 text-center">
                     <img class="img-responsive separator" src="img/separator.png" alt="Separator">
-                <a class="btn btn-default" data-scroll href="#derniers-travaux">Les derniers travaux</a>
+                <a class="btn btn-default" href="#derniers-travaux">Les derniers travaux</a>
         </div>
     </div>
 </section>

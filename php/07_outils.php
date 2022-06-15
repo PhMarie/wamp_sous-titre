@@ -23,22 +23,22 @@
                         <a href="https://sass-lang.com/documentation"><img src="img/outils/Sass-Logo.webp" alt="logo Sass"></a>
                     </div>
                     <div class="clientLogo">
-                        <a href="http://jquery.com/"><img src="img/outils/jquery.webp" alt="logo jquery"></a>
+                        <a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/"><img src="img/outils/bootstrap.webp" alt="logo bootstrap"></a>
                     </div>
                     <div class="clientLogo">
-                        <a href="http://getbootstrap.com/"><img src="img/outils/bootstrap.webp" alt="logo bootstrap"></a>
+                        <a href="https://fr.wordpress.org/support/"><img src="img/outils/wordpress.webp" alt="logo wordpress"></a>
                     </div>
                     <div class="clientLogo">
-                        <a href="https://nodejs.org/en/docs/"><img src="img/outils/nodejs-icon.webp" alt="logo nodejs"></a>
+                        <a href="https://docs.npmjs.com/cli/v8/commands"><img src="img/outils/nodejs-icon.webp" alt="logo nodejs"></a>
                     </div>
                     <div class="clientLogo">
-                        <a href="https://fr.wordpress.org/"><img src="img/outils/wordpress.webp" alt="logo wordpress"></a>
+                        <a href="https://webpack.js.org/"><img src="img/outils/webpack.webp" alt="logo webpack"></a>
                     </div>
                     <div class="clientLogo">
                         <a href="https://www.adobe.com/fr/"><img src="img/outils/Adobe.webp" alt="logo Adobe"></a>
                     </div>
                     <div class="clientLogo">
-                        <a href="https://steinberg.help/fr/cubase-manuals/cubase-pro/cubase-pro-11/"><img src="img/outils/cubase.webp" alt="logo Cubase"></a>
+                        <a href="https://steinberg.help/cubase_pro/v11/fr/cubase_nuendo/topics/new_features/new_features.html"><img src="img/outils/cubase.webp" alt="logo Cubase"></a>
                     </div>
                 </div>
             </div>

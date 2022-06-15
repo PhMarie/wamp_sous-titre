@@ -9,7 +9,7 @@
                     <br><br>Projets Web & Audio
                 </h1>
                 <br>
-                <a class="btn btn-default btn-white" data-scroll href="#presentation">Immersion</a>
+                <a class="btn btn-default btn-white" href="#presentation">Immersion</a>
             </div>
         </div>
 </section>
