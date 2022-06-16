@@ -264,20 +264,6 @@ $('.featuredWork').bind('touchend', function() {
     $(this).removeClass('.caption');
 });
 
-
-/* Waypoints Test
-http://imakewebthings.com/waypoints/
-
-*/
-var myWaypoint = new Waypoint({
-	element: document.getElementById("projets"),
-	handler: function () {
-		document.querySelector(".navbar").classList.toggle("navbarVisible")
-	},
-})
-
-
-
 /*
 Modal Mentions légales RGPD
 */
@@ -366,4 +352,29 @@ window.addEventListener("keydown", (e) => {
         focusInModal(e)
     }
 })
+
+/* Waypoints Test
+http://imakewebthings.com/waypoints/
+
+*/
+const myWaypoint = new Waypoint({
+	element: document.getElementById("projets"),
+	handler: function () {
+		document.querySelector(".navbar").classList.toggle("navbarVisible")
+	},
+})
 /* Fin Modal Mentions légales RGPD */
+
+/*
+Pas de # des ancres dans l'url
+*/
+const removeAnchors = function(event) {
+    let href = event.target.getAttribute('href')
+    let target = document.querySelector(href)
+    window.scrollTo(0, target.offsetTop);
+    event.preventDefault();
+};
+let links = document.querySelectorAll('a[href^="#"]');
+links.forEach(function(link) {
+    link.addEventListener('click', removeAnchors);
+});
