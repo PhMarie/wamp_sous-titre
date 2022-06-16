@@ -8,8 +8,9 @@
 - Review each lib again, what they do and how
 - Test other relevant replacements if needed
 - add a Modal for RGPD purpose
-- Trying to upgrade bootstrap 3.x.x to the last one 5.X.X available
+- Trying to upgrade bootstrap 3.x.x to the last one 4.6.1 available
 - Review the old sass file
 - Review the html to improve it
 - See if a webpack implementation worth it
+- Try to upgrade bootstrap 4.6.1 to bootstrap 5
 
