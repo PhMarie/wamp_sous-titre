@@ -333,18 +333,18 @@ $(window).load(function() {    // makes sure the whole site is loaded
 
 /* LOAD animations.css only on desktop */
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/animate.css') );
-    var wow = new WOW(
-        {
-            boxClass:     'wow',      // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset:       150,          // distance to the element when triggering the animation (default is 0)
-            mobile:       false        // trigger animations on mobile devices (true is default)
-        }
-    );
-    wow.init();
-}
+// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+//     $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/animate.css') );
+//     var wow = new WOW(
+//         {
+//             boxClass:     'wow',      // animated element css class (default is wow)
+//             animateClass: 'animated', // animation css class (default is animated)
+//             offset:       150,          // distance to the element when triggering the animation (default is 0)
+//             mobile:       false        // trigger animations on mobile devices (true is default)
+//         }
+//     );
+//     wow.init();
+// }
 
 if(Modernizr.touch){
     $('.caption .valign').css("top","40px");
