@@ -264,7 +264,7 @@ $('.featuredWork').bind('touchend', function() {
     $(this).removeClass('.caption');
 });
 
-/*
+/*!
 Modal Mentions légales RGPD
 */
 
@@ -365,7 +365,7 @@ const myWaypoint = new Waypoint({
 })
 /* Fin Modal Mentions légales RGPD */
 
-/*
+/*!
 Pas de # des ancres dans l'url
 */
 const removeAnchors = function(event) {
@@ -378,3 +378,29 @@ let links = document.querySelectorAll('a[href^="#"]');
 links.forEach(function(link) {
     link.addEventListener('click', removeAnchors);
 });
+
+/*! Wow-like Effect
+https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API#compatibilit%C3%A9_des_navigateurs
+*/
+const ratio = .1
+const options = {
+	// root: document.querySelector("#scrollArea")
+	root: null,
+	rootMargin: "0px",
+    // à 1 veut dire il faut que l'entièreté de l'élément soit visible pour déclencher, 0.1 = 10%
+	threshold: ratio,
+}
+
+const handleIntersect = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > ratio) {
+            entry.target.classList.remove("reveal")
+            observer.unobserve(entry.target)
+        }
+    })
+}
+document.documentElement.classList.add('reveal-loaded')
+const observer = new IntersectionObserver(handleIntersect, options)
+document.querySelectorAll('.reveal').forEach((r) => {
+	observer.observe(r)
+})

@@ -6,7 +6,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img class="" src="img/webp/logo_black_web.webp" alt="Logo black web">
+                <img src="img/webp/logo_black_web.webp" alt="Logo black web">
                 <h1><span class="serif">Internet</span>
                 <br>WEBDESIGN</h1>
 
@@ -15,8 +15,8 @@
                     <br>Je suis amené à travailler pour des entreprises, des collectivités et avec d'autres travailleurs indépendants.
                 </p>
                 <div class="text-center"> <img class="img-fluid separator" src="img/separator.png" alt="Separator"></div>
-                <div>
-                    <ul>
+                <div class="reveal">
+                    <ul class="reveal-2">
                         <li>- Développement web / CMS / Javascript</li>
                         <li>- Adaptation de template / Refonte de site Internet</li>
                         <li>- Édition multimédia adaptée web : suite Adobe
@@ -41,8 +41,8 @@
                 </p>
                 <div class="text-center"> <img class="img-fluid separator" src="img/separator.png" alt="Separator"></div>
 
-                <div>
-                    <ul>
+                <div class="reveal">
+                    <ul class="reveal-2">
                         <li>- Compositions / réadaptations de musiques</li>
                         <li>- Prises de sons chanteurs & chanteuses, comédiens & comédiennes voix off</li>
                         <li>- Enregistrement, mixage voix, instruments / Mastering</li>

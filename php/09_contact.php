@@ -1,9 +1,9 @@
    <section id="textSeparator" class="dark sectionSeparator">
         <div class="black-overlay"></div>
         <div class="container">
-            <div class="sectionHeader">
+            <div class="sectionHeader reveal">
                 <div class="row sectionHeaderText text-center">
-                    <div class="col-md-8 offset-md-2">
+                    <div class="col-md-8 offset-md-2 reveal-3">
                         <h2><span class="serif">Vous lancez un projet ?</span></h2>
                         <h1>Prenons Contact</h1>
                     </div>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-8 offset-md-2">
+                    <div class="col-md-8 offset-md-2 reveal-2">
                         <p>En fonction de vos attentes et votre budget, je vous proposerais la solution la plus adaptée au projet.</p>
                         <p>Lors des premières communications, nous survolerons le maximum de détails permettant de répondre au mieux à vos desiderata et à une expérience utilisateur utile et efficace.</p>
                         <br>

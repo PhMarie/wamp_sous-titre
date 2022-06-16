@@ -40,9 +40,9 @@
                 </div>
             </div>
         </div>
-        <div class="content">
+        <div class="content reveal">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 reveal-2">
                     <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 top-pad">
+                <div class="col-md-4 top-pad reveal-3">
                     <h2>Compétences</h2>
                     <hr>
                     <h3>HTMl - CSS3 - SASS</h3>

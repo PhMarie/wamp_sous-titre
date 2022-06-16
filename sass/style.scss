@@ -1151,7 +1151,7 @@ svg rect{
     max-height: 150px;
 }
 
-/* Animation */
+/* Wave Animation at footer */
 
 .parallaxwave > use {
     animation: move-forever 25s cubic-bezier(0.55,0.5,0.45,0.5) infinite;
@@ -1214,7 +1214,9 @@ svg rect{
         min-height: 34px;
     }
 }
-/* Modal Mentions Légales */
+/** End of Wave Animation at footer **/
+
+/* Modal for Mentions Légales */
 
 .modal {
     position: fixed;
@@ -1266,3 +1268,41 @@ svg rect{
     from { transform: translateY(0); }
     to { transform: translateY(-50px); }
 }
+/** End of Modal for Mentions Légales **/
+
+/* The Wow-like effect */
+
+.reveal-loaded .reveal [class*="reveal-"] {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+    transition: 0s !important;
+}
+
+.reveal-loaded [class*="reveal-"] {
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-loaded .reveal-2 {
+    transition-delay: .1s;
+}
+
+.reveal-loaded .reveal-3 {
+    transition-delay: .2s;
+}
+
+.reveal-loaded .reveal-4 {
+    transition-delay: .3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal [class*="reveal-"] {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    [class*="reveal-"] {
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
+/** End of The Wow-like effect **/
