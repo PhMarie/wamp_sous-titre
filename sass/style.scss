@@ -361,11 +361,11 @@ section.white a {
     padding: 12px 0;
 }
 /* 4. Intro  */
-#intro {
+#accueil {
     padding:0;
     margin:0;
 }
-#intro .introText .btn{
+#accueil .introText .btn{
     margin-top:20px;
 }
 /* 5. Presentation  */
@@ -396,7 +396,7 @@ section.white a {
     background: rgba(40, 40, 40, 0.90);
     -webkit-transition: all 1s ease-in-out;
 }
-.featuredWork:hover .caption{
+.featuredWork:hover .caption {
     opacity: 1;
 
 }
@@ -420,17 +420,17 @@ section.white a {
     background-repeat: repeat, repeat, repeat ,no-repeat;
 }
 
-#charts{
+#charts {
     padding-top:100px;
     padding-bottom:100px;
 }
 /* 7. Services  */
 
-#services{
+#competences {
     position:relative;
 }
 
-#services .panel-default>.panel-heading {
+#competences .panel-default>.panel-heading {
     background:url('img/cream_pixels.png') repeat;
 }
 
@@ -448,19 +448,19 @@ section.white a {
     margin-right: 40px;
 
 }
-#services .tab-content{
+#competences .tab-content {
     padding:20px;
 }
 
-.tableWrapper{
+.tableWrapper {
     padding:30px 30px;
     border:6px double #c99f6c;
 }
-.tableWrapper .btn{
+.tableWrapper .btn {
     margin-top:20px;
 }
 
-.tableWrapper ul{
+.tableWrapper ul {
     padding:0;
     font-weight: 300;
     font-size: 14px;
@@ -480,11 +480,11 @@ section.white a {
     background-color: #c99f6c;
 }
 /* 8. Testimonials  */
-#testimonials{
+#testimonials {
     padding-top:100px;
     padding-bottom:100px;
 }
-#testimonials{
+#testimonials {
     background: url(img/webp/background3.webp)  no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -562,11 +562,8 @@ section.white a {
     margin-right: auto;
 }
 /* 11. Portfolio  */
-#portfolio{
-    position:relative;
-    background-color: #ffffff;
-}
-#filters button{
+
+#filters button {
     margin:10px;
 }
 

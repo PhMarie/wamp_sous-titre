@@ -4,7 +4,7 @@
 $(function () {
     function introHeight() {
         var wh = $(window).height();
-        $('#intro').css({height: wh});
+        $('#accueil').css({height: wh});
     }
 
     introHeight();
@@ -41,7 +41,7 @@ $(function () {
 
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $( "#intro" ).css( "background-attachment", "scroll" );
+        $( "#accueil" ).css("background-attachment", "scroll")
         $( "#charts" ).css( "background-attachment", "scroll" );
         $( "#testimonials" ).css( "background-attachment", "scroll" );
         $( "#clients" ).css( "background-attachment", "scroll" );
@@ -463,7 +463,7 @@ http://imakewebthings.com/waypoints/
 
  */
 var myWaypoint = new Waypoint({
-	element: document.getElementById("derniers-travaux"),
+	element: document.getElementById("projets"),
 	handler: function (direction) {
 		document.querySelector(".navbar").classList.toggle("navbarVisible")
 	},

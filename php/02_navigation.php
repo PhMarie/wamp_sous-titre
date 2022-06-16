@@ -17,9 +17,9 @@
     <a class="overlay-close"><i class="ion-close fa-3x"></i></a>
     <nav>
         <ul>
-            <li><a href="#intro">Accueil</a></li>
-            <li><a href="#services">Compétences</a></li>
-            <li><a href="#derniers-travaux">Travaux récents</a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets récents</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>

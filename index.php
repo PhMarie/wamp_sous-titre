@@ -70,7 +70,7 @@
     include 'php/02_navigation.php';
     ?>
     <?php
-    include 'php/03_intro.php';
+    include 'php/03_accueil.php';
     ?>
     <?php
     include 'php/04_about.php';

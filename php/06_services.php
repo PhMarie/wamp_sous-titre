@@ -1,4 +1,4 @@
-<section id="services" class="white">
+<section id="competences" class="white">
     <div class="container">
         <div class="sectionHeader">
             <div class="row text-center">

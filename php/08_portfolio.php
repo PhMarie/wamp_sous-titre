@@ -1,4 +1,4 @@
-<section id="derniers-travaux" class="white" data-offset="-68">
+<section id="projets" class="white" data-offset="-68">
     <div class="container">
         <div class="sectionHeader">
             <div class="row text-center">
@@ -28,7 +28,7 @@
             <div class="row sectionHeaderText text-center">
                 <div class="col-md-12">
                     <h2><span class="serif">Parmi les</span></h2>
-                    <h1>travaux récents</h1>
+                    <h1>Projets récents</h1>
                 </div>
             </div>
             <div class="row sectionIntroText text-center">
