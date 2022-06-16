@@ -1,4 +1,4 @@
-<section id="charts" class="dark sectionSeparator parallax" data-stellar-background-ratio="0.6">
+<section id="charts" class="dark sectionSeparator">
     <div class="black-overlay"></div>
     <div class="container">
         <div class="sectionHeader">
@@ -9,11 +9,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <img class="img-responsive separator" src="img/separator.png" alt="Separator">
+                <div class="col-md-12 text-center">
+                    <img class="img-fluid separator" src="img/separator.png" alt="Separator">
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center" style="margin-top: 50px">
                 <div class="col-sm-4">
                         <div class="triangleWrapperBig top-pad">
                             <div class="triangleBorderBig">

@@ -1,7 +1,7 @@
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar fixed-top">
     <div class="container-fluid">
         <div class="col-md-2">
-            <a href="https://sous-titre.com"><img class="img-responsive topLogo hidden-xs hidden-sm visible-md visible-lg" src="img/logo-white.png" alt="Logo"></a>
+            <a href="https://sous-titre.com"><img class="d-none d-md-block" src="img/logo-white.png" alt="Logo"></a>
         </div>
 
         <div class="col-md-10 text-right toggle">

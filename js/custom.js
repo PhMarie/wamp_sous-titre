@@ -222,17 +222,13 @@ $(function () {
 
     $('#filters .btn').tooltip();
 
-    $("body").fitVids();
+    // $("body").fitVids();
 
 });
-
-
-
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* 12. Preloader */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 
 $(window).load(function() {    // makes sure the whole site is loaded
     "use strict";
@@ -242,109 +238,10 @@ $(window).load(function() {    // makes sure the whole site is loaded
 })
 
 
-
-
-//
-///** Used Only For Touch Devices **/
-//$( function( window ) {
-//
-//    // for touch devices: add class cs-hover to the figures when touching the items
-//    if( Modernizr.touch ) {
-//
-//        // classie.js https://github.com/desandro/classie/blob/master/classie.js
-//        // class helper functions from bonzo https://github.com/ded/bonzo
-//
-//        function classReg( className ) {
-//            return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
-//        }
-//
-//        // classList support for class management
-//        // altho to be fair, the api sucks because it won't accept multiple classes at once
-//        var hasClass, addClass, removeClass;
-//
-//        if ( 'classList' in document.documentElement ) {
-//            hasClass = function( elem, c ) {
-//                return elem.classList.contains( c );
-//            };
-//            addClass = function( elem, c ) {
-//                elem.classList.add( c );
-//            };
-//            removeClass = function( elem, c ) {
-//                elem.classList.remove( c );
-//            };
-//        }
-//        else {
-//            hasClass = function( elem, c ) {
-//                return classReg( c ).test( elem.className );
-//            };
-//            addClass = function( elem, c ) {
-//                if ( !hasClass( elem, c ) ) {
-//                    elem.className = elem.className + ' ' + c;
-//                }
-//            };
-//            removeClass = function( elem, c ) {
-//                elem.className = elem.className.replace( classReg( c ), ' ' );
-//            };
-//        }
-//
-//        function toggleClass( elem, c ) {
-//            var fn = hasClass( elem, c ) ? removeClass : addClass;
-//            fn( elem, c );
-//        }
-//
-//        var classie = {
-//            // full names
-//            hasClass: hasClass,
-//            addClass: addClass,
-//            removeClass: removeClass,
-//            toggleClass: toggleClass,
-//            // short names
-//            has: hasClass,
-//            add: addClass,
-//            remove: removeClass,
-//            toggle: toggleClass
-//        };
-//
-//        // transport
-//        if ( typeof define === 'function' && define.amd ) {
-//            // AMD
-//            define( classie );
-//        } else {
-//            // browser global
-//            window.classie = classie;
-//        }
-//
-//        [].slice.call( document.querySelectorAll( 'ul.grid > li > figure' ) ).forEach( function( el, i ) {
-//            el.querySelector( 'figcaption > a' ).addEventListener( 'touchstart', function(e) {
-//                e.stopPropagation();
-//            }, false );
-//            el.addEventListener( 'touchstart', function(e) {
-//                classie.toggle( this, 'cs-hover' );
-//            }, false );
-//        } );
-//
-//    }
-//
-//});
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* Mobile bug fixes  */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* LOAD animations.css only on desktop */
-
-// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-//     $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/animate.css') );
-//     var wow = new WOW(
-//         {
-//             boxClass:     'wow',      // animated element css class (default is wow)
-//             animateClass: 'animated', // animation css class (default is animated)
-//             offset:       150,          // distance to the element when triggering the animation (default is 0)
-//             mobile:       false        // trigger animations on mobile devices (true is default)
-//         }
-//     );
-//     wow.init();
-// }
 
 if(Modernizr.touch){
     $('.caption .valign').css("top","40px");
@@ -368,112 +265,105 @@ $('.featuredWork').bind('touchend', function() {
 });
 
 
-/* Modal Mentions légales RGPD */
+/* Waypoints Test
+http://imakewebthings.com/waypoints/
+
+*/
+var myWaypoint = new Waypoint({
+	element: document.getElementById("projets"),
+	handler: function () {
+		document.querySelector(".navbar").classList.toggle("navbarVisible")
+	},
+})
+
+
+
+/*
+Modal Mentions légales RGPD
+*/
+
 let modal = null
 const focusableSelector = "button, a, input, textarea, select"
 let focusables = []
 let previouslyFocusElement = null
 
 const openModal = async (e) => {
-	e.preventDefault()
-	const target = e.target.getAttribute("href")
-	if (target.startsWith("#")) {
-		modal = document.querySelector(target)
-	} else {
-		modal = await loadModal(target)
-	}
-	focusables = Array.from(modal.querySelectorAll(focusableSelector))
-	previouslyFocusElement = document.querySelector(":focus")
-	modal.style.display = null
-	focusables[0].focus()
-	modal.removeAttribute("aria-hidden")
-	modal.setAttribute("aria-modal", "true")
-	modal.querySelector(".js-modal-close").addEventListener("click", closeModal)
+    e.preventDefault()
+    const target = e.target.getAttribute("href")
+    if (target.startsWith("#")) {
+        modal = document.querySelector(target)
+    } else {
+        modal = await loadModal(target)
+    }
+    focusables = Array.from(modal.querySelectorAll(focusableSelector))
+    previouslyFocusElement = document.querySelector(":focus")
+    modal.style.display = null
+    focusables[0].focus()
+    modal.removeAttribute("aria-hidden")
+    modal.setAttribute("aria-modal", "true")
+    modal.querySelector(".js-modal-close").addEventListener("click", closeModal)
 }
 
 const closeModal = (e) => {
-	if (modal === null) return
-	if (previouslyFocusElement !== null) previouslyFocusElement.focus()
-	e.preventDefault()
-	window.setTimeout(() => {
-		modal.style.display = "none"
-		modal = null
-	}, 500)
-	modal.setAttribute("aria-hidden", "true")
-	modal.removeAttribute("aria-modal")
-	modal
-		.querySelector(".js-modal-close")
-		.removeEventListener("click", closeModal)
+    if (modal === null) return
+    if (previouslyFocusElement !== null) previouslyFocusElement.focus()
+    e.preventDefault()
+    window.setTimeout(() => {
+        modal.style.display = "none"
+        modal = null
+    }, 500)
+    modal.setAttribute("aria-hidden", "true")
+    modal.removeAttribute("aria-modal")
+    modal
+        .querySelector(".js-modal-close")
+        .removeEventListener("click", closeModal)
 }
 
 const focusInModal = (e) => {
-	e.preventDefault()
-	let index = focusables.findIndex((f) => f === modal.querySelector(":focus"))
-	if (e.shiftKey === true) {
-		index--
-	} else {
-		index++
-	}
-	if (index >= focusables.length) {
-		index = 0
-	}
-	if (index < 0) {
-		index = focusables.length - 1
-	}
-	focusables[index].focus()
+    e.preventDefault()
+    let index = focusables.findIndex((f) => f === modal.querySelector(":focus"))
+    if (e.shiftKey === true) {
+        index--
+    } else {
+        index++
+    }
+    if (index >= focusables.length) {
+        index = 0
+    }
+    if (index < 0) {
+        index = focusables.length - 1
+    }
+    focusables[index].focus()
 }
 
 const loadModal = async (url) => {
-	// TODO : afficher un "loader"
-	const target = "#" + url.split("#")[1]
-	// console.log(target);
-	const existingModal = document.querySelector(target)
-	if (existingModal !== null) return existingModal
-	const html = await fetch(url).then((response) => response.text())
-	// MDN DocumentFragment
-	const fragment = document.createRange().createContextualFragment(html)
-	const element = fragment.querySelector(target)
-	if (element === null)
-		throw `L'élément ${target} n'a pas été trouvé dans la page ${url}`
-	// console.log(element);
-	document.body.append(element)
-	// on retourne element qui peut être utilisé par la suite
-	return element
+    // TODO : afficher un "loader"
+    const target = "#" + url.split("#")[1]
+    // console.log(target);
+    const existingModal = document.querySelector(target)
+    if (existingModal !== null) return existingModal
+    const html = await fetch(url).then((response) => response.text())
+    // MDN DocumentFragment
+    const fragment = document.createRange().createContextualFragment(html)
+    const element = fragment.querySelector(target)
+    if (element === null)
+        throw `L'élément ${target} n'a pas été trouvé dans la page ${url}`
+    // console.log(element);
+    document.body.append(element)
+    // on retourne element qui peut être utilisé par la suite
+    return element
 }
 
 document.querySelectorAll(".js-modal").forEach((a) => {
-	a.addEventListener("click", openModal)
+    a.addEventListener("click", openModal)
 })
 
 window.addEventListener("keydown", (e) => {
-	if (e.key === "Escape" || e.key === "Esc") {
-		closeModal(e)
-	}
-	if (e.key === "Tab" && modal !== null) {
-		focusInModal(e)
-	}
+    if (e.key === "Escape" || e.key === "Esc") {
+        closeModal(e)
+    }
+    if (e.key === "Tab" && modal !== null) {
+        focusInModal(e)
+    }
 })
 /* Fin Modal Mentions légales RGPD */
-
-
-
-
-/* Waypoints Test
-http://imakewebthings.com/waypoints/
-
- */
-var myWaypoint = new Waypoint({
-	element: document.getElementById("projets"),
-	handler: function (direction) {
-		document.querySelector(".navbar").classList.toggle("navbarVisible")
-	},
-})
-// var myWaypoint2 = new Waypoint({
-// 	element: document.getElementById("presentation"),
-// 	handler: function (direction) {
-// 		const targets = document.querySelectorAll(".reveal")
-// 		console.log("wayp02 !")
-// 		targets.forEach((target) => target.classList.toggle("reveal-visible"))
-// 	},
-// })
-

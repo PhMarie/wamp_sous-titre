@@ -6,14 +6,9 @@
                 <div class="col-md-12">
                     <h2><span class="serif">Les outils</span></h2>
                     <h1>Favoris</h1>
-                    <img class="img-responsive separator" src="img/separator.png" alt="Separator">
+                    <img class="img-fluid separator" src="img/separator.png" alt="Separator">
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-md-12">
-                    <img class="img-responsive separator" src="img/separator.png" alt="Separator">
-                </div>
-            </div> -->
             <div class="row">
                 <div id="owl-clientsOFF" class="owl-carousel owl-theme">
                     <div class="clientLogo">

@@ -1,8 +1,8 @@
-<section id="projets" class="white" data-offset="-68">
+<section id="projets" class="white">
     <div class="container">
         <div class="sectionHeader">
             <div class="row text-center">
-                <div class="col-md-offset-3 col-md-6 allTriangleWrapper">
+                <div class="col-md-12 allTriangleWrapper">
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
                             <ion-icon name="albums" style="font-size: 48px;"></ion-icon>
@@ -20,19 +20,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-12">
-                    <img class="img-responsive separator" src="img/separator.png" alt="Separator">
+                    <img class="img-fluid separator" src="img/separator.png" alt="Separator">
                 </div>
             </div>
             <div class="row sectionHeaderText text-center">
-                <div class="col-md-12">
+                <div class="col-md-8 offset-md-2">
                     <h2><span class="serif">Parmi les</span></h2>
                     <h1>Projets récents</h1>
-                </div>
-            </div>
-            <div class="row sectionIntroText text-center">
-                <div class="col-md-offset-3 col-md-6 text-center">
                     <p>
                         Un aperçu avec des exemples de sites et leurs différentes vues, les derniers projets audio réalisés.
                     </p>

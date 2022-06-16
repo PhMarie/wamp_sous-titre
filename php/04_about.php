@@ -14,7 +14,7 @@
                     Webdesigner depuis de longues années, je développe des sites en appliquant les dernières recommandations et j'interviens sur la partie graphique en prenant en compte les tendances du métier (UX / UI Design).
                     <br>Je suis amené à travailler pour des entreprises, des collectivités et avec d'autres travailleurs indépendants.
                 </p>
-                    <img class="img-responsive separator" src="img/separator.png" alt="Separator">
+                <div class="text-center"> <img class="img-fluid separator" src="img/separator.png" alt="Separator"></div>
                 <div>
                     <ul>
                         <li>- Développement web / CMS / Javascript</li>
@@ -39,7 +39,8 @@
                     Passionné de musique et de mixage audio, j'ai eu la chance de pouvoir participer à plusieurs projets pour Médecins Sans Frontières, aaa Production, Auzou Éditions, Brainpop, Fructeam et Double Mètre Animation
                     pour la saison 03 de la série d'animation des <strong>Kiwi</strong> diffusée notamment sur <a href="https://www.france.tv/france-5/kiwi/toutes-les-videos/" target="_blank"><strong>France Télévisions</strong></a> et <a href="https://www.lumni.fr/marque/kiwi" target="_blank"><strong>Lumni</strong></a>.
                 </p>
-                    <img class="img-responsive separator" src="img/separator.png" alt="Separator">
+                <div class="text-center"> <img class="img-fluid separator" src="img/separator.png" alt="Separator"></div>
+
                 <div>
                     <ul>
                         <li>- Compositions / réadaptations de musiques</li>
@@ -55,7 +56,8 @@
             </div>
         </div>
         <div class="col-xs-12 text-center">
-                    <img class="img-responsive separator" src="img/separator.png" alt="Separator">
+                                    <div class="text-center"> <img class="img-fluid separator" src="img/separator.png" alt="Separator"></div>
+
                 <a class="btn btn-default" href="#projets">Les PROJETS RÉCENTS</a>
         </div>
     </div>

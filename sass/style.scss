@@ -37,9 +37,8 @@ section {
     padding-top:50px;
     padding-bottom:50px;
 }
-section#presentation ul {
+section ul {
     list-style-type: none;
-    font-size: 1.8rem;
 }
 .container{
     position:relative;
@@ -244,7 +243,7 @@ h3 {
     font-size:18px;
     letter-spacing:0;
     line-height:18px;
-
+    padding: 10px;
 }
 h3 .serif {
     letter-spacing:0;
@@ -282,14 +281,11 @@ section.white a {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     text-transform:uppercase;
-    font-size:4rem;
+    font-size:2rem;
     letter-spacing:5px;
     color: white;
 }
 
-.dark .introText h1 .serif {
-    color:#c99f6c;
-}
 .serif {
     text-transform: none;
     letter-spacing:1px;
@@ -425,10 +421,6 @@ section.white a {
     padding-bottom:100px;
 }
 /* 7. Services  */
-
-#competences {
-    position:relative;
-}
 
 #competences .panel-default>.panel-heading {
     background:url('img/cream_pixels.png') repeat;
