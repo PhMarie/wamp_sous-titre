@@ -55,7 +55,7 @@
                     <a class="popup-link" href="img/gallery/mg-huissiers-tours.fr.webp" title="mg-huissiers-tours.fr">
                         <div class="caption-heading">
                             <h1>+</h1>
-                            <h4>mg-huissiers-tours.fr</h4>
+                            <h4><span class="serif">mg-huissiers-tours.fr</span></h4>
                             <h4><span class="serif">Template Bootstrap</span></h4>
                         </div>
                     </a>
@@ -528,7 +528,7 @@
                     <a class="popup-link" href="img/gallery/bobitostudio.webp" title="BOBITOSTUDIO.COM">
                         <div class="caption-heading">
                             <h1>+</h1>
-                            <h4>Divers collaborations</h4>
+                            <h4><span class="serif">Divers collaborations</span></h4>
                             <h4><span class="serif">BOBITOSTUDIO.COM</span></h4>
                         </div>
                     </a>
@@ -542,7 +542,7 @@
                     <a class="popup-link" href="img/gallery/auzou.webp" title="Mes Comptines Rock - AUZOU ÉDITIONS">
                         <div class="caption-heading">
                             <h1>+</h1>
-                            <h4>Réadaptation musicale</h4>
+                            <h4><span class="serif">Réadaptation musicale</span></h4>
                             <h4><span class="serif">AUZOU ÉDITIONS</span></h4>
                             <h4>MES COMPTINES ROCK</h4>
                         </div>
@@ -557,7 +557,7 @@
                     <a class="popup-link" href="img/gallery/brainpop.webp" title="fr.brainpop.com">
                         <div class="caption-heading">
                             <h1>+</h1>
-                            <h4>Prise de son comédien voix off</h4>
+                            <h4><span class="serif">Prise de son comédien voix off</span></h4>
                             <h4><span class="serif">BRAINPOP</span></h4>
                             <h4>BRAINPOP France</h4>
                         </div>
@@ -572,7 +572,7 @@
                     <a class="popup-link" href="img/gallery/msf.webp" title="PODCAST LA ZONE D'ÉCOUTE">
                         <div class="caption-heading">
                             <h1>+</h1>
-                            <h4>Prises de son voix dont Bérengère Guais pour le podcast La Zone d'Écoute</h4>
+                            <h4><span class="serif">Prises de son voix dont Bérengère Guais pour le podcast La Zone d'Écoute</span></h4>
                             <h4><span class="serif">MSF FRANCE</span></h4>
                             <h4>PODCAST - LA ZONE D'ÉCOUTE</h4>
                         </div>
@@ -587,7 +587,7 @@
                     <a class="popup-link" href="img/gallery/kiwi.webp" title="KIWI Saison 03">
                         <div class="caption-heading">
                             <h1>+</h1>
-                            <h4>Bruitages, compositions, mixage</h4>
+                            <h4><span class="serif">Bruitages, compositions, mixage</span></h4>
                             <h4><span class="serif">DOUBLE MÈTRE ANIMATION</span></h4>
                             <h4>KIWI SAISON 03</h4>
                         </div>

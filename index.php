@@ -112,7 +112,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
         $('body').backstretch([
-            "img/webp/bg00.webp"
+            "img/webp/bg04.webp"
             , "img/webp/bg01.webp"
             , "img/webp/bg02.webp"
             , "img/webp/bg03.webp"

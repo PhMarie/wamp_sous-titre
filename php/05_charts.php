@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                    <h3><span class="timer4"></span> mois d'expérience</h3>
+                    <h3><span class="timer3"></span> mois d'expérience</h3>
                 </div>
             </div>
         </div>

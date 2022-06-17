@@ -87,23 +87,9 @@ $(function () {
         $('.timer3').countTo({
 
             from: 0,// the number you want to start
-            to: 80,// the number you want to reach
+            to: 212,// the number you want to reach
             speed: 250,
             refreshInterval: 1
-        });
-
-
-        // fourth timer
-        $('.timer4').countTo({
-
-            from: 0,// the number you want to start
-            to: 200,// the number you want to reach
-            speed: 250,
-            refreshInterval: 1,
-            onComplete: function(value) {
-                $( '.timer' ).stop();
-            }
-
         });
 
 
@@ -123,7 +109,7 @@ $(function () {
     });
 
     $container.isotope({
-        filter: '*' // IF YOU WANT TO DISPLAY AT FIRST ONLY ONE FILTER, FOR EXAMPLE DESIGNS: SUBSTIUTE '*' WITH '.designs'
+        filter: '*' // IF YOU WANT TO DISPLAY AT FIRST ONLY ONE FILTER, FOR EXAMPLE DESIGNS: SUBSTITUTE '*' WITH '.designs'
     });
 
 
@@ -243,9 +229,9 @@ $(window).load(function() {    // makes sure the whole site is loaded
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-if(Modernizr.touch){
-    $('.caption .valign').css("top","40px");
-}
+// if(Modernizr.touch){
+//     $('.caption .valign').css("top","40px");
+// }
 
 $('.gallery-inner').bind('touchstart', function() {
     $(this).addClass('.caption');
@@ -357,12 +343,13 @@ window.addEventListener("keydown", (e) => {
 http://imakewebthings.com/waypoints/
 
 */
-const myWaypoint = new Waypoint({
+var Waypoint = new Waypoint({
 	element: document.getElementById("projets"),
 	handler: function () {
 		document.querySelector(".navbar").classList.toggle("navbarVisible")
 	},
 })
+
 /* Fin Modal Mentions légales RGPD */
 
 /*!
