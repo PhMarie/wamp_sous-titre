@@ -4,7 +4,7 @@
 ### Possible steps to improve and why :
 - Convert all images to webp file format for best performance - old safari browsers are not compatible, work-around ?
 - Update everything to the maximum first : jquery, bootstrap and the 14 js lib used at that time (compare and test performance)
-- Integrate all the js updated into one only file : myAllscript.js (separate each lib by a comment containing "MY", compare and test performance)
+- Integrate all the js updated into one only file : allScript.js (compare and test performance)
 - Review each lib again, what they do and how
 - Test other relevant replacements if needed
 - add a Modal for RGPD purpose
