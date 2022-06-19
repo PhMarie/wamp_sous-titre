@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sous-titre.com - Freelance Webdesign & Production audiovisuelle</title>
-    <meta name="description" content="Freelance - création de site Internet & Production audiovisuelle - Développement Web - HTML5 &amp; CSS3 - Jquery - Bootstrap - wordpress - mixage - cubase">
+    <title>Sous-titre.com - Freelance Webdesign, développement front & Production audiovisuelle</title>
+    <meta name="description" content="Freelance - création de site Internet & Production audiovisuelle - Développement Front Web - HTML5 &amp; CSS3 - Jquery - Bootstrap - wordpress - mixage - cubase">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="sous-titre.com">
