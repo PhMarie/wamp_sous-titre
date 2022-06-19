@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="content reveal">
+        <div class="content">
             <div class="row">
                 <div class="col-md-8 reveal-2">
                     <div class="panel-group" id="accordion">

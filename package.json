@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "jquery-waypoints": "^2.0.5"
-  },
-  "devDependencies": {
-    "eslint": "^8.17.0"
-  }
-}
