@@ -112,7 +112,8 @@
     <script src="js/custom-min.js"></script>
     <script>
         $('body').backstretch([
-            "img/webp/bg04.webp"
+            "img/webp/bg10.webp"
+            , "img/webp/bg04.webp"
             , "img/webp/bg01.webp"
             , "img/webp/bg02.webp"
             , "img/webp/bg03.webp"

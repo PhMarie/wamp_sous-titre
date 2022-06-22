@@ -1,4 +1,4 @@
-   <section id="footer" class="dark sectionSeparator text-center" data-stellar-background-ratio="0.6">
+   <section id="footer" class="dark sectionSeparator text-center">
         <div class="topLine">
             <a href="https://sous-titre.com" title="Accueil"><img src="img/webp/white-logo_webAudio.webp" alt="white Logo sous-titre.com web et audio"></a>
         </div>
