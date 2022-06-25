@@ -13,7 +13,7 @@
  </nav>
 
 <div class="overlay overlay-hugeinc">
-    <a class="overlay-close"><i class="ion-close fa-3x"></i></a>
+    <a class="overlay-close"><ion-icon src="fonts/close-outline.svg"></ion-icon></a>
     <nav>
         <ul>
             <li><a href="#accueil">Accueil</a></li>
