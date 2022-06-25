@@ -4,9 +4,10 @@
         </div>
         <div class="bottomLine">
             <ul class="footerSocialIcons">
-                <li><a href="https://www.facebook.com/sous.titre.webdesign"><i class="fa fa-facebook fa-2x"></i></a></li>
-                <li><a href="https://twitter.com/SousTitre"><i class="fa fa-twitter fa-2x"></i></a></li>
-                <li><a href="https://instagram.com/aqua_pulko/"><i class="fa fa-instagram fa-2x"></i></a></li>
+                <li><a href="https://www.facebook.com/sous.titre.webdesign"><ion-icon src="fonts/logo-facebook.svg" style="font-size: 48px;"></ion-icon></a></li>
+                <li><a href="https://twitter.com/SousTitre"><ion-icon src="fonts/logo-twitter.svg" style="font-size: 48px;"></ion-icon></a></li>
+                <li><a href="https://instagram.com/aqua_pulko/"><ion-icon src="fonts/logo-instagram.svg" style="font-size: 48px;"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/1022287/admin/"><ion-icon src="fonts/logo-linkedin.svg" style="font-size: 48px;"></i></a></li>
             </ul>
             <p>&copy;&nbsp;<?php Print(date("Y"));?> <a href="https://www.sous-titre.com/" >sous-titre.com</a></p>
             <p style="padding-top:15px"><a href="include/mentions-legales.html#modal" class="js-modal">Mentions légales</a>

@@ -6,8 +6,7 @@
 
         <div class="col-md-10 text-right toggle">
             <a id="trigger-overlay">
-                <ion-icon name="menu-outline"></ion-icon>
-                <!-- <i class="ion-navicon fa-3x"></i> -->
+                <ion-icon src="fonts/menu-outline.svg"></ion-icon>
             </a>
         </div>
     </div>

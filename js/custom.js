@@ -392,11 +392,11 @@ $("body").backstretch(
 		"img/webp/bg10.webp",
 		"img/webp/bg04.webp",
 		"img/webp/bg08.webp",
-		// , "img/webp/bg01.webp"
-		// , "img/webp/bg02.webp"
-		// , "img/webp/bg03.webp"
-		// , "img/webp/bg07.webp"
-		// , "img/webp/bg11.webp"
+		//"img/webp/bg01.webp",
+		//"img/webp/bg02.webp",
+		//"img/webp/bg03.webp",
+		//"img/webp/bg07.webp",
+		//"img/webp/bg11.webp",
 		"img/webp/bg12.webp",
 		"img/webp/bg05.webp",
 		"img/webp/bg06.webp",

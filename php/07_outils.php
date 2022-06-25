@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="row">
-                <div id="owl-clientsOFF" class="owl-carousel owl-theme">
+                <div id="owl-clients" class="owl-carousel owl-theme">
                     <div class="clientLogo">
                         <a href="https://code.visualstudio.com/docs/nodejs/working-with-javascript"><img src="img/outils/vscode.webp"  alt="logo vscode"></a>
                     </div>

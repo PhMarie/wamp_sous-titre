@@ -1,3 +1,6 @@
+$primary_bg : #353535;
+$primary_color : #c99f6c;
+
 * {
     box-sizing: border-box;
 }
@@ -115,7 +118,7 @@ ion-icon {
 }
 .triangleBorderSmallSingle i{
     padding:12px;
-    color:#c99f6c;
+    color:$primary_color;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -133,14 +136,14 @@ ion-icon {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin:0 30px;
-    border:4px double #c99f6c;
+    border:4px double $primary_color;
 }
 .triangleBorderSmallSingle{
     float:none;
     position: relative;
     height: 60px;
     width: 60px;
-    border:4px double #c99f6c;
+    border:4px double $primary_color;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -157,7 +160,7 @@ ion-icon {
 }
 .triangleBorderBig i {
     padding:30px;
-    color:#c99f6c;
+    color:$primary_color;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -169,7 +172,7 @@ ion-icon {
     position: relative;
     height: 120px;
     width: 120px;
-    border:7px double #c99f6c;
+    border:7px double $primary_color;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -255,11 +258,11 @@ h4 {
 
 }
 h4 .serif {
-    color:#c99f6c;
+    color:$primary_color;
     letter-spacing: 0;
 }
 .dark h1, .dark h2, .dark h3 {
-    color:#c99f6c;
+    color:$primary_color;
 }
 .dark h1 .serif, .dark h2 .serif, .dark h3 {
     color:#caa068;
@@ -271,10 +274,10 @@ section.white h1 .serif, section.white h2 .serif {
     color:#4c4c4c;
 }
 section.white h1, section.white h2 {
-    color:#c99f6c;
+    color:$primary_color;
 }
 section.white a {
-    color: #353535;
+    color: $primary_bg;
 }
 .introText h1 {
     padding-top: 1rem;
@@ -299,8 +302,8 @@ section.white a {
     text-transform:uppercase;
     letter-spacing:4px;
     font-size:16px;
-    border:1px solid #c99f6c;
-    outline: 1px solid #c99f6c;
+    border:1px solid $primary_color;
+    outline: 1px solid $primary_color;
     outline-offset: 3px;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -310,9 +313,9 @@ section.white a {
 
 }
 .btn:hover, .btn:active, .btn:focus, .btn-default.active {
-    background-color: #c99f6c;
+    background-color: $primary_color;
     padding: 12px 40px;
-    outline: 4px solid #c99f6c;
+    outline: 4px solid $primary_color;
     outline-offset: 0px;
     border:1px solid white;
     color:white;
@@ -327,7 +330,7 @@ section.white a {
 
 .tooltip-inner {
     max-width:200px;
-    color:#c99f6c;
+    color:$primary_color;
     text-align:center;
     text-decoration:none;
     background-color:#000;
@@ -434,7 +437,7 @@ section.white a {
     margin-bottom: 20px;
     border-radius: 0;
     overflow: hidden;
-    border:4px double #c99f6c;
+    border:4px double $primary_color;
 
     margin-left: 40px;
     margin-right: 40px;
@@ -446,7 +449,7 @@ section.white a {
 
 .tableWrapper {
     padding:30px 30px;
-    border:6px double #c99f6c;
+    border:6px double $primary_color;
 }
 .tableWrapper .btn {
     margin-top:20px;
@@ -469,7 +472,7 @@ section.white a {
 
 .progress-bar {
 
-    background-color: #c99f6c;
+    background-color: $primary_color;
 }
 /* 8. Testimonials  */
 #testimonials {
@@ -490,8 +493,8 @@ section.white a {
     padding:0;
 }
 #testimonials .testimonialImage{
-    border:1px solid #c99f6c;
-    outline: 1px solid #c99f6c;
+    border:1px solid $primary_color;
+    outline: 1px solid $primary_color;
     outline-offset: 3px;
 }
 
@@ -504,14 +507,14 @@ section.white a {
 
 #owl-testimonials .serif{
     letter-spacing:0;
-    color:#c99f6c;
+    color:$primary_color;
 }
 /* 9. Team  */
 #team{
     position: relative;
 }
 #team .member{
-    border:1px solid #c99f6c;
+    border:1px solid $primary_color;
     outline: 1px solid #c99f6c;
     outline-offset: 3px;
     margin:10px;
@@ -810,7 +813,7 @@ section#googleMap {
 #footer .topLine{
     padding:20px;
     margin:0 auto;
-    background-color:#353535;
+    background-color:$primary_bg;
 }
 
 #footer .footerLogo{
@@ -853,8 +856,8 @@ section#googleMap {
     padding: 20px 50px;
 }
 
-.widget p{
-    color: #353535;
+.widget p {
+    color: $primary_bg;
     padding:0px;
 }
 
@@ -864,8 +867,8 @@ section#googleMap {
     margin-bottom:10px;
 }
 
-.widget ul li a{
-    color: #353535;
+.widget ul li a {
+    color: $primary_bg;
 }
 
 #blog{
@@ -1016,8 +1019,8 @@ blockquote p{
     background-color: #121212; /* change if the mask should have another color then white */
     z-index:9999; /* makes sure it stays on top */
 }
-::-moz-selection { color: #c99f6c;  background: #353535;  }
-::selection      { color: #c99f6c;  background: #353535; }
+::-moz-selection { color: $primary_color;  background: $primary_bg;  }
+::selection      { color: $primary_color;  background: $primary_bg; }
 
 .loader{
 

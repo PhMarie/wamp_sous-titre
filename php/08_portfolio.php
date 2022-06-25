@@ -5,17 +5,17 @@
                 <div class="col-md-12 allTriangleWrapper">
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <ion-icon name="albums" style="font-size: 48px;"></ion-icon>
+                            <ion-icon src="fonts/albums-outline.svg" style="font-size: 48px;"></ion-icon>
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <ion-icon name="color-filter" style="font-size: 48px;"></ion-icon>
+                            <ion-icon src="fonts/color-filter-outline.svg" style="font-size: 48px;"></ion-icon>
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <ion-icon name="desktop" style="font-size: 48px;"></ion-icon>
+                            <ion-icon src="fonts/desktop-outline.svg" style="font-size: 48px;"></ion-icon>
                         </div>
                     </div>
                 </div>

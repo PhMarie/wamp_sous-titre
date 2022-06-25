@@ -31,7 +31,7 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle">
                             <div class="triangleBorderSmallSingle">
-                                <ion-icon name="mail-outline" style="font-size: 48px;"></ion-icon>
+                                <ion-icon src="fonts/mail-outline.svg" style="font-size: 48px;"></ion-icon>
                             </div>
                         </div>
                         <h2><span class="serif">Mail</span></h2>
@@ -45,7 +45,7 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
-                                <ion-icon name="location-outline" style="font-size: 48px;"></ion-icon>
+                                <ion-icon src="fonts/location-outline.svg" style="font-size: 48px;"></ion-icon>
                             </div>
                         </div>
 
@@ -61,7 +61,7 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
-                                <ion-icon name="time-outline" style="font-size: 48px;"></ion-icon>
+                                <ion-icon src="fonts/time-outline.svg" style="font-size: 48px;"></ion-icon>
                             </div>
                         </div>
                         <h2><span class="serif">Disponibilité</span></h2>
