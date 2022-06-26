@@ -4,10 +4,10 @@
         </div>
         <div class="bottomLine">
             <ul class="footerSocialIcons">
-                <li><a href="https://www.facebook.com/sous.titre.webdesign"><ion-icon src="fonts/logo-facebook.svg" style="font-size: 48px;"></ion-icon></a></li>
-                <li><a href="https://twitter.com/SousTitre"><ion-icon src="fonts/logo-twitter.svg" style="font-size: 48px;"></ion-icon></a></li>
-                <li><a href="https://instagram.com/aqua_pulko/"><ion-icon src="fonts/logo-instagram.svg" style="font-size: 48px;"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/company/1022287/admin/"><ion-icon src="fonts/logo-linkedin.svg" style="font-size: 48px;"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/sous.titre.webdesign"><img src="fonts/logo-facebook.svg" width="48" height="48" alt="logo facebook"></a></li>
+                <li><a href="https://twitter.com/SousTitre"><img src="fonts/logo-twitter.svg" width="48" height="48" alt="logo twitter"></a></li>
+                <li><a href="https://instagram.com/aqua_pulko/"><img src="fonts/logo-instagram.svg" width="48" height="48" alt="logo instagram"></a></li>
+                <li><a href="https://www.linkedin.com/company/1022287/admin/"><img src="fonts/logo-linkedin.svg" width="48" height="48" alt="logo linkedin"></a></li>
             </ul>
             <p>&copy;&nbsp;<?php Print(date("Y"));?> <a href="https://www.sous-titre.com/" >sous-titre.com</a></p>
             <p style="padding-top:15px"><a href="include/mentions-legales.html#modal" class="js-modal">Mentions légales</a>

@@ -5,17 +5,17 @@
                 <div class="col-md-12 allTriangleWrapper">
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <ion-icon src="fonts/cafe-outline.svg" style="font-size: 3em;"></ion-icon>
+                            <img src="fonts/cafe-outline.svg" width="48" height="48" alt="logo cafe">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <ion-icon src="fonts/construct-outline.svg" style="font-size: 48px;"></ion-icon>
+                            <img src="fonts/construct-outline.svg" width="48" height="48" alt="logo construct">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <ion-icon src="fonts/speedometer-outline.svg" style="font-size: 48px;"></ion-icon>
+                            <img src="fonts/speedometer-outline.svg" width="48" height="48" alt="logo speedometer">
                         </div>
                     </div>
                 </div>

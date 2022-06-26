@@ -97,7 +97,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default-min.css">
     <link rel="stylesheet" href="css/magnific-popup-min.css">
-    <link rel="stylesheet" href="css/responsive.min.css">
+    <link rel="stylesheet" href="css/responsive-min.css">
 
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
@@ -106,8 +106,8 @@
     <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
     <script src="js/modernizr.custom.js" defer></script>
     <script src="js/borderMenu-min.js" defer></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
+    <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script> -->
     <script src="js/custom-min.js" defer></script>
     </body>
 </html>
