@@ -174,25 +174,19 @@
         width: 40px;
         margin: 0 20px;
     }
-
+    #competences .triangleBorderSmall, #projets .triangleBorderSmall {
+        height: 60px;
+        width: 60px;
+        margin: 0 10px;
+    }
     .triangleBorderSmall i {
         padding: 8px;
-    }
-
-    .triangleBorderSmall .fa-2x {
-        font-size: 1.5em;
     }
 
     .triangleWrapperSmall {
         margin: 0 auto;
         width: 240px;
     }
-
-
-    .fa-2x {
-        font-size: 1.2em;
-    }
-
 
     .bigIntroLogo {
         width: 60%;
@@ -213,10 +207,6 @@
         width: 50%;/* change here the column width */
     }
 
-    .triangleBorderSmall .fa-2x {
-        font-size: 1.2em;
-    }
-
 
     .bt-menu-trigger {
         right: 20px;
@@ -228,7 +218,7 @@
 }
 
 
-/*iPhone Landscape Mode and Mediium Smart Phones*/
+/*iPhone Landscape Mode and Medium Smart Phones*/
 @media screen and (max-width: 500px){
 
     h1 {
@@ -270,12 +260,9 @@
         margin: 0 20px;
     }
 
+
     .triangleBorderSmall i {
         padding: 8px;
-    }
-
-    .triangleBorderSmall .fa-2x {
-        font-size: 1.2em;
     }
 
     .triangleWrapperSmall {
