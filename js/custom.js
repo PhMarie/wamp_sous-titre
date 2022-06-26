@@ -387,19 +387,40 @@ document.querySelectorAll(".reveal").forEach((r) => {
 
 /* BG carousel */
 
-$("body").backstretch(
-	[
-		"img/webp/bg10.webp",
-		"img/webp/bg04.webp",
-		"img/webp/bg08.webp",
-		//"img/webp/bg01.webp",
-		//"img/webp/bg02.webp",
-		//"img/webp/bg03.webp",
-		//"img/webp/bg07.webp",
-		//"img/webp/bg11.webp",
-		"img/webp/bg12.webp",
-		"img/webp/bg05.webp",
-		"img/webp/bg06.webp",
-	],
-	{ duration: 4000, fade: 750 }
-)
+// $("body").backstretch(
+// 	[
+// 		"img/webp/bg10.webp",
+// 		"img/webp/bg04.webp",
+// 		"img/webp/bg08.webp",
+// 		//"img/webp/bg01.webp",
+// 		//"img/webp/bg02.webp",
+// 		//"img/webp/bg03.webp",
+// 		//"img/webp/bg07.webp",
+// 		//"img/webp/bg11.webp",
+// 		"img/webp/bg12.webp",
+// 		"img/webp/bg05.webp",
+// 		"img/webp/bg06.webp",
+// 	],
+// 	{ duration: 4000, fade: 750 }
+// )
+if (window.matchMedia("(min-width: 992px)").matches) {
+	// phone
+	$.backstretch(
+		["img/webp/bg10.webp", "img/webp/bg04.webp", "img/webp/bg08.webp", "img/webp/bg12.webp", "img/webp/bg05.webp", "img/webp/bg06.webp",],
+		{
+			duration: 4000,
+			fade: 750,
+		}
+	)
+} else {
+	//tab or desktop
+	$.backstretch(
+		[
+			"img/webp/smaller/bg10.webp"
+		],
+		{
+			duration: 4000,
+			fade: 750,
+		}
+	)
+}

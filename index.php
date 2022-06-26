@@ -16,7 +16,6 @@
     <meta property="og:image" content="https://www.sous-titre.com/img/logo-rezos.png">
     <meta property="og:title" content="Webdesign & Prod audio">
     <meta property="og:description" content="Freelance - création de site Internet - HTML5 &amp; CSS3 - Jquery - Bootstrap - wordpress - woocommerce - responsive design">
-    <!-- <link rel="shortcut icon" href="img/favicons/favicon.ico"> -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
@@ -51,8 +50,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <!--Styles-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
     <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="css/responsive-min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93111-3"></script>
     <script>
@@ -93,21 +93,19 @@
     <?php
     include 'php/10_footer.php';
     ?>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default-min.css">
     <link rel="stylesheet" href="css/magnific-popup-min.css">
-    <link rel="stylesheet" href="css/responsive-min.css">
 
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous" defer></script>
     <script src="js/allScripts-min.js" defer></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
     <script src="js/modernizr.custom.js" defer></script>
     <script src="js/borderMenu-min.js" defer></script>
-    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
-    <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script> -->
+
     <script src="js/custom-min.js" defer></script>
     </body>
 </html>

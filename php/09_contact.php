@@ -4,7 +4,7 @@
             <div class="sectionHeader reveal">
                 <div class="row sectionHeaderText text-center">
                     <div class="col-md-8 offset-md-2 reveal-3">
-                        <h2><span class="serif">Vous lancez un projet ?</span></h2>
+                        <h2 style="color: #efefef">Vous lancez un projet ?</h2>
                         <h1>Prenons Contact</h1>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                         <h1>Contact</h1>
                                 <img class="img-fluid separator" src="img/separator.png" alt="Separator">
                         <p>
-                            <a href="mailto:freelance@sous-titre.com?subject=Via&nbsp;sous-titre.com:">freelance@sous-titre.com</a>
+                            <a href="mailto:freelance@sous-titre.com?subject=Via&nbsp;sous-titre.com:" style="font-weight:bold">freelance@sous-titre.com</a>
                             <br>
                         </p>
                     </div>
@@ -53,7 +53,6 @@
                         <h1>Adresse</h1>
                         <img class="img-fluid separator" src="img/separator.png" alt="Separator">
                         <p>
-                            Philippe Marie<br>
                             12 rue Saint-Exupéry<br>
                             93100 Montreuil
                         </p>
