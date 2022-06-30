@@ -6,14 +6,14 @@
 
         <div class="col-md-10 text-right toggle">
             <a id="trigger-overlay">
-                <img src="fonts/menu-outline.svg" width="48" height="48" alt="logo hamburger menu">
+                <img src="img/svg/menu-outline.svg" width="48" height="48" alt="logo hamburger menu">
             </a>
         </div>
     </div>
  </nav>
 
 <div class="overlay overlay-hugeinc">
-    <a class="overlay-close"><img src="fonts/close-outline.svg" width="48" height="48" alt="logo close"></a>
+    <a class="overlay-close"><img src="img/svg/close-outline.svg" width="48" height="48" alt="logo close"></a>
     <nav>
         <ul>
             <li><a href="#accueil">Accueil</a></li>

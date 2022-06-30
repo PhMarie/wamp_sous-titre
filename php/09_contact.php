@@ -31,7 +31,7 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle">
                             <div class="triangleBorderSmallSingle">
-                                <img src="fonts/mail-outline.svg" width="48" height="48" alt="logo mail">
+                                <img src="img/svg/mail-outline.svg" width="48" height="48" alt="logo mail">
                             </div>
                         </div>
                         <h2><span class="serif">Mail</span></h2>
@@ -45,7 +45,7 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
-                                <img src="fonts/location-outline.svg" width="48" height="48" alt="logo adresse">
+                                <img src="img/svg/location-outline.svg" width="48" height="48" alt="logo adresse">
                             </div>
                         </div>
 
@@ -60,7 +60,7 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
-                                <img src="fonts/time-outline.svg" width="48" height="48" alt="logo horaire">
+                                <img src="img/svg/time-outline.svg" width="48" height="48" alt="logo horaire">
                             </div>
                         </div>
                         <h2><span class="serif">Disponibilité</span></h2>

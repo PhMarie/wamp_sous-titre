@@ -5,17 +5,17 @@
                 <div class="col-md-12 allTriangleWrapper">
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="fonts/albums-outline.svg" width="48" height="48" alt="logo screen">
+                            <img src="img/svg/albums-outline.svg" width="48" height="48" alt="logo screen">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="fonts/color-filter-outline.svg" width="48" height="48" alt="logo filter">
+                            <img src="img/svg/color-filter-outline.svg" width="48" height="48" alt="logo filter">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="fonts/desktop-outline.svg" width="48" height="48" alt="logo desktop">
+                            <img src="img/svg/desktop-outline.svg" width="48" height="48" alt="logo desktop">
                         </div>
                     </div>
                 </div>

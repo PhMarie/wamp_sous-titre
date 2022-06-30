@@ -17,7 +17,7 @@
                 <div class="col-sm-4">
                         <div class="triangleWrapperBig top-pad">
                             <div class="triangleBorderBig">
-                                <img src="fonts/barcode-outline.svg" alt="logo barcode">
+                                <img src="img/svg/barcode-outline.svg" alt="logo barcode">
                             </div>
                         </div>
                         <h3><span class="timer1"></span>K+ Lignes de Code</h3>
@@ -26,7 +26,7 @@
                 <div class="col-sm-4">
                     <div class="triangleWrapperBig top-pad">
                         <div class="triangleBorderBig">
-                            <img src="fonts/people-outline.svg" alt="logo people">
+                            <img src="img/svg/people-outline.svg" alt="logo people">
                         </div>
                     </div>
 
@@ -36,7 +36,7 @@
                 <div class="col-sm-4">
                     <div class="triangleWrapperBig top-pad">
                         <div class="triangleBorderBig">
-                            <img src="fonts/bulb-outline.svg" alt="logo bulb">
+                            <img src="img/svg/bulb-outline.svg" alt="logo bulb">
                         </div>
                     </div>
 
