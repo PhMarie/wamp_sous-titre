@@ -49,9 +49,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <!--Styles-->
-
-    <link rel="stylesheet" href="style.min.css">
-    <!-- <link rel="stylesheet" href="css/responsive-min.css"> -->
+    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93111-3"></script>
     <script>
@@ -96,6 +95,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default-min.css">
     <link rel="stylesheet" href="css/magnific-popup-min.css">
+    <link rel="stylesheet" href="css/responsive-min.css">
 
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>

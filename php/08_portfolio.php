@@ -66,7 +66,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/mg-huissiers-tours.fr_sm.webp" title="mg-huissiers-tours.fr /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/mg-huissiers-tours.fr_sm.webp" title="mg-huissiers-tours.fr /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>mg-huissiers-tours.fr</h4>
@@ -108,7 +108,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/bobitostudio.com_sm.webp" title="bobitostudio.com /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/bobitostudio.com_sm.webp" title="bobitostudio.com /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>bobitostudio.com</h4>
@@ -151,7 +151,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/aptitude-logiciels.com_sm.webp" title="aptitude-logiciels.com /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/aptitude-logiciels.com_sm.webp" title="aptitude-logiciels.com /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>aptitude-logiciels.com</h4>
@@ -194,7 +194,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier62-llw.fr_sm.webp" title="huissier62-llw.fr /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/huissier62-llw.fr_sm.webp" title="huissier62-llw.fr /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>huissier62-llw.fr</h4>
@@ -237,7 +237,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-poncet-paris.com_sm.webp" title="huissier-poncet-paris.com /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/huissier-poncet-paris.com_sm.webp" title="huissier-poncet-paris.com /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>huissier-poncet-paris.com</h4>
@@ -280,7 +280,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/ocea-huissier-justice.fr_sm.webp" title="ocea-huissier-justice.fr /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/ocea-huissier-justice.fr_sm.webp" title="ocea-huissier-justice.fr /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>ocea-huissier-justice.fr</h4>
@@ -324,7 +324,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-nancy-djp.com_sm.webp" title="huissier-nancy-djp.com /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/huissier-nancy-djp.com_sm.webp" title="huissier-nancy-djp.com /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>huissier-nancy-djp.com</h4>
@@ -367,7 +367,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-justifirst.fr_sm.webp" title="huissier-justifirst.fr /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/huissier-justifirst.fr_sm.webp" title="huissier-justifirst.fr /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>huissier-justifirst.fr</h4>
@@ -410,7 +410,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-waterlot-lille.com_sm.webp" title="huissier-waterlot-lille.com /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/huissier-waterlot-lille.com_sm.webp" title="huissier-waterlot-lille.com /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>huissier-waterlot-lille.com</h4>
@@ -453,7 +453,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-waterlot.com_sm.webp" title="huissier-waterlot.com /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/huissier-waterlot.com_sm.webp" title="huissier-waterlot.com /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>huissier-waterlot.com</h4>
@@ -496,7 +496,7 @@
         <div class="gallery-inner smartphone">
             <div class="caption">
                 <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-93-lieurade.com_sm.webp" title="huissier-93-lieurade.com /  smartphone reveal-2">
+                    <a class="popup-link" href="img/gallery/huissier-93-lieurade.com_sm.webp" title="huissier-93-lieurade.com /  smartphone">
                         <div class="caption-heading">
                             <h1>+</h1>
                             <h4>huissier-93-lieurade.com</h4>

@@ -9,7 +9,14 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-
+$primary: rgb(201, 159, 108)  !default;
+// $secondary: $gray-600  !default;
+// $success: $green  !default;
+// $info: $cyan  !default;
+// $warning: $yellow  !default;
+// $danger: $red  !default;
+// $light: $gray-100  !default;
+// $dark: $gray-900  !default;
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
 
@@ -41,7 +48,6 @@
 // 8. Add additional custom code here
 //---------------------------------------
 $primary_bg : #353535;
-$primary_color : rgb(201, 159, 108);
 
 * {
     box-sizing: border-box;
@@ -60,6 +66,27 @@ body {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
+
+/* https: //css-tricks.com/aspect-ratio-boxes/ */
+
+
+.aspect-ratio-box::before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: calc(210 / 640) * 100%;
+}
+
+.aspect-ratio-box::after {
+    /* to clear float */
+    content: "";
+    display: table;
+    clear: both;
+}
+/* End of https: //css-tricks.com/aspect-ratio-boxes/ */
+
 .valign {
     position: relative;
     top: 50%;
@@ -79,7 +106,7 @@ a:hover, a:focus {
 
 section {
     position:relative;
-    padding-top:20px;
+    padding-top:30px;
     padding-bottom:50px;
 }
 section ul {
@@ -155,7 +182,7 @@ line-height: 150%;
 
 .triangleBorderSmallSingle i{
     padding:12px;
-    color:$primary_color;
+    color:$primary;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -173,14 +200,14 @@ line-height: 150%;
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin:0 30px;
-    border:4px double $primary_color;
+    border:4px double $primary;
 }
 .triangleBorderSmallSingle {
     float:none;
     position: relative;
     height: 60px;
     width: 60px;
-    border:4px double $primary_color;
+    border:4px double $primary;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -197,7 +224,7 @@ line-height: 150%;
 }
 .triangleBorderBig i {
     padding:30px;
-    color:$primary_color;
+    color:$primary;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -209,7 +236,7 @@ line-height: 150%;
     position: relative;
     height: 120px;
     width: 120px;
-    border:7px double $primary_color;
+    border:7px double $primary;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -239,7 +266,7 @@ p {
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
-    color:#4c4c4c;
+    color:$primary_bg;
     padding:10px;
 
 }
@@ -286,11 +313,11 @@ h4 {
 
 }
 h4 .serif {
-    color:$primary_color;
+    color:$primary;
     letter-spacing: 0;
 }
 .dark h1, .dark h2, .dark h3 {
-    color:$primary_color;
+    color:$primary;
 }
 .dark h1 .serif, .dark h2 .serif, .dark h3 {
     color:#caa068;
@@ -302,11 +329,9 @@ section.white h1 .serif, section.white h2 .serif {
     color:#4c4c4c;
 }
 section.white h1, section.white h2 {
-    color:$primary_color;
+    color:$primary;
 }
-section.white a {
-    color: $primary_bg;
-}
+
 .introText h1 {
     padding-top: 1rem;
     font-family: 'Raleway', sans-serif;
@@ -330,8 +355,8 @@ section.white a {
     text-transform:uppercase;
     letter-spacing:4px;
     font-size:16px;
-    border:1px solid $primary_color;
-    outline: 1px solid $primary_color;
+    border:1px solid $primary;
+    outline: 1px solid $primary;
     outline-offset: 3px;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -341,9 +366,9 @@ section.white a {
 
 }
 .btn:hover, .btn:active, .btn:focus, .btn-default.active {
-    background-color: $primary_color;
+    background-color: $primary;
     padding: 12px 40px;
-    outline: 4px solid $primary_color;
+    outline: 4px solid $primary;
     outline-offset: 0px;
     border:1px solid white;
     color:white;
@@ -358,7 +383,7 @@ section.white a {
 
 .tooltip-inner {
     max-width:200px;
-    color:$primary_color;
+    color:$primary;
     text-align:center;
     text-decoration:none;
     background-color:#000;
@@ -427,7 +452,7 @@ section.white a {
     margin-bottom: 20px;
     border-radius: 0;
     overflow: hidden;
-    border:4px double $primary_color;
+    border:4px double $primary;
 
     margin-left: 40px;
     margin-right: 40px;
@@ -439,7 +464,7 @@ section.white a {
 
 .tableWrapper {
     padding:30px 30px;
-    border:6px double $primary_color;
+    border:6px double $primary;
 }
 .tableWrapper .btn {
     margin-top:20px;
@@ -456,7 +481,7 @@ section.white a {
 
 }
 .progress-bar {
-    background-color: $primary_color;
+    background-color: $primary;
 }
 
 /* 10. Outils  */
@@ -740,8 +765,8 @@ blockquote p {
     background-color: #121212; /* change if the mask should have another color then white */
     z-index:9999; /* makes sure it stays on top */
 }
-::-moz-selection { color: $primary_color;  background: $primary_bg;  }
-::selection      { color: $primary_color;  background: $primary_bg; }
+::-moz-selection { color: $primary;  background: $primary_bg;  }
+::selection      { color: $primary;  background: $primary_bg; }
 
 .loader{
 

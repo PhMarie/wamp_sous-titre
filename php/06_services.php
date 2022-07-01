@@ -47,7 +47,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseOne" class="">
+                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseOne" class="link-primary">
                                         <h3>Sites Internet <span class="serif">&amp;</span> Boutiques en ligne</h3>
                                         <h4><span class="serif"> Bootstrap / WordPress & Woocommerce</span></h4>
                                     </a>
@@ -62,7 +62,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseTwo" class="collapsed">
+                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseTwo" class="collapsed link-primary">
                                         <h3>Optimisation, référencement <span class="serif">&amp;</span> Coûts réduits</h3>
                                         <h4><span class="serif">Réactivité, visibilité &amp; budget maîtrisé</span></h4>
                                 </a>
@@ -79,7 +79,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseThree" class="collapsed">
+                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseThree" class="collapsed link-primary">
                                         <h3>UX <span class="serif">&amp;</span> UI Design</h3>
                                         <h4><span class="serif">Expérience utilisateur et interface</span></h4>
                                     </a>
