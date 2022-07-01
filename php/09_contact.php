@@ -4,7 +4,7 @@
             <div class="sectionHeader reveal">
                 <div class="row sectionHeaderText text-center">
                     <div class="col-md-8 offset-md-2 reveal-3">
-                        <h2 style="color: #efefef">Vous lancez un projet ?</h2>
+                        <h2 style="color: #efefef">Vous lancez un projet&nbsp;?</h2>
                         <h1>Prenons Contact</h1>
                     </div>
                 </div>

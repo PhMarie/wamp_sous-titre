@@ -1,0 +1,22 @@
+{
+  "name": "sous-titrev4.loc",
+  "version": "1.0.0",
+  "description": "- Convert all images to webp file format for best performance - old safari browsers are not compatible, work-around ?\r - Update everything to the maximum first : jquery, bootstrap and the 14 js lib used at that time (compare and test performance)\r - Integrate all the js updated into one only file : allScript.js (compare and test performance)\r - Review each lib again, what they do and how\r - Test other relevant replacements if needed\r - add a Modal for RGPD purpose\r - Trying to upgrade bootstrap 3.x.x to the last one 4.6.1 available\r - Review the old sass file\r - Review the html to improve it\r - See if a webpack implementation worth it\r - Try to upgrade bootstrap 4.6.1 to bootstrap 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhMarie/wamp_sous-titre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhMarie/wamp_sous-titre/issues"
+  },
+  "homepage": "https://github.com/PhMarie/wamp_sous-titre#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

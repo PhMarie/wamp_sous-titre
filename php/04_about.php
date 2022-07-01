@@ -4,25 +4,23 @@
             <div class="row text-center">
             </div>
         </div>
-        <div class="row">
+        <div class="row about-content">
             <div class="col-md-6">
                 <img src="img/webp/logo_black_web.webp" alt="Logo black web">
                 <h1><span class="serif">Internet</span>
                 <br>WEBDESIGN</h1>
 
                 <p>
-                    Webdesigner depuis de longues années, je développe des sites en appliquant les dernières recommandations et j'interviens sur la partie graphique en prenant en compte les tendances du métier (UX / UI Design).
-                    <br>Je suis amené à travailler pour des entreprises, des collectivités et avec d'autres travailleurs indépendants.
+                    Webdesigner depuis de longues années, je développe des sites en appliquant les dernières recommandations et interviens sur la partie graphique en prenant en compte les tendances du métier (UX / UI Design).
+                    Je suis amené à travailler pour des entreprises, des collectivités et avec d'autres travailleurs indépendants.
                 </p>
                 <div class="text-center"> <img class="img-fluid separator" src="img/separator.png" alt="Separator"></div>
                 <div class="reveal">
                     <ul class="reveal-2">
                         <li>- Développement web / CMS / Javascript</li>
                         <li>- Adaptation de template / Refonte de site Internet</li>
-                        <li>- Édition multimédia adaptée web : suite Adobe
-                            <br>(Photoshop, Illustrator, Premiere Pro...)</li>
-                        <li>- Multi-support (portable, tablette, ordinateur)
-                            <br>Responsive design et Mobile First</li>
+                        <li>- Édition multimédia adaptée web : suite Adobe</li>
+                        <li>- Responsive design et Mobile First</li>
                         <li>- SEO & référencement naturel</li>
                         <li>- UX/UI Design</li>
                         <li>- Webmaster: gestion de projet & communication</li>
@@ -44,7 +42,7 @@
                 <div class="reveal">
                     <ul class="reveal-2">
                         <li>- Compositions / réadaptations de musiques</li>
-                        <li>- Prises de sons chanteurs & chanteuses, comédiens & comédiennes voix off</li>
+                        <li>- Prises de son chant et voix off</li>
                         <li>- Enregistrement, mixage voix, instruments / Mastering</li>
                         <li>- Bruitages, mixage son à l'image, Universal Audio</li>
                         <li>- Postproduction son, livres audio, didacticiels, E-learning</li>

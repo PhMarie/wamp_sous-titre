@@ -43,11 +43,11 @@
         <div class="content">
             <div class="row">
                 <div class="col-md-8 reveal-2">
-                    <div class="panel-group" id="accordion">
+                    <div class="panel-group" id="collapse-anchor">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">
+                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseOne" class="">
                                         <h3>Sites Internet <span class="serif">&amp;</span> Boutiques en ligne</h3>
                                         <h4><span class="serif"> Bootstrap / WordPress & Woocommerce</span></h4>
                                     </a>
@@ -62,7 +62,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseTwo" class="collapsed">
                                         <h3>Optimisation, référencement <span class="serif">&amp;</span> Coûts réduits</h3>
                                         <h4><span class="serif">Réactivité, visibilité &amp; budget maîtrisé</span></h4>
                                 </a>
@@ -79,7 +79,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                                    <a data-toggle="collapse" data-parent="#collapse-anchor" href="#collapseThree" class="collapsed">
                                         <h3>UX <span class="serif">&amp;</span> UI Design</h3>
                                         <h4><span class="serif">Expérience utilisateur et interface</span></h4>
                                     </a>
@@ -103,35 +103,35 @@
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                            <span class="sr-only">80% Complete (success)</span>
+                            <span class="sr-only">80%</span>
                         </div>
                     </div>
                     <h3>JavaScript <span class="serif">&amp;</span> Librairies (jquery)</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                            <span class="sr-only">60% Complete (success)</span>
+                            <span class="sr-only">60%</span>
                         </div>
                     </div>
                     <h3>Bootstrap <span class="serif">&amp;</span> Wordpress</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                            <span class="sr-only">80% Complete (success)</span>
+                            <span class="sr-only">80%</span>
                         </div>
                     </div>
                     <h3>Suite ADOBE & CUBASE</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                            <span class="sr-only">75% Complete (success)</span>
+                            <span class="sr-only">75%</span>
                         </div>
                     </div>
                     <h3><span class="serif">Support</span> Client & Réactivité</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (success)</span>
+                            <span class="sr-only">100%</span>
                         </div>
                     </div>
                 </div>

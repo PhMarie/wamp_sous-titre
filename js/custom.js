@@ -354,8 +354,11 @@ const removeAnchors = function (event) {
 	window.scrollTo(0, target.offsetTop)
 	event.preventDefault()
 }
-let links = document.querySelectorAll('a[href^="#"]')
+let links = document.querySelectorAll(
+	'a[href^="#accueil"], a[href^="#presentation"], a[href^="#competences"], a[href^="#projets"], a[href^="#contact"]'
+)
 links.forEach(function (link) {
+	console.log(link);
 	link.addEventListener("click", removeAnchors)
 })
 
@@ -406,7 +409,16 @@ document.querySelectorAll(".reveal").forEach((r) => {
 if (window.matchMedia("(min-width: 992px)").matches) {
 	// phone
 	$.backstretch(
-		["img/webp/bg10.webp", "img/webp/bg04.webp", "img/webp/bg08.webp", "img/webp/bg12.webp", "img/webp/bg05.webp", "img/webp/bg06.webp",],
+		[
+			// "https://source.unsplash.com/user/c_v_r/1600x900",
+			"https://picsum.photos/1100/600?random=1",
+			"https://picsum.photos/1100/600?random=2",
+			"https://picsum.photos/1100/600?random=3",
+			"https://picsum.photos/1100/600?random=4",
+			"https://picsum.photos/1100/600?random=5",
+			"https://picsum.photos/1100/600?random=6",
+		],
+		// ["img/webp/bg10.webp", "img/webp/bg04.webp", "img/webp/bg08.webp", "img/webp/bg12.webp", "img/webp/bg05.webp", "img/webp/bg06.webp",],
 		{
 			duration: 4000,
 			fade: 750,
@@ -416,7 +428,8 @@ if (window.matchMedia("(min-width: 992px)").matches) {
 	//tab or desktop
 	$.backstretch(
 		[
-			"img/webp/smaller/bg10.webp"
+			"https://picsum.photos/300/600?random=1",
+			// "img/webp/smaller/bg10.webp"
 		],
 		{
 			duration: 4000,

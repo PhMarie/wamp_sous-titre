@@ -1,10 +1,10 @@
 <nav class="navbar fixed-top">
     <div class="container-fluid">
-        <div class="col-md-2">
+        <div class="col-md-11">
             <a href="https://sous-titre.com"><img class="d-none d-md-block" src="img/logo-white.png" alt="Logo"></a>
         </div>
 
-        <div class="col-md-10 text-right toggle">
+        <div class="col-md-1 d-flex flex-row-reverse toggle">
             <a id="trigger-overlay">
                 <img src="img/svg/menu-outline.svg" width="48" height="48" alt="logo hamburger menu">
             </a>
