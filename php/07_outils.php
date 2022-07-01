@@ -1,4 +1,4 @@
-<section id="outils" class="dark sectionSeparator parallax" data-stellar-background-ratio="0.6">
+<section id="outils" class="dark sectionSeparator">
     <div class="black-overlay"></div>
     <div class="container">
         <div class="sectionHeader">

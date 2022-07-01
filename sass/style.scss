@@ -41,14 +41,14 @@
 // 8. Add additional custom code here
 //---------------------------------------
 $primary_bg : #353535;
-$primary_color : #c99f6c;
+$primary_color : rgb(201, 159, 108);
 
 * {
     box-sizing: border-box;
 }
 
 *:focus {
-    box-shadow: 0 0 3px rgb(0, 110, 255);
+    box-shadow: 0 0 3px rgb(201, 159, 108);
 }
 html, body {
     // margin: 0;
@@ -79,7 +79,7 @@ a:hover, a:focus {
 
 section {
     position:relative;
-    padding-top:50px;
+    padding-top:20px;
     padding-bottom:50px;
 }
 section ul {
@@ -132,9 +132,7 @@ hr {
     background: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.9) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-::-moz-focus-inner {
-    border: 0;
-}
+
 .about-content p {
 line-height: 150%;
 }
@@ -245,16 +243,7 @@ p {
     padding:10px;
 
 }
-.dropcap {
-    float: left;
-    color:inherit;
-    font-size: 50px;
-    line-height: 40px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 3px;
-    font-family: Georgia;
-}
+
 .dark p {
     color:#cbc9c9;
 }
@@ -391,13 +380,7 @@ section.white a {
 .navbar ion-icon {
     font-size: 32px;
 }
-.topLogo {
-    position:fixed;
-    z-index:10;
-    width:120px !important;
-    height:auto !important;
-    padding: 12px 0;
-}
+
 /* 4. Intro  */
 #accueil {
     padding:0;
@@ -406,18 +389,7 @@ section.white a {
 #accueil .introText .btn{
     margin-top:20px;
 }
-/* 5. Presentation  */
-#presentation {
-    position:relative;
-}
 
-#featuredWorks {
-    padding-bottom:0;
-    padding-top:0;
-}
-.featuredWork img{
-    width:100%;
-}
 .captionWrapper h1{
     margin:0;
 }
@@ -425,30 +397,10 @@ section.white a {
     margin-top:20px;
     margin-bottom:-10px;
 }
-.featuredWork .caption{
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(40, 40, 40, 0.90);
-    transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-}
-.featuredWork:hover .caption {
-    opacity: 1;
 
-}
-
-.featuredWork .caption-heading {
-    width:100%;
-    height:80px;
-}
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* 6. Charts  */
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-#charts{
+#charts {
     background: url(img/webp/background2.webp)  no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -457,12 +409,10 @@ section.white a {
     background-attachment: fixed;
     background-position: 50% 0, 50% 0, 50% 0, 50% 0;
     background-repeat: repeat, repeat, repeat ,no-repeat;
-}
-
-#charts {
     padding-top:100px;
     padding-bottom:100px;
 }
+
 /* 7. Services  */
 
 #competences .panel-default>.panel-heading {
@@ -505,78 +455,10 @@ section.white a {
     list-style-type:none;
 
 }
-.recommended{
-    padding-bottom:90px;
-    margin-top:-30px;
-}
-
 .progress-bar {
-
     background-color: $primary_color;
 }
-/* 8. Testimonials  */
-#testimonials {
-    padding-top:100px;
-    padding-bottom:100px;
-}
-#testimonials {
-    background: url(img/webp/background3.webp)  no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: 50% 0, 50% 0, 50% 0, 50% 0;
-    background-repeat: repeat, repeat, repeat ,no-repeat;
-}
 
-#testimonials p{
-    padding:0;
-}
-#testimonials .testimonialImage{
-    border:1px solid $primary_color;
-    outline: 1px solid $primary_color;
-    outline-offset: 3px;
-}
-
-#testimonials .imageWrapper{
-    margin:6px;
-    max-width:200px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-#owl-testimonials .serif{
-    letter-spacing:0;
-    color:$primary_color;
-}
-/* 9. Team  */
-#team{
-    position: relative;
-}
-#team .member{
-    border:1px solid $primary_color;
-    outline: 1px solid #c99f6c;
-    outline-offset: 3px;
-    margin:10px;
-}
-#team .memberWrapper{
-    padding:20px;
-}
-#team .memberWrapper img {
-    margin: 0 auto;
-}
-#team .memberDescription p{
-    font-size:12px;
-}
-
-#team .socialIcons{
-    margin:20px 0;
-}
-
-#team .socialIcons a{
-    color:#c99f6c;
-    margin:0 10px;
-}
 /* 10. Outils  */
 #outils {
     padding-top:100px;
@@ -590,7 +472,7 @@ section.white a {
     background-repeat: repeat, repeat, repeat ,no-repeat;
 }
 
-#outils .clientLogo img{
+#outils .clientLogo img {
     width: 128px;
     height: 128px;
     margin-left:auto;
@@ -598,8 +480,8 @@ section.white a {
 }
 /* 11. Portfolio  */
 
-#filters button {
-    margin:10px;
+#projets #filters button {
+    margin:20px;
 }
 
 .gallery {
@@ -607,10 +489,6 @@ section.white a {
     background: hsla(45, 100%, 40%, 0.2);
     max-width: 100%;
 
-}
-
-.captionWrapper h1{
-    margin:0;
 }
 .gallery .gallery-inner .caption {
     opacity: 0;
@@ -624,7 +502,7 @@ section.white a {
     text-align: center;
 }
 
-.gallery .gallery-inner:hover .caption{
+.gallery .gallery-inner:hover .caption {
     opacity: 1;
 }
 
@@ -679,7 +557,6 @@ section.white a {
     min-width:100%;
     width: 100%;
     height: auto;
-
 }
 
 
@@ -687,7 +564,6 @@ section.white a {
 /* overlay at start */
 .mfp-fade.mfp-bg {
     opacity: 0;
-
     -webkit-transition: all 0.15s ease-out;
     -moz-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out;
@@ -745,28 +621,7 @@ section.white a {
 #video .triangleBorderBig i {
      padding: 37px;
  }
-/* 13. Recent News  */
-#recentNews{
-    position: relative;
-}
 
-#recentNews p{
-    padding:0;
-}
-#recentNews .postDescription{
-    padding:20px;
-}
-
-#recentNews img{
-    padding-top:20px;
-}
-.postDescription h3{
-    margin-top:0;
-}
-
-.blogPost{
-    margin:40px 0;
-}
 /* 14. Text Separator  */
 #textSeparator {
     background: url(img/webp/sand.webp) no-repeat center center fixed;
@@ -785,92 +640,19 @@ section.white a {
     font-size: 1.4rem;
 }
 
-/* 15. Contact  */
-#contactUs{
-    position:relative;
-}
-
-#contactUs .headerContact{
-    margin-top:30px;
-}
-
-#contact_form input{
-    width:100%;
-    height:50px;
-    padding:10px;
-    padding-bottom:0px;
-    border:0;
-    background:transparent;
-    border-bottom:1px solid #c99f6c;
-    font-family: 'dubielitalic', sans-serif;
-    color: #c99f6c;
-}
-
-#contact_form input:focus{
-    outline:0;
-    background:transparent;
-}
-
-#contact_form label{
-    width: 90%;
-    margin:10px;
-    color:#c99f6c;
-}
-
-#contact_form textarea:focus{
-    outline:0;
-    background:transparent;
-}
-#contact_form textarea{
-    width:100%;
-    height:190px;
-    padding:10px;
-    padding-bottom:0px;
-    border:0;
-    background:transparent;
-    border-bottom:1px solid #c99f6c;
-    border-left:1px solid #c99f6c;
-    font-family: 'dubielitalic', sans-serif;
-    color: #c99f6c;
-}
-
-#result{
-    font-weight: 400;
-    font-size:15px;
-    letter-spacing:0;
-    line-height:18px;
-    text-align:center;
-    font-style:italic;
-    color:red;
-}
-/* 16. Google Map  */
-#googleMap {
-    width: 100%;
-    height: 450px;
-}
-section#googleMap {
-    position:relative;
-    padding-top:0px;
-    padding-bottom: 0px;
-}
 /* 17. Footer  */
-#footer{
+#footer {
     padding-bottom:0;
     padding-top:0;
     position:relative;
 }
-#footer .topLine{
+#footer .topLine {
     padding:20px;
     margin:0 auto;
     background-color:$primary_bg;
 }
 
-#footer .footerLogo{
-    width:180px;
-    margin:40px;
-}
-
-#footer .bottomLine{
+#footer .bottomLine {
     padding:20px 0 0 0;
     margin:0 auto;
     background-color:#282828;
@@ -880,134 +662,24 @@ section#googleMap {
     padding:5px;
 }
 
-.bottomLine .footerSocialIcons{
+.bottomLine .footerSocialIcons {
     padding:20px;
 }
 
-.footerSocialIcons{
+.footerSocialIcons {
     list-style:none
 }
 
-.footerSocialIcons li{
+.footerSocialIcons li {
     display:inline;
     margin:0 10px;
-}
-/* 18. Blog  */
-.blogPost{
-    margin-bottom:100px;
-}
-
-.widget ul{
-    list-style-type:square;
-    padding-left:20px;
-}
-.widget{
-    padding: 20px 50px;
-}
-
-.widget p {
-    color: $primary_bg;
-    padding:0px;
-}
-
-.widget ul li{
-    font-weight:300;
-    color:#c99f6c;
-    margin-bottom:10px;
-}
-
-.widget ul li a {
-    color: $primary_bg;
-}
-
-#blog{
-    position:relative;
-}
-
-#blogIntro .container{
-    padding-top:50px;
-    padding-bottom:30px;
-}
-
-#blog .input-group{
-    padding-top: 20px;
-}
-
-#blog .form-control {
-    height: 45px;
-    padding: 8px 12px;
-    font-size: 12px;
-    border-radius: 2px;
-    text-transform:uppercase;
-    letter-spacing:2px;
-}
-
-#blog .form-control:focus {
-    border-color: #c99f6c;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(201, 159, 108, 0.60);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(201, 159, 108, 0.60);
-}
-
-iframe{
-    border:0;
-}
-
-// #blog .owl-theme .owl-controls .owl-buttons div {
-//     padding: 5px 9px;
-// }
-
-// #blog .owl-theme .owl-buttons i{
-//     margin-top: 2px;
-// }
-
-// #blog .owl-theme .owl-controls .owl-buttons div {
-//     position: absolute;
-//     top: 45%;
-//     -webkit-transform: translateY(-45%);
-//     -ms-transform: translateY(-45%);
-//     transform: translateY(-45%);
-//     color:white;
-//     font-size:30px;
-// }
-
-// #blog .owl-theme .owl-controls .owl-buttons .owl-prev{
-//     left: 10px;
-
-// }
-
-// #blog .owl-theme .owl-controls .owl-buttons .owl-next{
-//     right: 10px;
-// }
-
-#blog .blogPost img{
-    width:100%;
-}
-
-.blogPostSeparator{
-    width:60px;
-    height:2px;
-    background-color:#c99f6c;
-    margin-bottom:20px;
-    margin-top:15px;
-}
-
-#blogIntro{
-    background: url(img/webp/background7.webp)  no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: 50% 0, 50% 0, 50% 0, 50% 0;
-    background-repeat: repeat, repeat, repeat ,no-repeat;
 }
 
 blockquote {
     border-left: 5px solid #C6C6C6;
 }
 
-
-blockquote p{
+blockquote p {
     font-style:italic;
 }
 /* class "link link--io" */

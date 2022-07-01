@@ -36,25 +36,6 @@ $(function () {
 		},
 	})
 
-	if (
-		/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-			navigator.userAgent
-		)
-	) {
-		$("#accueil").css("background-attachment", "scroll")
-		$("#charts").css("background-attachment", "scroll")
-		$("#testimonials").css("background-attachment", "scroll")
-		$("#clients").css("background-attachment", "scroll")
-		$("#video").css("background-attachment", "scroll")
-		$("#textSeparator").css("background-attachment", "scroll")
-	} else {
-		$.stellar({
-			responsive: true,
-			horizontalOffset: 0,
-			horizontalScrolling: false,
-		})
-	}
-
 	$("#charts").waypoint(
 		function () {
 			"use strict"
@@ -117,23 +98,6 @@ $(function () {
 
 		tLoading: "Loading...",
 	})
-
-	// $(".featuredWork").magnificPopup({
-	// 	delegate: " .popup-link",
-	// 	gallery: {
-	// 		enabled: true, // set to true to enable gallery
-	// 		navigateByImgClick: true,
-	// 		arrowMarkup:
-	// 			'<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
-	// 		tPrev: "Previous (Left arrow key)", // title for left button
-	// 		tNext: "Next (Right arrow key)", // title for right button
-	// 	},
-	// 	type: "image",
-	// 	mainClass: "mfp-fade",
-	// 	// Info about options is in docs:
-	// 	// http://dimsemenov.com/plugins/magnific-popup/documentation.html#options
-	// 	tLoading: "Loading...",
-	// })
 
 	// $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
 	// 	disableOn: 100,
@@ -407,7 +371,7 @@ document.querySelectorAll(".reveal").forEach((r) => {
 // 	{ duration: 4000, fade: 750 }
 // )
 if (window.matchMedia("(min-width: 992px)").matches) {
-	// phone
+	// desktop
 	$.backstretch(
 		[
 			// "https://source.unsplash.com/user/c_v_r/1600x900",
@@ -425,11 +389,11 @@ if (window.matchMedia("(min-width: 992px)").matches) {
 		}
 	)
 } else {
-	//tab or desktop
+	//tab or phone
 	$.backstretch(
 		[
-			"https://picsum.photos/300/600?random=1",
-			// "img/webp/smaller/bg10.webp"
+			// "https://picsum.photos/608/1080?random=1",
+			"img/webp/smaller/bg10.webp"
 		],
 		{
 			duration: 4000,
