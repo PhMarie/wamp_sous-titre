@@ -45,7 +45,7 @@
                         <li>- Bruitages, mixage son à l'image, Universal Audio</li>
                         <li>- Postproduction son, livres audio, didacticiels, E-learning</li>
                         <li>- Montage de vidéo de présentation</li>
-                        <li>- Sous-titrage vidéo, import/export de sous-titres, sous-titrage automatique </li>
+                        <li>- Sous-titrage vidéo</li>
                         <li>- Plusieurs collaborations avec le <a href="https://www.bobitostudio.com/" target="_blank" class="link-primary"><strong>Bobito Studio</strong></a></li>
                     </ul>
                 </div>

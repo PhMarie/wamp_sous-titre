@@ -57,7 +57,7 @@ $primary_bg : #353535;
     box-shadow: 0 0 3px rgb(201, 159, 108);
 }
 html, body {
-    // margin: 0;
+    margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
@@ -425,18 +425,18 @@ section.white h1, section.white h2 {
 
 /* 6. Charts  */
 
-#charts {
-    background: url(img/webp/background2.webp)  no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 0, 50% 0, 50% 0, 50% 0;
-    background-repeat: repeat, repeat, repeat ,no-repeat;
-    padding-top:100px;
-    padding-bottom:100px;
-}
+// #charts {
+//     background: url(img/webp/background2.webp)  no-repeat center center fixed;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     background-position: 50% 0, 50% 0, 50% 0, 50% 0;
+//     background-repeat: repeat, repeat, repeat ,no-repeat;
+//     padding-top:100px;
+//     padding-bottom:100px;
+// }
 
 /* 7. Services  */
 
@@ -485,17 +485,34 @@ section.white h1, section.white h2 {
 }
 
 /* 10. Outils  */
-#outils {
-    padding-top:100px;
-    padding-bottom:100px;
-    background: url(img/webp/background4.webp)  no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: 50% 0, 50% 0, 50% 0, 50% 0;
-    background-repeat: repeat, repeat, repeat ,no-repeat;
-}
+// #outils {
+//     @include clearfix;
+//     padding: 100px 0;
+//     overflow: hidden; // added for pseudo-element
+//     position: relative; // added for pseudo-element
+//     // background-size: cover;
+//     // background-position: 50% 0, 50% 0, 50% 0, 50% 0;
+//     // background-repeat: repeat, repeat, repeat ,no-repeat;
+
+//     // Fixed-position background image
+//     &::before {
+//         content: ' ';
+//         // position: fixed; // instead of background-attachment
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//         // background: url(img/webp/background4.webp) no-repeat center center;
+//         background-size: cover;
+//         // background-position: 50% 0, 50% 0, 50% 0, 50% 0;
+//         // background-repeat: repeat, repeat, repeat, no-repeat;
+//         -webkit-background-size: cover;
+//         -moz-background-size: cover;
+//         -o-background-size: cover;
+//         will-change: transform; // creates a new paint layer
+//         z-index: -1;
+//     }
+// }
 
 #outils .clientLogo img {
     width: 128px;
@@ -648,15 +665,15 @@ section.white h1, section.white h2 {
  }
 
 /* 14. Text Separator  */
-#textSeparator {
-    background: url(img/webp/sand.webp) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: 50% 0, 50% 0, 50% 0, 50% 0;
-    background-repeat: repeat, repeat, repeat ,no-repeat;
-}
+// #textSeparator {
+//     background: url(img/webp/sand.webp) no-repeat center center fixed;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     background-position: 50% 0, 50% 0, 50% 0, 50% 0;
+//     background-repeat: repeat, repeat, repeat ,no-repeat;
+// }
 
 #textSeparator p {
     font-family: 'Raleway', sans-serif;
