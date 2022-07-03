@@ -32,7 +32,7 @@
                 <div class="aspect-ratio-box">
                     <p>
                         Passionné de musique et de mixage audio, j'ai eu la chance de pouvoir participer à plusieurs projets pour Médecins Sans Frontières, aaa Production, Auzou Éditions, Brainpop, Fructeam et Double Mètre Animation
-                        pour la saison 03 de la série d'animation des <strong>Kiwi</strong> diffusée notamment sur <a href="https://www.france.tv/france-5/kiwi/toutes-les-videos/" target="_blank" class="link-primary"><strong>France Télévisions</strong></a> et <a href="https://www.lumni.fr/marque/kiwi" target="_blank" class="link-primary"><strong>Lumni</strong></a>.
+                        pour la saison 03 de la série d'animation des Kiwi diffusée notamment sur <span style="font-weight:bold"><a href="https://www.france.tv/france-5/kiwi/toutes-les-videos/" target="_blank" class="link-primary">France Télévisions</a></span>  et <a href="https://www.lumni.fr/marque/kiwi" target="_blank" class="link-primary" style="font-weight:bold">Lumni</a>.
                     </p>
                 </div>
                 <div class="text-center"> <img class="img-fluid separator" src="img/separator.png" alt="Separator"></div>

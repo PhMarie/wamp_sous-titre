@@ -38,7 +38,7 @@
                         <h1>Contact</h1>
                                 <img class="img-fluid separator" src="img/separator.png" alt="Separator">
                         <p>
-                            <a href="mailto:freelance@sous-titre.com?subject=Via&nbsp;sous-titre.com:" style="font-weight:bold"  class="link-primary">freelance@sous-titre.com</a>
+                            <a href="mailto:freelance@sous-titre.com?subject=Via&nbsp;sous-titre.com:" class="link-dark">freelance@sous-titre.com</a>
                             <br>
                         </p>
                     </div>
