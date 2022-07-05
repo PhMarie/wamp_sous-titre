@@ -4,16 +4,21 @@
 <head>
     <!-- Meta Data -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sous-titre.com - Freelance Webdesign, intégrateur web, développeur web front, postproduction audiovisuelle, mixage audio cubase</title>
-    <meta name="description" content="Freelance - création de site Internet - intégrateur web - développeeur web Front-end - HTML5 &amp; CSS3 - JavaScript - Bootstrap - wordpress - mixage - cubase">
+    <title>Sous-titre.com Freelance Webdesign, intégrateur web, développeur front-end</title>
+    <!-- <script src='./passive-min.js'></script> -->
+    <!--Google Fonts-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> -->
+    <meta name="description" content="Freelance - création de site Internet - intégrateur web - développeur web Front-end - HTML5 &amp; CSS3 - JavaScript - Bootstrap - wordpress - mixage - cubase">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="sous-titre.com">
     <meta property="og:locale" content="fr">
     <meta property="og:url" content="https://www.sous-titre.com">
-    <meta property="og:image" content="https://www.sous-titre.com/img/logo-rezos.png">
+    <meta property="og:image" content="https://www.sous-titre.com/img/webp/logo_black_web.webp">
     <meta property="og:title" content="Webdesign & Prod audio">
     <meta property="og:description" content="Freelance - création de site Internet - HTML5 &amp; CSS3 - Jquery - Bootstrap - wordpress - woocommerce - responsive design">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
@@ -43,13 +48,8 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <!--Styles-->
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style-050722h.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93111-3"></script>
     <script>
@@ -91,10 +91,7 @@
     include 'php/10_footer.php';
     ?>
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default-min.css">
-    <link rel="stylesheet" href="css/magnific-popup-min.css">
-    <link rel="stylesheet" href="css/responsive-min.css">
+    <link rel="stylesheet" href="css/allCss-min.css">
 
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>

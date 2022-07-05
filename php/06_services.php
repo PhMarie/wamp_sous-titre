@@ -5,38 +5,38 @@
                 <div class="col-md-12 allTriangleWrapper">
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/cafe-outline.svg" width="48" height="48" alt="logo cafe">
+                            <img src="img/svg/cafe-outline.svg" width="48" height="48" alt="logo cafe" loading="lazy">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/construct-outline.svg" width="48" height="48" alt="logo construct">
+                            <img src="img/svg/construct-outline.svg" width="48" height="48" alt="logo construct" loading="lazy">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/speedometer-outline.svg" width="48" height="48" alt="logo speedometer">
+                            <img src="img/svg/speedometer-outline.svg" width="48" height="48" alt="logo speedometer" loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <img class="img-fluid separator" src="img/separator.png" alt="Separator">
+                    <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100" loading="lazy">
                 </div>
             </div>
             <div class="row sectionHeaderText text-center">
                 <div class="col-md-8 offset-md-2">
                     <h2><span class="serif">Objectifs</span></h2>
-                    <h1>Compétences</h1>
+                    <h1>COMPÉTENCES</h1>
                     <p>
-                        Progresser dans l'application de l'UI et l'UX Design à travers une veille technologique constante et stimulante.
+                        Progresser dans l'application de l'UI et l'UX Design, le JavaScript moderne et les bonnes pratiques à travers une veille technologique constante et stimulante.
                     </p>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <img class="img-fluid separator" src="img/separator.png" alt="Separator">
+                    <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100" loading="lazy">
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 top-pad reveal-3">
-                    <h2>Compétences</h2>
+                    <h2>COMPÉTENCES</h2>
                     <hr>
                     <h3>HTMl - CSS3 - SASS</h3>
                     <div class="progress progress-striped">
@@ -106,7 +106,7 @@
                             <span class="sr-only">80%</span>
                         </div>
                     </div>
-                    <h3>JavaScript <span class="serif">&amp;</span> Librairies (jquery)</h3>
+                    <h3>JavaScript &amp; Librairies (jquery)</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
@@ -120,14 +120,14 @@
                             <span class="sr-only">80%</span>
                         </div>
                     </div>
-                    <h3>Suite ADOBE & CUBASE</h3>
+                    <h3>Suite ADOBE &amp; CUBASE</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
                             <span class="sr-only">75%</span>
                         </div>
                     </div>
-                    <h3><span class="serif">Support</span> Client & Réactivité</h3>
+                    <h3><span class="serif">Support</span> Client &amp; Réactivité</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">

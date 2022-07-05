@@ -1,3 +1,17 @@
+#Header set Strict-Transport-Security "max-age=300; includeSubDomains; preload"
+Header add Content-Security-Policy "default-src 'self';"
+# X-XSS-Protection against XSS attacks
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+# X-Frame-Options Protect against page-framing and click-jacking
+<IfModule mod_headers.c>
+	Header always append X-Frame-Options SAMEORIGIN
+</IfModule>
+# X-Content-Type nosniff
+<IfModule mod_headers.c>
+	Header set X-Content-Type-Options nosniff
+</IfModule>
 AddType image/webp .webp
 AddType video/ogg ogv
 AddType video/mp4 mp4 m4v f4v f4p

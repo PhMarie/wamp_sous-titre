@@ -1,3 +1,28 @@
+/* touch and wheel event listeners as passive */
+jQuery.event.special.touchstart = {
+	setup: function (_, ns, handle) {
+		this.addEventListener("touchstart", handle, {
+			passive: !ns.includes("noPreventDefault"),
+		})
+	},
+}
+jQuery.event.special.touchmove = {
+	setup: function (_, ns, handle) {
+		this.addEventListener("touchmove", handle, {
+			passive: !ns.includes("noPreventDefault"),
+		})
+	},
+}
+jQuery.event.special.wheel = {
+	setup: function (_, ns, handle) {
+		this.addEventListener("wheel", handle, { passive: true })
+	},
+}
+jQuery.event.special.mousewheel = {
+	setup: function (_, ns, handle) {
+		this.addEventListener("mousewheel", handle, { passive: true })
+	},
+}
 /* 1.Intro Height  */
 
 $(function () {
@@ -157,7 +182,6 @@ $(window).load(function () {
 })
 
 /* Mobile bug fixes  */
-
 
 // if(Modernizr.touch){
 //     $('.caption .valign').css("top","40px");
@@ -319,10 +343,10 @@ const removeAnchors = function (event) {
 	event.preventDefault()
 }
 let links = document.querySelectorAll(
-	'a[href^="#accueil"], a[href^="#presentation"], a[href^="#competences"], a[href^="#projets"], a[href^="#contact"]'
+	'a[href^="#accueil"], a[href^="#presentation"], a[href^="#competences"], a[href^="#projets"], a[href^="#contact"], a[href^="#modal"]'
 )
 links.forEach(function (link) {
-	console.log(link);
+	console.log(link)
 	link.addEventListener("click", removeAnchors)
 })
 
@@ -392,8 +416,12 @@ if (window.matchMedia("(min-width: 992px)").matches) {
 	//tab or phone
 	$.backstretch(
 		[
-			// "https://picsum.photos/608/1080?random=1",
-			"img/webp/smaller/bg10.webp"
+			"https://picsum.photos/375/675?random=1",
+			"https://picsum.photos/375/675?random=2",
+			"https://picsum.photos/375/675?random=3",
+			"https://picsum.photos/375/675?random=4",
+			"https://picsum.photos/375/675?random=5",
+			// "img/webp/smaller/bg10.webp",
 		],
 		{
 			duration: 4000,

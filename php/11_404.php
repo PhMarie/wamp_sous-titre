@@ -3,15 +3,15 @@
     <div style="text-align:center">
                 <h2><span class="serif">Ooops</span></h2>
                 <h1>Erreur 404</h1>
-                <img class="separator" src="img/separator.png" alt="Separator">
+                <img class="separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                 <h3>Désolé, nous n'avons pas trouvé la page demandée...</h3>
-                <img class="separator" src="img/separator.png" alt="Separator">
+                <img class="separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
 
             </div>
 </section>
    <section style="text-align:center" id="footer" class="dark">
         <div class="topLine">
-            <a href="https://sous-titre.com" title="Accueil"><img src="img/webp/white-logo_webAudio.webp" alt="white Logo sous-titre.com web et audio"></a>
+            <a href="https://sous-titre.com" title="Accueil"><img src="img/webp/white-logo_webAudio.webp" alt="white Logo sous-titre.com web et audio" height="117" width="283"></a>
         </div>
         <div class="bottomLine">
             <p>&copy;&nbsp;<?php Print(date("Y"));?> <a href="https://www.sous-titre.com/" >sous-titre.com</a></p>

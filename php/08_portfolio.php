@@ -5,32 +5,32 @@
                 <div class="col-md-12 allTriangleWrapper">
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/albums-outline.svg" width="48" height="48" alt="logo screen">
+                            <img src="img/svg/albums-outline.svg" width="48" height="48" alt="logo screen" loading="lazy">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/color-filter-outline.svg" width="48" height="48" alt="logo filter">
+                            <img src="img/svg/color-filter-outline.svg" width="48" height="48" alt="logo filter" loading="lazy">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/desktop-outline.svg" width="48" height="48" alt="logo desktop">
+                            <img src="img/svg/desktop-outline.svg" width="48" height="48" alt="logo desktop" loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <img class="img-fluid separator" src="img/separator.png" alt="Separator">
+                    <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100"" loading="lazy">
                 </div>
             </div>
             <div class="row sectionHeaderText text-center">
                 <div class="col-md-8 offset-md-2">
                     <h2><span class="serif">Parmi les</span></h2>
-                    <h1>Projets récents</h1>
+                    <h1>PROJETS RÉCENTS</h1>
                     <p>
-                        Un aperçu avec des exemples de sites et leurs différentes vues, les derniers projets audio réalisés.
+                        Un aperçu avec des exemples de sites et leurs différentes vues et les derniers projets audio réalisés.
                     </p>
                 </div>
             </div>
@@ -38,16 +38,16 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center reveal-2">
                     <div class="" id="filters">
-                        <button class="btn btn-default" data-filter=".site_web" data-toggle="tooltip" data-placement="top" title="10">Sites Web</button>
-                        <button class="btn btn-default" data-filter=".smartphone" data-toggle="tooltip" data-placement="top" title="10">Vues Smartphone</button>
-                        <button class="btn btn-default" data-filter=".tablette" data-toggle="tooltip" data-placement="top" title="10">Vues Tablette</button>
-                        <button class="btn btn-default" data-filter=".audio" data-toggle="tooltip" data-placement="top" title="5">Audio</button>
+                        <button class="btn btn-default" data-filter=".site_web" data-toggle="tooltip" data-placement="top" title="10">SITES WEB</button>
+                        <button class="btn btn-default" data-filter=".smartphone" data-toggle="tooltip" data-placement="top" title="10">VUES SMARTPHONE</button>
+                        <button class="btn btn-default" data-filter=".tablette" data-toggle="tooltip" data-placement="top" title="10">VUES TABLETTE</button>
+                        <button class="btn btn-default" data-filter=".audio" data-toggle="tooltip" data-placement="top" title="5">AUDIO</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="gallery js-isotope reveal-4" style="background: white url('img/section-pattern.webp') repeat;" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer" } }'>
+    <div class="gallery js-isotope reveal-4" style="background: white url('img/webp/section-pattern.webp') repeat;" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer" } }'>
         <div class="grid-sizer"></div>
         <div class="gallery-inner site_web">
             <div class="caption">
@@ -61,7 +61,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/mg-huissiers-tours.fr-thumb.webp">
+            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/mg-huissiers-tours.fr-thumb.webp" height="380" width="380" loading="lazy">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -75,7 +75,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/mg-huissiers-tours.fr_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/mg-huissiers-tours.fr_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -89,7 +89,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/mg-huissiers-tours.fr_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/mg-huissiers-tours.fr_tab-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner site_web">
             <div class="caption">
@@ -103,7 +103,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/bobitostudio.com-thumb.webp">
+            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/bobitostudio.com-thumb.webp" height="380" width="380" loading="lazy">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -117,7 +117,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/bobitostudio.com_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/bobitostudio.com_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -131,7 +131,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/bobitostudio.com_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/bobitostudio.com_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <div class="gallery-inner site_web">
@@ -146,7 +146,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/aptitude-logiciels.com-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/aptitude-logiciels.com-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -160,7 +160,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/aptitude-logiciels.com_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/aptitude-logiciels.com_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -174,7 +174,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/aptitude-logiciels.com_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/aptitude-logiciels.com_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <div class="gallery-inner site_web">
@@ -189,7 +189,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier62-llw.fr-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier62-llw.fr-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -203,7 +203,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier62-llw.fr_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier62-llw.fr_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -217,7 +217,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier62-llw.fr_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier62-llw.fr_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <div class="gallery-inner site_web">
@@ -232,7 +232,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-poncet-paris.com-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-poncet-paris.com-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -246,7 +246,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-poncet-paris.com_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-poncet-paris.com_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -260,7 +260,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-poncet-paris.com_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-poncet-paris.com_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <div class="gallery-inner site_web">
@@ -275,7 +275,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/ocea-huissier-justice.fr-thumb.webp">
+            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/ocea-huissier-justice.fr-thumb.webp" height="380" width="380" loading="lazy">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -289,7 +289,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/ocea-huissier-justice.fr_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/ocea-huissier-justice.fr_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -303,7 +303,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/ocea-huissier-justice.fr_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/ocea-huissier-justice.fr_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <!-- ---------------------------------------- -->
@@ -319,7 +319,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com-thumb.webp">
+            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com-thumb.webp" loading="lazy">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -362,7 +362,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-justifirst.fr-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-justifirst.fr-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -376,7 +376,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-justifirst.fr_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-justifirst.fr_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -390,7 +390,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-justifirst.fr_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-justifirst.fr_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <div class="gallery-inner site_web">
@@ -405,7 +405,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot-lille.com-thumb.webp">
+            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot-lille.com-thumb.webp" height="380" width="380" loading="lazy">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -419,7 +419,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-waterlot-lille.com_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-waterlot-lille.com_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -433,7 +433,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-waterlot-lille.com_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-waterlot-lille.com_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <div class="gallery-inner site_web">
@@ -448,7 +448,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot.com-thumb.webp">
+            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot.com-thumb.webp" height="380" width="380" loading="lazy">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -462,7 +462,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-waterlot.com_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-waterlot.com_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -476,7 +476,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-waterlot.com_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-waterlot.com_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <div class="gallery-inner site_web">
@@ -491,7 +491,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-93-lieurade.com-thumb.webp">
+            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-93-lieurade.com-thumb.webp" height="380" width="380" loading="lazy">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -505,7 +505,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-93-lieurade.com_sm-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-93-lieurade.com_sm-thumb.webp" height="586" width="381">
         </div>
         <div class="gallery-inner tablette">
             <div class="caption">
@@ -519,7 +519,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-93-lieurade.com_tab-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/huissier-93-lieurade.com_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- ---------------------------------------- -->
         <div class="gallery-inner audio">
@@ -534,7 +534,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/bobitostudio-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/bobitostudio-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner audio">
             <div class="caption">
@@ -549,7 +549,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/auzou-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/auzou-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner audio">
             <div class="caption">
@@ -564,7 +564,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/brainpop-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/brainpop-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner audio">
             <div class="caption">
@@ -579,7 +579,7 @@
                     </a>
                 </div>
             </div>
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/msf-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/msf-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner audio">
             <div class="caption">
@@ -595,7 +595,7 @@
                 </div>
             </div>
 
-            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/kiwi-thumb.webp">
+            <img alt="thumbnail" class="galleryImage" src="img/gallery/thumb/kiwi-thumb.webp" height="380" width="380">
         </div>
     </div>
 </section>
