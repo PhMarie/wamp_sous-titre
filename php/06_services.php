@@ -5,24 +5,24 @@
                 <div class="col-md-12 allTriangleWrapper">
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/cafe-outline.svg" width="48" height="48" alt="logo cafe" loading="lazy">
+                            <img src="img/svg/cafe-outline.svg" width="48" height="48" alt="logo cafe" class="lazyload">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/construct-outline.svg" width="48" height="48" alt="logo construct" loading="lazy">
+                            <img src="img/svg/construct-outline.svg" width="48" height="48" alt="logo construct" class="lazyload">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/speedometer-outline.svg" width="48" height="48" alt="logo speedometer" loading="lazy">
+                            <img src="img/svg/speedometer-outline.svg" width="48" height="48" alt="logo speedometer" class="lazyload">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100" loading="lazy">
+                    <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                 </div>
             </div>
             <div class="row sectionHeaderText text-center">
@@ -36,7 +36,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100" loading="lazy">
+                    <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                 </div>
             </div>
         </div>

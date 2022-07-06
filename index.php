@@ -5,7 +5,7 @@
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sous-titre.com Freelance Webdesign, intégrateur web, développeur front-end</title>
+    <title>Sous-titre.com - Freelance intégrateur web, développeur front-end</title>
     <!-- <script src='./passive-min.js'></script> -->
     <!--Google Fonts-->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
@@ -49,7 +49,7 @@
     <![endif]-->
 
     <!--Styles-->
-    <link rel="stylesheet" href="style-050722h.min.css">
+    <link rel="stylesheet" href="style-060722a.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93111-3"></script>
     <script>
@@ -60,6 +60,7 @@
     </script> -->
 </head>
 <body>
+    <div class="black-overlay"></div>
     <?php
     include 'php/01_preloader.php';
     ?>
@@ -94,13 +95,14 @@
     <link rel="stylesheet" href="css/allCss-min.css">
 
     <!-- SCRIPT -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous" defer></script>
     <script src="js/allScripts-min.js" defer></script>
 
-    <script src="js/modernizr.custom.js" defer></script>
-    <script src="js/borderMenu-min.js" defer></script>
+    <!-- <script src="js/modernizr.custom.js" defer></script> -->
+    <!-- <script src="js/borderMenu-min.js" defer></script> -->
 
-    <script src="js/custom-min.js" defer></script>
+    <!-- <script src="js/custom-min.js" defer></script> -->
     </body>
 </html>

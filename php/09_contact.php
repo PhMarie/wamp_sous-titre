@@ -1,5 +1,4 @@
    <section id="textSeparator" class="dark sectionSeparator">
-        <div class="black-overlay"></div>
         <div class="container">
             <div class="sectionHeader reveal">
                 <div class="row sectionHeaderText text-center">
@@ -10,7 +9,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100" loading="lazy">
+                        <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                     </div>
                 </div>
                 <div class="row text-center">
@@ -31,12 +30,12 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle">
                             <div class="triangleBorderSmallSingle">
-                                <img src="img/svg/mail-outline.svg" width="48" height="48" alt="logo mail" loading="lazy">
+                                <img src="img/svg/mail-outline.svg" width="48" height="48" alt="logo mail" class="lazyload">
                             </div>
                         </div>
                         <h2><span class="serif">Mail</span></h2>
                         <h1>CONTACT</h1>
-                                <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100" loading="lazy">
+                                <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                         <p>
                             <a href="mailto:freelance@sous-titre.com?subject=Via&nbsp;sous-titre.com:" class="link-primary" style="font-weight:bold">freelance@sous-titre.com</a>
                             <br>
@@ -45,13 +44,13 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
-                                <img src="img/svg/location-outline.svg" width="48" height="48" alt="logo adresse" loading="lazy">
+                                <img src="img/svg/location-outline.svg" width="48" height="48" alt="logo adresse" class="lazyload">
                             </div>
                         </div>
 
                         <h2><span class="serif">Écrire à cette</span></h2>
                         <h1>ADRESSE</h1>
-                        <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100"" loading="lazy">
+                        <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                         <p>
                             12 rue Saint-Exupéry<br>
                             93100 Montreuil
@@ -60,12 +59,12 @@
                     <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
-                                <img src="img/svg/time-outline.svg" width="48" height="48" alt="logo horaire" loading="lazy">
+                                <img src="img/svg/time-outline.svg" width="48" height="48" alt="logo horaire" class="lazyload">
                             </div>
                         </div>
                         <h2><span class="serif">Disponibilité</span></h2>
                         <h1>HORAIRES</h1>
-                        <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100" loading="lazy">
+                        <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                         <p>
                             L-V : 9h - 18h
                         </p>

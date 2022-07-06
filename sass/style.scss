@@ -77,7 +77,7 @@ body {
     margin-left: -1px;
     float: left;
     height: 0;
-    padding-top: calc(210 / 640) * 100%;
+    padding-top: calc(116 / 700) * 100%;
 }
 
 .aspect-ratio-box::after {
@@ -107,7 +107,7 @@ a:hover, a:focus {
 
 section {
     position:relative;
-    padding-top:30px;
+    padding-top:50px;
     padding-bottom:50px;
 }
 section ul {
@@ -146,12 +146,12 @@ hr {
     border-top: 1px dashed #E3B683;
 }
 .black-overlay {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    // z-index:0;
     background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
     background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
@@ -161,8 +161,11 @@ hr {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.about-content p {
-line-height: 150%;
+#presentation {
+    min-height: 100vh;
+}
+#presentation li {
+    line-height: 214%;
 }
 /*DIAMONDS SHAPES*/
 /*small*/
@@ -282,10 +285,6 @@ p {
 
 }
 
-.dark p {
-    color:#cbc9c9;
-}
-
 .sectionHeader h1, .captionWrapper h1 {
     margin:0;
 }
@@ -333,13 +332,39 @@ h4 .serif {
     color:$primary;
 }
 .dark h1 .serif, .dark h2 .serif, .dark h3 {
-    color:#caa068;
+    color:$primary;
+}
+.dark p {
+    color: #cbc9c9;
 }
 section.white {
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
     background-color: #efefef;
     // background: white url('img/webp/section-pattern.webp') repeat;
+}
+
+.Parent1, .Parent2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.child1 {
+    width: 50%;
+    height: 80vh;
+    // background-color: green;
+    // text-align: right;
+    // color: white;
+}
+
+.child2 {
+    width: 50%;
+    // color: green;
+    height: 80vh;
+}
+.child3 {
+    width: 100%;
+    height: 20vh;
 }
 section.white h1 .serif, section.white h2 .serif {
     color: $primary_bg;
@@ -431,8 +456,8 @@ h1.introText {
 
 /* 4. Intro  */
 #accueil {
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,7 +465,6 @@ h1.introText {
 }
 
 #accueil .accueil-container-item {
-    z-index: 2;
     width: auto;
     height: 350px;
 }

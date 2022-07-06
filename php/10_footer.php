@@ -1,13 +1,13 @@
-   <section id="footer" class="dark sectionSeparator text-center">
+   <footer id="footer" class="dark sectionSeparator text-center">
         <div class="topLine">
-            <a href="https://sous-titre.com" title="Accueil"><img src="img/webp/white-logo_webAudio.webp" alt="white Logo sous-titre.com web et audio" height="117" width="283" loading="lazy"></a>
+            <a href="https://sous-titre.com" title="Accueil"><img src="img/webp/white-logo_webAudio.webp" alt="white Logo sous-titre.com web et audio" height="117" width="283" class="lazyload"></a>
         </div>
         <div class="bottomLine">
             <ul class="footerSocialIcons">
-                <li><a href="https://www.facebook.com/sous.titre.webdesign"><img src="img/svg/logo-facebook.svg" width="48" height="48" alt="logo facebook" loading="lazy"></a></li>
-                <li><a href="https://twitter.com/SousTitre"><img src="img/svg/logo-twitter.svg" width="48" height="48" alt="logo twitter" loading="lazy"></a></li>
-                <li><a href="https://instagram.com/aqua_pulko/"><img src="img/svg/logo-instagram.svg" width="48" height="48" alt="logo instagram" loading="lazy"></a></li>
-                <li><a href="https://www.linkedin.com/in/soustitre/"><img src="img/svg/logo-linkedin.svg" width="48" height="48" alt="logo linkedin" loading="lazy"></a></li>
+                <li><a href="https://www.facebook.com/sous.titre.webdesign"><img src="img/svg/logo-facebook.svg" width="48" height="48" alt="logo facebook" class="lazyload"></a></li>
+                <li><a href="https://twitter.com/SousTitre"><img src="img/svg/logo-twitter.svg" width="48" height="48" alt="logo twitter" class="lazyload"></a></li>
+                <li><a href="https://instagram.com/aqua_pulko/"><img src="img/svg/logo-instagram.svg" width="48" height="48" alt="logo instagram" class="lazyload"></a></li>
+                <li><a href="https://www.linkedin.com/in/soustitre/"><img src="img/svg/logo-linkedin.svg" width="48" height="48" alt="logo linkedin" class="lazyload"></a></li>
             </ul>
             <p>&copy;&nbsp;<?php Print(date("Y"));?> <a href="https://www.sous-titre.com/" >sous-titre.com</a></p>
             <p style="padding-top:15px"><a href="include/mentions-legales.html#modal" class="js-modal">Mentions légales</a>
@@ -29,5 +29,5 @@
             </div>
             <!--Waves end-->
         </div>
-    </section>
+</footer>
 

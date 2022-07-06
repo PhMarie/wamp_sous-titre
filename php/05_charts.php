@@ -1,5 +1,4 @@
-<section id="charts" class="dark sectionSeparator">
-    <div class="black-overlay"></div>
+<section id="charts" class="dark">
     <div class="container">
         <div class="sectionHeader">
             <div class="row sectionHeaderText text-center">
@@ -10,14 +9,14 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100" loading="lazy">
+                    <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                 </div>
             </div>
             <div class="row text-center" style="margin-top: 50px">
                 <div class="col-sm-4">
                         <div class="triangleWrapperBig top-pad">
                             <div class="triangleBorderBig">
-                                <img src="img/svg/barcode-outline.svg" alt="logo barcode" width="110" height="110" loading="lazy">
+                                <img src="img/svg/barcode-outline.svg" alt="logo barcode" width="110" height="110" class="lazyload">
                             </div>
                         </div>
                         <h3><span class="timer1"></span>K+ LIGNES DE CODE</h3>
@@ -26,7 +25,7 @@
                 <div class="col-sm-4">
                     <div class="triangleWrapperBig top-pad">
                         <div class="triangleBorderBig">
-                            <img src="img/svg/people-outline.svg" alt="logo people" width="110" height="110" loading="lazy">
+                            <img src="img/svg/people-outline.svg" alt="logo people" width="110" height="110" class="lazyload">
                         </div>
                     </div>
 
@@ -36,7 +35,7 @@
                 <div class="col-sm-4">
                     <div class="triangleWrapperBig top-pad">
                         <div class="triangleBorderBig">
-                            <img src="img/svg/bulb-outline.svg" alt="logo bulb" width="110" height="110" loading="lazy">
+                            <img src="img/svg/bulb-outline.svg" alt="logo bulb" width="110" height="110" class="lazyload">
                         </div>
                     </div>
 

@@ -5,24 +5,24 @@
                 <div class="col-md-12 allTriangleWrapper">
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/albums-outline.svg" width="48" height="48" alt="logo screen" loading="lazy">
+                            <img src="img/svg/albums-outline.svg" width="48" height="48" alt="logo screen" class="lazyload">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/color-filter-outline.svg" width="48" height="48" alt="logo filter" loading="lazy">
+                            <img src="img/svg/color-filter-outline.svg" width="48" height="48" alt="logo filter" class="lazyload">
                         </div>
                     </div>
                     <div class="triangleWrapperSmall">
                         <div class="triangleBorderSmall">
-                            <img src="img/svg/desktop-outline.svg" width="48" height="48" alt="logo desktop" loading="lazy">
+                            <img src="img/svg/desktop-outline.svg" width="48" height="48" alt="logo desktop" class="lazyload">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <img class="img-fluid separator" src="img/webp/separator.webp" alt="Separator" height="13" width="100"" loading="lazy">
+                    <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                 </div>
             </div>
             <div class="row sectionHeaderText text-center">
@@ -61,7 +61,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/mg-huissiers-tours.fr-thumb.webp" height="380" width="380" loading="lazy">
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/mg-huissiers-tours.fr-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -103,7 +103,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/bobitostudio.com-thumb.webp" height="380" width="380" loading="lazy">
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/bobitostudio.com-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -275,7 +275,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/ocea-huissier-justice.fr-thumb.webp" height="380" width="380" loading="lazy">
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/ocea-huissier-justice.fr-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -319,7 +319,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com-thumb.webp" loading="lazy">
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com-thumb.webp">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -405,7 +405,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot-lille.com-thumb.webp" height="380" width="380" loading="lazy">
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot-lille.com-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -448,7 +448,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot.com-thumb.webp" height="380" width="380" loading="lazy">
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot.com-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
@@ -491,7 +491,7 @@
                     </a>
                 </div>
             </div>
-            <img class="galleryImage" alt="thumbnail" src="img/gallery/thumb/huissier-93-lieurade.com-thumb.webp" height="380" width="380" loading="lazy">
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-93-lieurade.com-thumb.webp" height="380" width="380">
         </div>
         <div class="gallery-inner smartphone">
             <div class="caption">
