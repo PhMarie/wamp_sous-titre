@@ -34,11 +34,11 @@
                     </p>
                 </div>
             </div>
-            <div class="row text-center">
+            <!-- <div class="row text-center">
                 <div class="col-md-12">
                     <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="content">
             <div class="row">

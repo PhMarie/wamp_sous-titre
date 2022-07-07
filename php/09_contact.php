@@ -38,6 +38,7 @@
                                 <img class="img-fluid separator lazyload" src="img/webp/separator.webp" alt="Separator" height="13" width="100">
                         <p>
                             <a href="mailto:freelance@sous-titre.com?subject=Via&nbsp;sous-titre.com:" class="link-primary" style="font-weight:bold">freelance@sous-titre.com</a>
+                            <a class="js-copy-mail-btn" href="#copy" title="Copier"><img src="img/svg/copy.svg" width="18" height="18" alt="logo mail" class="lazyload"></a>
                             <br>
                         </p>
                     </div>

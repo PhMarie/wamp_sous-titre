@@ -485,7 +485,7 @@ const removeAnchors = function (event) {
 	event.preventDefault()
 }
 let links = document.querySelectorAll(
-	'a[href^="#accueil"], a[href^="#presentation"], a[href^="#competences"], a[href^="#projets"], a[href^="#contact"], a[href^="#modal"]'
+	'a[href^="#accueil"], a[href^="#presentation"], a[href^="#competences"], a[href^="#projets"], a[href^="#contact"]'
 )
 links.forEach(function (link) {
 	console.log(link)
@@ -755,3 +755,49 @@ if (window.matchMedia("(min-width: 992px)").matches) {
 
 /* lazyload */
 lazyload()
+
+/* copy to clipboard button */
+function fallbackCopyTextToClipboard(text) {
+	var textArea = document.createElement("textarea")
+	textArea.value = text
+
+	// Avoid scrolling to bottom
+	textArea.style.top = "0"
+	textArea.style.left = "0"
+	textArea.style.position = "fixed"
+
+	document.body.appendChild(textArea)
+	textArea.focus()
+	textArea.select()
+
+	try {
+		var successful = document.execCommand("copy")
+		var msg = successful ? "successful" : "unsuccessful"
+		console.log("Fallback: Copying text command was " + msg)
+	} catch (err) {
+		console.error("Fallback: Oops, unable to copy", err)
+	}
+
+	document.body.removeChild(textArea)
+}
+function copyTextToClipboard(text) {
+	if (!navigator.clipboard) {
+		fallbackCopyTextToClipboard(text)
+		return
+	}
+	navigator.clipboard.writeText(text).then(
+		function () {
+			console.log("Async: Copying to clipboard was successful!")
+		},
+		function (err) {
+			console.error("Async: Could not copy text: ", err)
+		}
+	)
+}
+
+var copyMailBtn = document.querySelector(".js-copy-mail-btn")
+
+copyMailBtn.addEventListener("click", function (event) {
+	event.preventDefault()
+	copyTextToClipboard("freelance@sous-titre.com")
+})
