@@ -1,4 +1,4 @@
-<section id="presentation" class="white">
+<section id="presentation" class="elegance">
     <div class="container">
         <div class="row about-content">
             <div class="col-lg-6">

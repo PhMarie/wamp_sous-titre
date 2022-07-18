@@ -1,4 +1,4 @@
-<section id="competences" class="white">
+<section id="competences" class="beige">
     <div class="container">
         <div class="sectionHeader">
             <div class="row text-center">
@@ -99,7 +99,7 @@
                 <div class="col-md-4 top-pad reveal-3">
                     <h2>COMPÉTENCES</h2>
                     <hr>
-                    <h3>HTMl - CSS3 - SASS</h3>
+                    <h3>HTML5 - CSS3 - SASS</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
@@ -120,7 +120,7 @@
                             <span class="sr-only">80%</span>
                         </div>
                     </div>
-                    <h3>Suite ADOBE &amp; CUBASE</h3>
+                    <h3>Suite ADOBE &amp; Cubase</h3>
                     <div class="progress progress-striped">
 
                         <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 75%">

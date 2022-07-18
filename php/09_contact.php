@@ -23,7 +23,7 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="white">
+    <section id="contact" class="beige">
         <div class="container">
             <div class="sectionHeader">
                 <div class="row">
