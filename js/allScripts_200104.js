@@ -538,38 +538,45 @@ document.querySelectorAll(".reveal").forEach((r) => {
 // )
 if (window.matchMedia("(min-width: 992px)").matches) {
 	// desktop
-	$.backstretch(
-		[
-			// "https://source.unsplash.com/user/c_v_r/1600x900",
-			"https://picsum.photos/1100/600?random=1",
-			"https://picsum.photos/1100/600?random=2",
-			"https://picsum.photos/1100/600?random=3",
-			"https://picsum.photos/1100/600?random=4",
-			"https://picsum.photos/1100/600?random=5",
-			"https://picsum.photos/1100/600?random=6",
-		],
-		// ["img/webp/bg10.webp", "img/webp/bg04.webp", "img/webp/bg08.webp", "img/webp/bg12.webp", "img/webp/bg05.webp", "img/webp/bg06.webp",],
-		{
-			duration: 4000,
-			fade: 750,
-		}
-	)
+	const localLargeImageUrls = [
+		"img/webp/bg10.webp",
+		"img/webp/bg04.webp",
+		"img/webp/bg08.webp",
+		"img/webp/bg12.webp",
+		"img/webp/bg05.webp",
+		"img/webp/bg06.webp"
+	]
+	// "https://source.unsplash.com/user/c_v_r/1600x900",
+	// const picsumLargeImageUrls = [
+	// 	"https://picsum.photos/1100/600.jpg?random=1",
+	// 	"https://picsum.photos/1100/600.jpg?random=2",
+	// 	"https://picsum.photos/1100/600.jpg?random=3",
+	// 	"https://picsum.photos/1100/600.jpg?random=4",
+	// 	"https://picsum.photos/1100/600.jpg?random=5",
+	// 	"https://picsum.photos/1100/600.jpg?random=6"
+	// ]
+
+	$.backstretch(localLargeImageUrls, {
+		duration: 4000,
+		fade: 750,
+	})
+	
 } else {
 	//tab or phone
-	$.backstretch(
-		[
-			"https://picsum.photos/375/675?random=1",
-			"https://picsum.photos/375/675?random=2",
-			"https://picsum.photos/375/675?random=3",
-			"https://picsum.photos/375/675?random=4",
-			"https://picsum.photos/375/675?random=5",
-			// "img/webp/smaller/bg10.webp",
-		],
-		{
-			duration: 4000,
-			fade: 750,
-		}
-	)
+	const localSmallImageUrls = [
+		"img/webp/smaller/bg10.webp"
+	]
+	// const picsumSmallImageUrls = [
+	// 	"https://picsum.photos/375/675?random=1",
+	// 	"https://picsum.photos/375/675?random=2",
+	// 	"https://picsum.photos/375/675?random=3",
+	// 	"https://picsum.photos/375/675?random=4",
+	// 	"https://picsum.photos/375/675?random=5"
+	// ]
+	$.backstretch(localSmallImageUrls, {
+		duration: 4000,
+		fade: 750,
+	})
 }
 
 /*!
