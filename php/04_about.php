@@ -42,10 +42,11 @@
                         <li>- Compositions / réadaptations de musiques</li>
                         <li>- Prises de son chant et voix off</li>
                         <li>- Enregistrement, mixage voix, instruments / Mastering</li>
-                        <li>- Bruitages, mixage son à l'image, Universal Audio</li>
+                        <li>- Bruitages, mixage son à l'image, post-production</li>
                         <li>- Postproduction son, livres audio, didacticiels, E-learning</li>
                         <li>- Montage de vidéo de présentation</li>
                         <li>- Sous-titrage vidéo</li>
+                        <!-- <li>- Plusieurs collaborations avec le Bobito Studio</li> -->
                         <li>- Plusieurs collaborations avec le <a href="https://www.bobitostudio.com/" class="link-primary"><strong>Bobito Studio</strong></a></li>
                     </ul>
                 </div>

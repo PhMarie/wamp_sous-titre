@@ -14,5 +14,8 @@
 		<?php
 		include 'php/11_404.php';
 		?>
+		<h2>
+			toto
+		</h2>
     </body>
 </html>

@@ -560,7 +560,7 @@ if (window.matchMedia("(min-width: 992px)").matches) {
 		duration: 4000,
 		fade: 750,
 	})
-	
+
 } else {
 	//tab or phone
 	const localSmallImageUrls = [

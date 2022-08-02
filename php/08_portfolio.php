@@ -49,6 +49,7 @@
     </div>
     <div class="gallery js-isotope reveal-4" style="background: white url('img/webp/section-pattern.webp') repeat;" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer" } }'>
         <div class="grid-sizer"></div>
+        <!-- mg-huissiers-tours.fr -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -91,7 +92,8 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/mg-huissiers-tours.fr_tab-thumb.webp" height="380" width="380">
         </div>
-        <div class="gallery-inner site_web">
+        <!-- bobitostudio -->
+        <!-- <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
                     <a class="popup-link" href="img/gallery/bobitostudio.com.webp" title="bobitostudio.com">
@@ -132,8 +134,51 @@
                 </div>
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/bobitostudio.com_tab-thumb.webp" height="380" width="380">
+        </div> -->
+        <!-- huissier-nancy-djp.com -->
+        <div class="gallery-inner site_web">
+            <div class="caption">
+                <div class="captionWrapper valign">
+                    <a class="popup-link" href="img/gallery/huissier-nancy-djp.com.webp" title="huissier-nancy-djp.com">
+                        <div class="caption-heading">
+                            <h1>+</h1>
+                            <h4>huissier-nancy-djp.com</h4>
+                            <h4><span class="serif">Template Bootstrap</span></h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com-thumb.webp">
         </div>
-        <!-- ---------------------------------------- -->
+        <div class="gallery-inner smartphone">
+            <div class="caption">
+                <div class="captionWrapper valign">
+                    <a class="popup-link" href="img/gallery/huissier-nancy-djp.com_sm.webp" title="huissier-nancy-djp.com /  smartphone">
+                        <div class="caption-heading">
+                            <h1>+</h1>
+                            <h4>huissier-nancy-djp.com</h4>
+                            <h4><span class="serif">Template Bootstrap</span></h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com_sm-thumb.webp">
+        </div>
+        <div class="gallery-inner tablette">
+            <div class="caption">
+                <div class="captionWrapper valign">
+                    <a class="popup-link" href="img/gallery/huissier-nancy-djp.com_tab.webp" title="huissier-nancy-djp.com / Tablette">
+                        <div class="caption-heading">
+                            <h1>+</h1>
+                            <h4>huissier-nancy-djp.com</h4>
+                            <h4><span class="serif">Template Bootstrap</span></h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com_tab-thumb.webp">
+        </div>
+        <!-- aptitude-logiciels.com -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -176,7 +221,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/aptitude-logiciels.com_tab-thumb.webp" height="380" width="380">
         </div>
-        <!-- ---------------------------------------- -->
+        <!-- huissier62-llw.fr -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -219,7 +264,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier62-llw.fr_tab-thumb.webp" height="380" width="380">
         </div>
-        <!-- ---------------------------------------- -->
+        <!-- huissier-poncet-paris.com -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -262,7 +307,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-poncet-paris.com_tab-thumb.webp" height="380" width="380">
         </div>
-        <!-- ---------------------------------------- -->
+        <!-- ocea-huissier-justice.fr -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -305,51 +350,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/ocea-huissier-justice.fr_tab-thumb.webp" height="380" width="380">
         </div>
-        <!-- ---------------------------------------- -->
-        <!-- ---------------------------------------- -->
-        <!-- <div class="gallery-inner site_web">
-            <div class="caption">
-                <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-nancy-djp.com.webp" title="huissier-nancy-djp.com">
-                        <div class="caption-heading">
-                            <h1>+</h1>
-                            <h4>huissier-nancy-djp.com</h4>
-                            <h4><span class="serif">Template Bootstrap</span></h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com-thumb.webp">
-        </div>
-        <div class="gallery-inner smartphone">
-            <div class="caption">
-                <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-nancy-djp.com_sm.webp" title="huissier-nancy-djp.com /  smartphone">
-                        <div class="caption-heading">
-                            <h1>+</h1>
-                            <h4>huissier-nancy-djp.com</h4>
-                            <h4><span class="serif">Template Bootstrap</span></h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com_sm-thumb.webp">
-        </div>
-        <div class="gallery-inner tablette">
-            <div class="caption">
-                <div class="captionWrapper valign">
-                    <a class="popup-link" href="img/gallery/huissier-nancy-djp.com_tab.webp" title="huissier-nancy-djp.com / Tablette">
-                        <div class="caption-heading">
-                            <h1>+</h1>
-                            <h4>huissier-nancy-djp.com</h4>
-                            <h4><span class="serif">Template Bootstrap</span></h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com_tab-thumb.webp">
-        </div> -->
-        <!-- ---------------------------------------- -->
+        <!-- huissier-justifirst.fr -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -392,7 +393,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-justifirst.fr_tab-thumb.webp" height="380" width="380">
         </div>
-        <!-- ---------------------------------------- -->
+        <!-- huissier-waterlot-lille.com -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -435,7 +436,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot-lille.com_tab-thumb.webp" height="380" width="380">
         </div>
-        <!-- ---------------------------------------- -->
+        <!-- huissier-waterlot.com -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -478,7 +479,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-waterlot.com_tab-thumb.webp" height="380" width="380">
         </div>
-        <!-- ---------------------------------------- -->
+        <!-- huissier-93-lieurade.com -->
         <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -521,7 +522,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-93-lieurade.com_tab-thumb.webp" height="380" width="380">
         </div>
-        <!-- ---------------------------------------- -->
+        <!-- AUDIO BOBITOSTUDIO.COM -->
         <div class="gallery-inner audio">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -536,6 +537,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/bobitostudio-thumb.webp" height="380" width="380">
         </div>
+        <!-- AUDIO AUZOU ÉDITIONS -->
         <div class="gallery-inner audio">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -551,6 +553,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/auzou-thumb.webp" height="380" width="380">
         </div>
+        <!-- AUDIO BRAINPOP -->
         <div class="gallery-inner audio">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -566,6 +569,7 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/brainpop-thumb.webp" height="380" width="380">
         </div>
+        <!-- AUDIO MSF -->
         <div class="gallery-inner audio">
             <div class="caption">
                 <div class="captionWrapper valign">
@@ -581,13 +585,14 @@
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/msf-thumb.webp" height="380" width="380">
         </div>
+        <!-- AUDIO KIWI -->
         <div class="gallery-inner audio">
             <div class="caption">
                 <div class="captionWrapper valign">
                     <a class="popup-link" href="img/gallery/kiwi.webp" title="KIWI Saison 03">
                         <div class="caption-heading">
                             <h1>+</h1>
-                            <h4><span class="serif">Bruitages, compositions, mixage</span></h4>
+                            <h4><span class="serif">Bruitages, compositions, post-production</span></h4>
                             <h4><span class="serif">DOUBLE MÈTRE ANIMATION</span></h4>
                             <h4>KIWI SAISON 03</h4>
                         </div>
