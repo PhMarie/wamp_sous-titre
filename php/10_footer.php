@@ -6,7 +6,7 @@
             <ul class="footerSocialIcons">
                 <li><a href="https://www.facebook.com/sous.titre.webdesign"><img src="img/svg/logo-facebook.svg" width="48" height="48" alt="logo facebook" class="lazyload"></a></li>
                 <li><a href="https://twitter.com/SousTitre"><img src="img/svg/logo-twitter.svg" width="48" height="48" alt="logo twitter" class="lazyload"></a></li>
-                <li><a href="https://instagram.com/aqua_pulko/"><img src="img/svg/logo-instagram.svg" width="48" height="48" alt="logo instagram" class="lazyload"></a></li>
+                <!-- <li><a href="https://instagram.com/aqua_pulko/"><img src="img/svg/logo-instagram.svg" width="48" height="48" alt="logo instagram" class="lazyload"></a></li> -->
                 <li><a href="https://www.linkedin.com/in/soustitre/"><img src="img/svg/logo-linkedin.svg" width="48" height="48" alt="logo linkedin" class="lazyload"></a></li>
             </ul>
             <p>&copy;&nbsp;<?php Print(date("Y"));?> <a href="https://www.sous-titre.com/" >sous-titre.com</a></p>

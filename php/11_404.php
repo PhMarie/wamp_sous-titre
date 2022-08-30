@@ -15,7 +15,6 @@
         </div>
         <div class="bottomLine">
             <p>&copy;&nbsp;<?php Print(date("Y"));?> <a href="https://www.sous-titre.com/" >sous-titre.com</a></p>
-            <!--Waves Container-->
             <div>
                 <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -30,6 +29,5 @@
                 </g>
             </svg>
             </div>
-            <!--Waves end-->
         </div>
     </section>

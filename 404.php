@@ -8,14 +8,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>404 Error at Sous-titre.com</title>
 		<meta name="robots" content="no index, no follow">
-		<link rel="stylesheet" href="style-100722b.min.css">
+		<link rel="stylesheet" href="style-100722c.min.css">
 	</head>
 	<body>
 		<?php
 		include 'php/11_404.php';
 		?>
-		<h2>
-			toto
-		</h2>
     </body>
 </html>

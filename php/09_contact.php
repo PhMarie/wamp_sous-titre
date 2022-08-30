@@ -27,7 +27,7 @@
         <div class="container">
             <div class="sectionHeader">
                 <div class="row">
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4.offset-md-4 text-center">
                         <div class="triangleWrapperSmallSingle">
                             <div class="triangleBorderSmallSingle">
                                 <img src="img/svg/mail-outline.svg" width="48" height="48" alt="logo mail" class="lazyload">
@@ -42,7 +42,7 @@
                             <br>
                         </p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <!-- <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
                                 <img src="img/svg/location-outline.svg" width="48" height="48" alt="logo adresse" class="lazyload">
@@ -56,8 +56,8 @@
                             12 rue Saint-Exupéry<br>
                             93100 Montreuil
                         </p>
-                    </div>
-                    <div class="col-md-4 text-center">
+                    </div> -->
+                    <!-- <div class="col-md-4 text-center">
                         <div class="triangleWrapperSmallSingle top-pad">
                             <div class="triangleBorderSmallSingle">
                                 <img src="img/svg/time-outline.svg" width="48" height="48" alt="logo horaire" class="lazyload">
@@ -69,7 +69,7 @@
                         <p>
                             L-V : 9h - 18h
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

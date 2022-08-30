@@ -57,6 +57,7 @@ html, body {
     scroll-behavior: smooth;
 }
 body {
+    min-height: 100vh;
     overflow-x: hidden!important;
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
