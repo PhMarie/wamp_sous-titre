@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="fr" prefix="og: https://ogp.me/ns#">
 <head>
     <!-- meta Data -->
     <meta charset="UTF-8">
@@ -13,14 +13,15 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> -->
     <meta name="description" content="Freelance - création de site Internet - intégrateur web - développeur web Front-end - HTML5 &amp; CSS3 - JavaScript - Bootstrap - wordpress - mixage - cubase">
+    <link rel="canonical" href="https://www.sous-titre.com">
     <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="sous-titre.com">
-    <meta property="og:locale" content="fr">
-    <meta property="og:url" content="https://www.sous-titre.com">
-    <meta property="og:image" content="https://www.sous-titre.com/img/webp/logo_black_web.webp">
-    <meta property="og:title" content="Webdesign & Prod audio">
-    <meta property="og:description" content="Freelance - création de site Internet - HTML5 &amp; CSS3 - Jquery - Bootstrap - wordpress - woocommerce - responsive design">
+    <meta property="og:title" content="Webdesign & Prod audio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.sous-titre.com" />
+    <meta property="og:image" content="https://www.sous-titre.com/img/webp/logo_black_web.webp" />
+    <meta property="og:site_name" content="sous-titre.com" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:description" content="Freelance - création de site Internet - HTML5 &amp; CSS3 - Jquery - Bootstrap - wordpress - woocommerce - responsive design" />
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">

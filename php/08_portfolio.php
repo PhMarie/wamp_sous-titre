@@ -93,7 +93,7 @@
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/mg-huissiers-tours.fr_tab-thumb.webp" height="380" width="380">
         </div>
         <!-- bobitostudio -->
-        <!-- <div class="gallery-inner site_web">
+        <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
                     <a class="popup-link" href="img/gallery/bobitostudio.com.webp" title="bobitostudio.com">
@@ -134,9 +134,9 @@
                 </div>
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/bobitostudio.com_tab-thumb.webp" height="380" width="380">
-        </div> -->
+        </div>
         <!-- huissier-nancy-djp.com -->
-        <div class="gallery-inner site_web">
+        <!-- <div class="gallery-inner site_web">
             <div class="caption">
                 <div class="captionWrapper valign">
                     <a class="popup-link" href="img/gallery/huissier-nancy-djp.com.webp" title="huissier-nancy-djp.com">
@@ -177,7 +177,7 @@
                 </div>
             </div>
             <img class="galleryImage lazyload" alt="thumbnail" src="img/gallery/thumb/huissier-nancy-djp.com_tab-thumb.webp">
-        </div>
+        </div> -->
         <!-- aptitude-logiciels.com -->
         <div class="gallery-inner site_web">
             <div class="caption">
