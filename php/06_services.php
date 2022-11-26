@@ -102,35 +102,35 @@
                     <h3>HTML5 - CSS3 - SASS</h3>
                     <div class="progress progress-striped">
 
-                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        <div class="progress-bar" role="progressbar" id="HTML5"  title="HTML5 - CSS3 - SASS" aria-label="HTML5 - CSS3 - SASS" aria-labelledby="labeldiv" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                             <span class="sr-only">80%</span>
                         </div>
                     </div>
                     <h3>JavaScript &amp; Librairies (jquery)</h3>
                     <div class="progress progress-striped">
 
-                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        <div class="progress-bar" role="progressbar" id="JavaScript"  title="JavaScript" aria-label="JavaScript" aria-labelledby="labeldiv" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                             <span class="sr-only">60%</span>
                         </div>
                     </div>
                     <h3>Bootstrap <span class="serif">&amp;</span> Wordpress</h3>
                     <div class="progress progress-striped">
 
-                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        <div class="progress-bar" role="progressbar" id="CMS"  title="CMS" aria-label="CMS" aria-labelledby="labeldiv" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                             <span class="sr-only">80%</span>
                         </div>
                     </div>
                     <h3>Suite ADOBE &amp; Cubase</h3>
                     <div class="progress progress-striped">
 
-                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                        <div class="progress-bar" role="progressbar" id="adobe"  title="Suite ADOBE" aria-label="Suite ADOBE" aria-labelledby="labeldiv" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
                             <span class="sr-only">75%</span>
                         </div>
                     </div>
                     <h3><span class="serif">Support</span> Client &amp; Réactivité</h3>
                     <div class="progress progress-striped">
 
-                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                        <div class="progress-bar" role="progressbar" id="client-support"  title="Support Client" aria-label="Support Client" aria-labelledby="labeldiv" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
                             <span class="sr-only">100%</span>
                         </div>
                     </div>
