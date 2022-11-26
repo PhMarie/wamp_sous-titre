@@ -16,7 +16,7 @@
     <a class="overlay-close"><img src="img/svg/close-outline.svg" width="48" height="48" alt="logo close"></a>
     <nav>
         <ul>
-            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="https://sous-titre.com">Accueil</a></li>
             <li><a href="#competences">Compétences</a></li>
             <li><a href="#projets">Projets récents</a></li>
             <li><a href="#contact">Contact</a></li>
