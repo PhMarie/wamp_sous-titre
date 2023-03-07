@@ -52,7 +52,7 @@
     <!--Styles-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" href="style-100722c.min.css">
+    <link rel="stylesheet" href="style-100724.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93111-3"></script>
     <script>
@@ -64,6 +64,7 @@
 </head>
 <body>
     <div class="black-overlay"></div>
+    <!-- PRELOADER -->
     <div id="preloader">
       <div class="loader" title="7">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -86,6 +87,8 @@
         </svg>
       </div>
     </div>
+    <!-- END PRELOADER -->
+    <!-- NAVIGATION -->
     <nav class="navbar fixed-top">
       <div class="container-fluid">
           <div class="col-md-11">
@@ -99,38 +102,39 @@
           </div>
       </div>
     </nav>
-
     <div class="overlay overlay-hugeinc">
         <a class="overlay-close"><img src="img/svg/close-outline.svg" width="48" height="48" alt="logo close"></a>
         <nav>
             <ul>
-                <li><a href="https://sous-titre.com">Accueil</a></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <!-- <li><a href="#presentation">Présentation</a></li> -->
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#projets">Projets récents</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
+    <!-- END NAVIGATION -->
     <?php
-    include 'php/03_accueil.php';
+    include 'php/03_accueil.html';
     ?>
     <?php
-    include 'php/04_about.php';
+    include 'php/04_presentation.html';
     ?>
     <?php
-    include 'php/05_charts.php';
+    include 'php/05_quelques-chiffres.html';
     ?>
     <?php
-    include 'php/06_services.php';
+    include 'php/06_competences.html';
     ?>
     <?php
-    include 'php/07_outils.php';
+    include 'php/07_outils.html';
     ?>
     <?php
-    include 'php/08_portfolio.php';
+    include 'php/08_portfolio.html';
     ?>
     <?php
-    include 'php/09_contact.php';
+    include 'php/09_contact.html';
     ?>
     <?php
     include 'php/10_footer.php';
