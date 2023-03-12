@@ -10,6 +10,7 @@
 
 // 2. Include any default variable overrides here
 $primary: rgb(201, 159, 108)  !default;
+$primary-dark: rgb(86, 61, 32)  !default;
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
 
@@ -325,14 +326,14 @@ h4 {
 
 }
 h4 .serif {
-    color:$primary;
+    color:$primary-dark;
     letter-spacing: 0;
 }
 .dark h1, .dark h2, .dark h3 {
-    color:$primary;
+    color:white;
 }
 .dark h1 .serif, .dark h2 .serif, .dark h3 {
-    color:$primary;
+    color:white;
 }
 .dark p {
     color: #cbc9c9;
@@ -376,7 +377,7 @@ background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     color: $primary_bg;
 }
 h1, h2 {
-    color:$primary;
+    color:$primary-dark;
 }
 
 
@@ -404,11 +405,10 @@ h1.introText {
 
 // }
 .btn {
-    background-color: white;
-    color: $primary;
-    // border-radius:0px;
+    background-color: $primary-dark ;
+    color: white;
+    font-weight: bold;
     padding: 15px;
-    // text-transform:uppercase;
     letter-spacing:2px;
     font-size:1.1rem;
     border:1px solid $primary;
@@ -422,12 +422,12 @@ h1.introText {
 }
 
 .btn:hover, .btn:active, .btn:focus, .btn-default.active {
-    background-color: $primary;
+    background-color: white;
+    color:$primary-dark;
     padding: 15px 30px;
     outline: 4px solid $primary;
     outline-offset: 0px;
     border:1px solid white;
-    color:white;
 }
 .btn-white {
     background-color:transparent;
@@ -542,7 +542,10 @@ h1.introText {
 
 }
 .progress-bar {
-    background-color: $primary;
+    background-color: $primary-dark;
+    span {
+        font-weight: bold;
+    }
 }
 
 /* 10. Outils  */
@@ -891,7 +894,7 @@ svg rect{
     z-index:9999;
 }
 
-#trigger-overlay > i{
+#trigger-overlay > i {
     color:#c99f6c
 }
 

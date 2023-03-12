@@ -1,1 +1,1 @@
-sass sass/style.scss style-100724.min.css --style=compressed --no-source-map --watch
+sass sass/style.scss style-20230312.min.css --style=compressed --no-source-map --watch
