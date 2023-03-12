@@ -278,8 +278,7 @@ hr {
     padding-left:4px;
 }
 p {
-    // font-weight: 300;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 24px;
     color:$primary_bg;
     padding:10px;
@@ -336,7 +335,8 @@ h4 .serif {
     color:white;
 }
 .dark p {
-    color: #cbc9c9;
+    color: white;
+    font-weight: bold;
 }
 .white {
     // height: 100%;
@@ -741,24 +741,6 @@ h1.introText {
     opacity: 0;
 }
 /* end magnific popup effect */
-
-/* 14. Text Separator  */
-// #textSeparator {
-//     background: url(img/webp/sand.webp) no-repeat center center fixed;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-//     background-position: 50% 0, 50% 0, 50% 0, 50% 0;
-//     background-repeat: repeat, repeat, repeat ,no-repeat;
-// }
-
-#textSeparator p {
-    // font-family: 'Montserrat', sans-serif;
-    // letter-spacing: 1.5px;
-    color: #efefef;
-    font-size: 1.2rem;
-}
 
 /* 17. Footer  */
 #footer {
