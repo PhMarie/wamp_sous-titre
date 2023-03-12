@@ -623,14 +623,22 @@ h1.introText {
 .clientLogo:nth-child(8) {
   grid-area: img7;
 }
+
 /* 11. Portfolio  */
+
 .caption-heading span.serif {
         color: white
 }
+
+.caption-heading h2 {
+        color: white
+}
+
 #projets {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 #projets #filters button {
     margin:20px;
 }
