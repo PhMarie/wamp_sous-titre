@@ -328,6 +328,7 @@ h4 .serif {
     color:$primary-dark;
     letter-spacing: 0;
 }
+
 .dark h1, .dark h2, .dark h3 {
     color:white;
 }
@@ -623,6 +624,9 @@ h1.introText {
   grid-area: img7;
 }
 /* 11. Portfolio  */
+.caption-heading span.serif {
+        color: white
+}
 #projets {
     padding-top: 50px;
     padding-bottom: 50px;
