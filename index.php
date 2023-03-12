@@ -52,6 +52,7 @@
     <!--Styles-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
 
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="style-20230312.min.css">
     <link rel="stylesheet" href="style-20230312.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93111-3"></script>
@@ -67,7 +68,7 @@
     <!-- PRELOADER -->
     <div id="preloader">
       <div class="loader" title="7">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg role="img" aria-label="preloader image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
           <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
             <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0s" dur="0.6s" repeatCount="indefinite" />
@@ -91,7 +92,7 @@
     <!-- NAVIGATION -->
     <nav class="navbar fixed-top">
       <div class="container-fluid">
-          <div class="col-md-11">
+          <div class="col-md-11" role="img" aria-label="logo">
               <a href="https://sous-titre.com"><img class="d-none d-md-block" src="img/webp/logo-nav.webp" alt="Logo" height="24" width="120"></a>
           </div>
 
@@ -148,9 +149,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous" defer></script>
     <!-- <script src="js/allScripts_localimg-min.js" defer></script> -->
     <script src="js/allScripts_randomimg-min.js" defer></script>
-
-    <!-- <script src="js/modernizr.custom.js" defer></script> -->
-    <!-- <script src="js/borderMenu-min.js" defer></script> -->
-    <!-- <script src="js/custom-min.js" defer></script> -->
     </body>
 </html>
