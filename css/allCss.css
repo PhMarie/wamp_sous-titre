@@ -997,7 +997,7 @@ screen and (max-height: 300px) {
         outline-offset: 2px;
         outline: 2px solid #c99f6c;
         border: 1px solid white;
-        color: white;
+        color: #533e21;
     }
 
     .triangleBorderSmall {
