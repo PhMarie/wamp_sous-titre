@@ -363,7 +363,7 @@ h1 {
 .font-number {
     position: absolute !important;
     bottom: 10px !important;
-    right: 10px !important;
+    left: 10px !important;
     font-weight: bold;
     color: #ccc; /* Lighter grey */
     font-size: 14px;
@@ -380,6 +380,13 @@ h1 {
     text-align: center;
 }
 
+.search-input-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+}
+
 #font-search {
     padding: 12px 20px;
     width: 100%;
@@ -389,6 +396,43 @@ h1 {
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s;
+    padding-right: 40px; /* Make space for clear button */
+}
+
+#clear-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    font-size: 18px;
+    display: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+#clear-search:hover {
+    color: #666;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#clear-search:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.dark-theme #clear-search {
+    color: #777;
+}
+
+.dark-theme #clear-search:hover {
+    color: #ccc;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 #font-search:focus {
@@ -501,11 +545,58 @@ h1 {
 }
 
 .font-preview {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.4;
     color: #555;
     margin-bottom: 15px;
     min-height: 80px;
+    transition: font-size 0.2s;
+}
+
+.card-size-increase-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+    opacity: 0.7;
+}
+
+.card-size-increase-btn:hover {
+    color: #4285F4;
+    background-color: rgba(66, 133, 244, 0.1);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.card-size-increase-btn:active {
+    transform: scale(0.95);
+}
+
+.card-size-increase-btn.active {
+    color: #4285F4;
+    background-color: rgba(66, 133, 244, 0.2);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.dark-theme .card-size-increase-btn {
+    color: #777;
+}
+
+.dark-theme .card-size-increase-btn:hover {
+    color: #8ab4f8;
+    background-color: rgba(90, 123, 196, 0.2);
 }
 
 /* Fallback font indicator - purple color */

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Card Text Size</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .font-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .font-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4285F4;
+        }
+        
+        .font-preview {
+            font-size: 16px;
+            line-height: 1.4;
+            color: #555;
+            margin-bottom: 15px;
+            min-height: 80px;
+            transition: font-size 0.2s;
+        }
+        
+        .card-size-increase-btn {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #999;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s;
+            opacity: 0.7;
+        }
+        
+        .card-size-increase-btn:hover {
+            color: #4285F4;
+            background-color: rgba(66, 133, 244, 0.1);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .card-size-increase-btn.active {
+            color: #4285F4;
+            background-color: rgba(66, 133, 244, 0.2);
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        
+        .test-result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .success {
+            background-color: #e8f5e9;
+            color: #2E7D32;
+        }
+        
+        .error {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        
+        .info {
+            background-color: #e8f0fe;
+            color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Card Text Size</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Default Card Text Size</h2>
+        <p>Card text should be 16px by default.</p>
+        
+        <div class="font-card">
+            <div class="font-name">Test Font</div>
+            <div class="font-preview" id="preview-test-font">
+                This is preview text - should be 16px by default
+            </div>
+            <button class="card-size-increase-btn" title="Increase card text size" onclick="increaseCardTextSize('preview-test-font')">+</button>
+        </div>
+        
+        <div class="test-result info" id="test1-result">
+            Current card text size: <span id="current-card-size">16px</span>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2: Card Text Size Increase</h2>
+        <p>Click the "+" button on the card to increase text size by 2px each time (16px → 18px → 20px → 22px → 24px → 26px).</p>
+        
+        <div class="test-result info" id="test2-result">
+            Click the "+" button on the card above to test size increase
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3: Multiple Cards Independence</h2>
+        <p>Each card should maintain its own size independently.</p>
+        
+        <div class="font-card">
+            <div class="font-name">Card 1</div>
+            <div class="font-preview" id="preview-card-1">
+                Independent size control for Card 1
+            </div>
+            <button class="card-size-increase-btn" title="Increase card text size" onclick="increaseCardTextSize('preview-card-1')">+</button>
+        </div>
+        
+        <div class="font-card">
+            <div class="font-name">Card 2</div>
+            <div class="font-preview" id="preview-card-2">
+                Independent size control for Card 2
+            </div>
+            <button class="card-size-increase-btn" title="Increase card text size" onclick="increaseCardTextSize('preview-card-2')">+</button>
+        </div>
+        
+        <div class="test-result info" id="test3-result">
+            Click "+" buttons on different cards to test independent size control
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 4: Size Cycling</h2>
+        <p>After reaching 26px, clicking "+" should cycle back to 16px.</p>
+        
+        <div class="test-result info" id="test4-result">
+            Click "+" multiple times to test cycling behavior
+        </div>
+    </div>
+    
+    <script>
+        // Font size management for card text
+        const cardFontSizes = [16, 18, 20, 22, 24, 26]; // Card text sizes (increase by 2px)
+        const cardSizeMap = new Map(); // Track individual card sizes
+        
+        function increaseCardTextSize(previewId) {
+            const previewElement = document.getElementById(previewId);
+            if (previewElement) {
+                // Get current size index for this card, default to 0 (16px)
+                let currentIndex = cardSizeMap.get(previewId) || 0;
+                
+                // Increase size index, cycle back to 0 if at the end
+                currentIndex = (currentIndex + 1) % cardFontSizes.length;
+                
+                // Update the card size map
+                cardSizeMap.set(previewId, currentIndex);
+                
+                // Apply the new font size
+                const newSize = cardFontSizes[currentIndex];
+                previewElement.style.fontSize = newSize + 'px';
+                
+                // Update size display
+                updateCardSizeDisplay(previewId, newSize);
+                
+                // Show appropriate test result
+                if (previewId === 'preview-test-font') {
+                    const testResult = document.getElementById('test2-result');
+                    if (testResult) {
+                        testResult.textContent = `✅ Card text size increased to ${newSize}px`;
+                        testResult.className = 'test-result success';
+                    }
+                }
+                
+                // Test cycling behavior
+                if (newSize === 16 && currentIndex === 0 && cardSizeMap.get(previewId) !== 0) {
+                    const testResult = document.getElementById('test4-result');
+                    if (testResult) {
+                        testResult.textContent = '✅ Size cycled back to 16px after reaching maximum';
+                        testResult.className = 'test-result success';
+                    }
+                }
+                
+                // Add visual feedback to the button
+                const button = event.target;
+                button.classList.add('active');
+                setTimeout(() => {
+                    button.classList.remove('active');
+                }, 300);
+            }
+        }
+        
+        function updateCardSizeDisplay(previewId, size) {
+            if (previewId === 'preview-test-font') {
+                const sizeDisplay = document.getElementById('current-card-size');
+                if (sizeDisplay) {
+                    sizeDisplay.textContent = size + 'px';
+                }
+                
+                const testResult = document.getElementById('test1-result');
+                if (testResult) {
+                    if (size === 16) {
+                        testResult.textContent = '✅ Default card text size is 16px';
+                        testResult.className = 'test-result success';
+                    } else {
+                        testResult.textContent = `Current card text size: ${size}px`;
+                        testResult.className = 'test-result info';
+                    }
+                }
+            }
+        }
+        
+        // Initialize
+        const testResult1 = document.getElementById('test1-result');
+        if (testResult1) {
+            testResult1.textContent = '✅ Default card text size is 16px';
+            testResult1.className = 'test-result success';
+        }
+    </script>
+</body>
+</html>

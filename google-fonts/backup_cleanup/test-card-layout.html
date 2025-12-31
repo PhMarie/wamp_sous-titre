@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .font-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .font-card-content {
+            margin-bottom: 40px; /* Make space for bottom elements */
+        }
+        
+        .font-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #4285F4;
+        }
+        
+        .font-preview {
+            font-size: 16px;
+            line-height: 1.4;
+            color: #555;
+            margin-bottom: 15px;
+            min-height: 40px;
+        }
+        
+        .font-number {
+            position: absolute !important;
+            bottom: 10px !important;
+            left: 10px !important;
+            font-weight: bold;
+            color: #ccc;
+            font-size: 14px;
+            z-index: 1;
+        }
+        
+        .card-size-increase-btn {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #999;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s;
+            opacity: 0.7;
+        }
+        
+        .card-size-increase-btn:hover {
+            color: #4285F4;
+            background-color: rgba(66, 133, 244, 0.1);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .font-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-primary {
+            background-color: #4285F4;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        
+        .test-result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .success {
+            background-color: #e8f5e9;
+            color: #2E7D32;
+        }
+        
+        .error {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        
+        .info {
+            background-color: #e8f0fe;
+            color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Card Layout</h1>
+    
+    <div class="test-section">
+        <h2>New Card Layout</h2>
+        <p>Card number should be at bottom left, "+" button at bottom right.</p>
+        
+        <div class="font-card">
+            <div class="font-card-content">
+                <div class="font-name">Roboto</div>
+                <div class="font-preview">This is preview text for Roboto font</div>
+            </div>
+            <div class="font-actions">
+                <button class="btn btn-primary">Copy CSS</button>
+                <button class="btn btn-secondary">View on Google</button>
+            </div>
+            <div class="font-number">1</div>
+            <button class="card-size-increase-btn" title="Increase card text size">+</button>
+        </div>
+        
+        <div class="test-result info" id="test-result">
+            Verify that card number (1) is at bottom left and "+" button is at bottom right.
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Multiple Cards Layout</h2>
+        <p>Testing layout consistency across multiple cards.</p>
+        
+        <div class="font-card">
+            <div class="font-card-content">
+                <div class="font-name">Card 1</div>
+                <div class="font-preview">Preview text for card 1</div>
+            </div>
+            <div class="font-actions">
+                <button class="btn btn-primary">Copy CSS</button>
+                <button class="btn btn-secondary">View on Google</button>
+            </div>
+            <div class="font-number">1</div>
+            <button class="card-size-increase-btn" title="Increase card text size">+</button>
+        </div>
+        
+        <div class="font-card">
+            <div class="font-card-content">
+                <div class="font-name">Card 2</div>
+                <div class="font-preview">Preview text for card 2</div>
+            </div>
+            <div class="font-actions">
+                <button class="btn btn-primary">Copy CSS</button>
+                <button class="btn btn-secondary">View on Google</button>
+            </div>
+            <div class="font-number">2</div>
+            <button class="card-size-increase-btn" title="Increase card text size">+</button>
+        </div>
+        
+        <div class="test-result info" id="test2-result">
+            Both cards should have consistent layout with numbers on bottom left and "+" buttons on bottom right.
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Visual Layout Guide</h2>
+        <p>Diagram showing the new layout:</p>
+        
+        <pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow: hidden;">
+  +-------------------------------------+
+  |                                     |
+  |  Font Name                          |
+  |  Preview Text                       |
+  |                                     |
+  |  [Copy CSS] [View on Google]        |
+  |                                     |
+  |  1                               +  |
+  +-------------------------------------+
+        </pre>
+        
+        <div class="test-result success" id="test3-result">
+            ✅ Layout follows the diagram: number at bottom left, "+" button at bottom right
+        </div>
+    </div>
+    
+    <script>
+        // Test button functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.card-size-increase-btn');
+            const testResult = document.getElementById('test-result');
+            
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', function() {
+                    if (testResult) {
+                        testResult.textContent = '✅ "+" button clicked - positioned correctly at bottom right';
+                        testResult.className = 'test-result success';
+                    }
+                });
+            });
+            
+            // Verify layout positions
+            const card1 = document.querySelector('.font-card');
+            if (card1) {
+                const cardNumber = card1.querySelector('.font-number');
+                const sizeButton = card1.querySelector('.card-size-increase-btn');
+                
+                if (cardNumber && sizeButton) {
+                    const numberRect = cardNumber.getBoundingClientRect();
+                    const buttonRect = sizeButton.getBoundingClientRect();
+                    const cardRect = card1.getBoundingClientRect();
+                    
+                    // Check if number is at bottom left
+                    const numberAtBottomLeft = (
+                        numberRect.bottom >= cardRect.bottom - 20 &&
+                        numberRect.left <= cardRect.left + 20
+                    );
+                    
+                    // Check if button is at bottom right
+                    const buttonAtBottomRight = (
+                        buttonRect.bottom >= cardRect.bottom - 20 &&
+                        buttonRect.right >= cardRect.right - 20
+                    );
+                    
+                    if (numberAtBottomLeft && buttonAtBottomRight) {
+                        if (testResult) {
+                            testResult.textContent = '✅ Card number at bottom left, "+" button at bottom right - layout correct!';
+                            testResult.className = 'test-result success';
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

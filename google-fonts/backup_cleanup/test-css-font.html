@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test css font</title>
+</head>
+
+<body>
+    <code>
+
+/* Montserrat - sans-serif */
+/* Note: Some fonts use individual weight files, others use variable fonts */
+/* Includes ALL available weights and style variants from Google Fonts */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m0dJ9pQOi.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTn89ddpQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* CSS Variables */
+:root {
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+/* CSS Usage Examples */
+.montserrat-regular {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+}
+.montserrat-italic {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.montserrat-bold {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+}
+
+.montserrat-bold-italic {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+
+    </code>
+
+    <code>
+
+/* Inter - sans-serif */
+/* 🎯 EXCLUSIVE: Latin subset @font-face rules from Google Fonts */
+/* Note: Some fonts use individual weight files, others use variable fonts */
+/* Includes ALL available weights and style variants from Google Fonts */
+/* No Cyrillic, Greek, Latin-Ext, or other subsets included */
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC53FwrK3iLTcvneQg7Ca725JhhKnNqk6L5UUMbm9wUkHU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0I5nvwU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* 📋 CSS Usage Examples */
+.inter-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.inter-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+/* 💡 CSS Variables (optional) */
+:root {
+    --font-inter: "Inter", sans-serif;
+}
+
+.inter {
+    font-family: var(--font-inter);
+}
+
+/* 🎨 Usage Examples:
+   <div class="inter-regular">Regular text</div>
+   <div class="inter-bold">Bold text</div>
+   <div class="inter" style="font-weight: 400;">Using CSS variable</div>
+*/
+
+/* ⚠️  Note: These are the actual @font-face rules from Google Fonts.
+   The URLs point to the real font files hosted on Google's CDN.
+   For self-hosting, you would need to download these font files.
+*/
+
+    </code>
+</body>
+
+</html>

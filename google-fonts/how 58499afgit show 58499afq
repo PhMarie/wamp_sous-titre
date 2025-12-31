@@ -1,0 +1,19 @@
+[33mcommit 58499af96d469f6e6d77e706647cf2e867429d35[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: PhMarie <philippe.marie@sous-titre.com>
+Date:   Tue Dec 30 00:42:16 2025 +0100
+
+    first commit
+
+CAPS_CATEGORY_FIXES.md
+CAPS_FIXES_SUMMARY.md
+README.md
+caps_analysis_results.md
+extracted_css.txt
+fonts/AlexBrush-Regular.woff2
+get_font_details.py
+google-fonts.json
+index.html
+parse_fonts.py
+simple_server.py
+styles.css
+test-css-font.html

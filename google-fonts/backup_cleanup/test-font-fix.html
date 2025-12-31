@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Font Fix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .font-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .font-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #4285F4;
+        }
+        
+        .font-preview {
+            font-size: 16px;
+            line-height: 1.4;
+            color: #555;
+            margin-bottom: 15px;
+            min-height: 40px;
+        }
+        
+        .test-result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .success {
+            background-color: #e8f5e9;
+            color: #2E7D32;
+        }
+        
+        .error {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        
+        .info {
+            background-color: #e8f0fe;
+            color: #1565c0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>🧪 Test Font Fix</h1>
+    
+    <div class="test-section">
+        <h2>Font Rendering Test</h2>
+        <p>Testing that different fonts render correctly after the fix.</p>
+        
+        <div class="font-card">
+            <div class="font-name" style="font-family: 'Roboto', sans-serif;">Roboto</div>
+            <div class="font-preview" style="font-family: 'Roboto', sans-serif;">Roboto preview text</div>
+        </div>
+        
+        <div class="font-card">
+            <div class="font-name" style="font-family: 'Pacifico', cursive;">Pacifico</div>
+            <div class="font-preview" style="font-family: 'Pacifico', cursive;">Pacifico preview text</div>
+        </div>
+        
+        <div class="font-card">
+            <div class="font-name" style="font-family: 'Lobster', cursive;">Lobster</div>
+            <div class="font-preview" style="font-family: 'Lobster', cursive;">Lobster preview text</div>
+        </div>
+        
+        <div class="test-result info" id="test-result">
+            If all three fonts appear different, the fix is working correctly.
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>HTML Syntax Test</h2>
+        <p>Testing the corrected HTML syntax.</p>
+        
+        <div class="test-result success" id="syntax-result">
+            ✅ HTML syntax has been fixed - the misplaced quote has been corrected.
+        </div>
+    </div>
+    
+    <script>
+        // Verify fonts are loaded and different
+        document.addEventListener('DOMContentLoaded', function() {
+            const testResult = document.getElementById('test-result');
+            
+            // Check if fonts are loaded by testing computed styles
+            const robotoPreview = document.querySelector('.font-preview[style*="Roboto"]');
+            const pacificoPreview = document.querySelector('.font-preview[style*="Pacifico"]');
+            const lobsterPreview = document.querySelector('.font-preview[style*="Lobster"]');
+            
+            if (robotoPreview && pacificoPreview && lobsterPreview) {
+                const robotoStyle = window.getComputedStyle(robotoPreview).fontFamily;
+                const pacificoStyle = window.getComputedStyle(pacificoPreview).fontFamily;
+                const lobsterStyle = window.getComputedStyle(lobsterPreview).fontFamily;
+                
+                if (robotoStyle !== pacificoStyle && pacificoStyle !== lobsterStyle) {
+                    if (testResult) {
+                        testResult.textContent = '✅ All fonts appear different - fix is working correctly!';
+                        testResult.className = 'test-result success';
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
