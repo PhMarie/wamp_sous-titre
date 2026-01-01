@@ -32,7 +32,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 0;
     position: relative;
     overflow-x: hidden;
     transition: background-color 0.3s, color 0.3s;
@@ -149,9 +149,9 @@ body.dark-theme {
 /* Preview text using card font */
 #preview-text.using-card-font {
     font-weight: normal !important;
-    padding: 14px 22px !important;
+    padding: 14px 60px 14px 22px !important; /* Increased right padding to prevent overlap with buttons */
     border: 2px solid #4285F4 !important;
-    background-color: #e8f0fe !important;
+    background-color: white !important; /* Keep white background in light mode */
     box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2) !important;
 }
 
@@ -286,33 +286,68 @@ body.dark-theme {
     font-weight: 300;
 }
 
+/* Dark theme background letters - reduced opacity for better readability */
+.dark-theme .corner-letter {
+    color: rgba(150, 150, 150, 0.2);
+    opacity: 0.3;
+}
+
+.dark-theme .pattern-letter {
+    color: rgba(180, 180, 180, 0.15);
+    opacity: 0.2;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 20px; /* Space for sticky header */
 }
 
 header {
     text-align: center;
     margin-bottom: 30px;
+    padding: 20px 0;
+    position: relative;
+    z-index: 50; /* Below sticky controls but above background */
+}
+
+/* Font counter in sticky controls */
+.sticky-controls .font-counter {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.dark-theme .sticky-controls .font-counter {
+    color: #aaa;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Sticky controls container */
 .sticky-controls {
     position: sticky;
-    top: 20px;
+    top: 0;
     background-color: rgba(245, 245, 245, 0.95);
     backdrop-filter: blur(10px);
     z-index: 100;
-    padding: 15px;
-    border-radius: 12px;
+    padding: 0 15px 15px 15px; /* No top padding since counter is inside */
+    border-radius: 0 0 12px 12px; /* Only round bottom corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 30px;
     transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.03); /* Subtle border for light theme */
+    border-top: none; /* No top border for seamless look */
 }
 
 .dark-theme .sticky-controls {
-    background-color: rgba(33, 33, 33, 0.95);
+    background-color: rgba(33, 33, 33, 0.9); /* Slightly reduced opacity to hint at background */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Very subtle border, slightly lighter than background */
 }
 
 /* Adjust spacing for sticky elements */
@@ -352,14 +387,6 @@ h1 {
     font-size: 18px;
 }
 
-.font-counter {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #666;
-    font-weight: bold;
-}
-
 .font-number {
     position: absolute !important;
     bottom: 10px !important;
@@ -372,7 +399,7 @@ h1 {
 
 .font-card {
     position: relative; /* Needed for absolute positioning of font-number */
-    min-height: 220px;
+    min-height: 280px; /* Increased to accommodate larger font names */
 }
 
 .search-container {
@@ -507,14 +534,14 @@ h1 {
 }
 
 .font-name {
-    font-size: 16px;
+    font-size: 32px; /* Doubled from 16px for better visibility */
     font-weight: 600;
     margin-bottom: 5px;
     color: #4285F4;
     line-height: 1.2;
     display: flex;
     align-items: center;
-    height: 24px;
+    height: 48px; /* Adjusted to match new font size */
     /* Match font number height */
 }
 
@@ -551,6 +578,11 @@ h1 {
     margin-bottom: 15px;
     min-height: 80px;
     transition: font-size 0.2s;
+}
+
+/* Cursive fonts - larger default size and higher max size */
+.font-card[data-font-category="cursive"] .font-preview {
+    font-size: 20px;
 }
 
 .card-size-increase-btn {
@@ -626,7 +658,7 @@ h1 {
     top: 15px;
     right: 15px;
     font-size: 24px;
-    cursor: pointer;
+    cursor: pointer !important; /* Ensure cursor stays pointer */
     color: #ccc;
     transition: all 0.3s;
     z-index: 10;
@@ -683,7 +715,7 @@ h1 {
 }
 
 #preview-text {
-    padding: 12px 20px;
+    padding: 12px 60px 12px 20px; /* Increased right padding to prevent overlap with buttons */
     width: 100%;
     max-width: 100%;
     border: 2px solid #ddd;
@@ -691,6 +723,8 @@ h1 {
     font-size: 16px;
     outline: none;
     box-sizing: border-box;
+    background-color: white; /* White background for light mode */
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .loading {
@@ -739,18 +773,6 @@ h1 {
 .pagination-top {
     margin-bottom: 20px;
     margin-top: 0;
-}
-
-.font-counter {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #4285F4;
-    font-weight: normal;
-}
-
-#category-count {
-    font-weight: bold;
 }
 
 #pagination-top-container {

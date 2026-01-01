@@ -12,6 +12,8 @@
     <!-- External CSS file -->
     <link rel="stylesheet" href="styles.css">
     
+
+    
     </style>
 </head>
 
@@ -20,14 +22,15 @@
         <header>
             <h1>🎨 Google Fonts Showcase</h1>
             <p class="subtitle">Browse and preview beautiful Google Fonts</p>
-            <div class="font-counter" id="font-counter"><span id="category-name">All Fonts</span>: <span id="category-count">0</span> fonts</div>
         </header>
 
         <div class="sticky-controls">
+            <div class="font-counter" id="font-counter"><span id="category-name">All Fonts</span>: <span id="category-count">0</span> fonts</div>
             <div class="search-container">
                 <div class="search-input-wrapper">
-                    <input type="text" id="font-search" placeholder="🔍 Search fonts by name...">
-                    <button id="clear-search" title="Clear search">×</button>
+                    <input type="text" id="font-search" placeholder="🔍 Search fonts by name..." 
+                           title="Type to search, press ESC to clear, click outside to reset">
+                    <button id="clear-search" title="Clear search (or press ESC)">×</button>
                 </div>
             </div>
 
@@ -73,12 +76,8 @@
         const favorites = new Set(); // Store favorite fonts
         let isDarkTheme = false; // Track dark theme state
 
-        // DOM elements
-        const fontsContainer = document.getElementById('fonts-container');
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const fontSearch = document.getElementById('font-search');
-        const previewTextInput = document.getElementById('preview-text');
-        const categoryButtons = document.querySelectorAll('.category-btn');
+        // DOM elements (will be initialized when DOM is ready)
+        let fontsContainer, themeToggleBtn, fontSearch, previewTextInput, categoryButtons, clearSearchBtn;
 
         // Add beautiful background with 4 large cursive corner letters and pattern
         function addBackgroundLetters() {
@@ -140,8 +139,18 @@
                 cornerElement.style.right = cornerPositions[index].right + '%';
                 cornerElement.style.bottom = cornerPositions[index].bottom + '%';
                 cornerElement.style.transform = `rotate(${Math.random() * 15 - 7.5}deg)`;
-                cornerElement.style.opacity = '0.6';
-                cornerElement.style.color = 'rgba(220, 220, 220, 0.6)'; /* Lighter grey */
+                
+                // Apply theme-appropriate styles from the start
+                const isDarkTheme = document.body.classList.contains('dark-theme');
+                if (isDarkTheme) {
+                    // Dark theme - reduced opacity for better readability
+                    cornerElement.style.opacity = '0.3';
+                    cornerElement.style.color = 'rgba(150, 150, 150, 0.2)';
+                } else {
+                    // Light theme - original opacity
+                    cornerElement.style.opacity = '0.6';
+                    cornerElement.style.color = 'rgba(220, 220, 220, 0.6)';
+                }
                 
                 patternContainer.appendChild(cornerElement);
             });
@@ -173,8 +182,18 @@
                 charElement.style.left = left + '%';
                 charElement.style.fontSize = size + 'px';
                 charElement.style.transform = `rotate(${rotation}deg)`;
-                charElement.style.opacity = Math.random() * 0.2 + 0.1; // 0.1 to 0.3 opacity
-                charElement.style.color = 'rgba(200, 200, 200, 0.6)';
+                
+                // Apply theme-appropriate styles from the start
+                const isDarkTheme = document.body.classList.contains('dark-theme');
+                if (isDarkTheme) {
+                    // Dark theme - reduced opacity for better readability
+                    charElement.style.opacity = '0.2';
+                    charElement.style.color = 'rgba(180, 180, 180, 0.15)';
+                } else {
+                    // Light theme - original opacity
+                    charElement.style.opacity = Math.random() * 0.2 + 0.1; // 0.1 to 0.3 opacity
+                    charElement.style.color = 'rgba(200, 200, 200, 0.6)';
+                }
                 
                 patternContainer.appendChild(charElement);
             }
@@ -194,6 +213,14 @@
         // Initialize the app
         async function init() {
             try {
+                // Initialize DOM elements
+                fontsContainer = document.getElementById('fonts-container');
+                themeToggleBtn = document.getElementById('theme-toggle');
+                fontSearch = document.getElementById('font-search');
+                previewTextInput = document.getElementById('preview-text');
+                categoryButtons = document.querySelectorAll('.category-btn');
+                clearSearchBtn = document.getElementById('clear-search');
+
                 // Load font data
                 const response = await fetch('google-fonts.json');
                 if (!response.ok) {
@@ -230,7 +257,6 @@
             fontSearch.addEventListener('input', () => {
                 displayFonts();
                 // Show/hide clear button based on search input
-                const clearSearchBtn = document.getElementById('clear-search');
                 if (clearSearchBtn) {
                     clearSearchBtn.style.display = fontSearch.value.length > 0 ? 'block' : 'none';
                 }
@@ -241,32 +267,27 @@
                 // Ensure the search box has focus
                 fontSearch.focus();
                 
-                // Get category name from global variable
-                let categoryName = '';
-                if (currentCategory === 'caps') {
-                    categoryName = 'CAPS Fonts';
-                } else if (currentCategory === 'all') {
-                    categoryName = 'All Fonts';
-                } else if (currentCategory === 'favorites') {
-                    categoryName = 'Favorites';
-                } else {
-                    // Capitalize first letter for other categories
-                    categoryName = currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
-                }
-                
+                // Only add prefix if search box is empty
                 if (fontSearch.value === '') {
-                    // Set search value with descriptive prefix
-                    // Special case for CAPS category
+                    // Get category name from global variable
+                    let categoryName = '';
                     if (currentCategory === 'caps') {
-                        fontSearch.value = 'Search CAPS in All Fonts Category please...';
+                        categoryName = 'CAPS Fonts';
+                    } else if (currentCategory === 'all') {
+                        categoryName = 'All Fonts';
+                    } else if (currentCategory === 'favorites') {
+                        categoryName = 'Favorites';
                     } else {
-                        fontSearch.value = 'Searching in ' + categoryName + ': ';
+                        // Capitalize first letter for other categories
+                        categoryName = currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
                     }
+                    
+                    // Set search value with descriptive prefix (consistent for all categories)
+                    fontSearch.value = 'Search ' + categoryName + ': ';
                     // Position cursor at the end
                     fontSearch.selectionStart = fontSearch.selectionEnd = fontSearch.value.length;
                     
                     // Show the clear button since we now have content
-                    const clearSearchBtn = document.getElementById('clear-search');
                     if (clearSearchBtn) {
                         clearSearchBtn.style.display = 'block';
                     }
@@ -275,30 +296,37 @@
 
             // Reset search box when clicking outside (blur event)
             fontSearch.addEventListener('blur', () => {
-                // Only reset if the search box contains only the prefix (no user typing)
-                const searchValue = fontSearch.value;
-                const expectedPrefix = 'Searching in ';
+                // Always reset search box to empty when clicking outside
+                // This provides the cleanest UX by completely clearing the field
+                fontSearch.value = '';
                 
-                if (searchValue.startsWith(expectedPrefix)) {
-                    const prefixEnd = expectedPrefix.length;
-                    const categoryPart = searchValue.substring(prefixEnd);
+                // Hide clear button
+                if (clearSearchBtn) {
+                    clearSearchBtn.style.display = 'none';
+                }
+            });
+            
+            // Add Escape key support for search reset
+            fontSearch.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' || event.keyCode === 27) {
+                    // Reset search on Escape key
+                    fontSearch.value = '';
                     
-                    // Check if it's just the prefix with category name and colon
-                    if (categoryPart.endsWith(': ') && !categoryPart.includes(': ', prefixEnd)) {
-                        // Reset to empty (placeholder will show)
-                        fontSearch.value = '';
-                        
-                        // Hide clear button
-                        const clearSearchBtn = document.getElementById('clear-search');
-                        if (clearSearchBtn) {
-                            clearSearchBtn.style.display = 'none';
-                        }
+                    // Hide clear button
+                    if (clearSearchBtn) {
+                        clearSearchBtn.style.display = 'none';
                     }
+                    
+                    // Trigger search to show all fonts
+                    fontSearch.dispatchEvent(new Event('input'));
+                    
+                    // Prevent default Escape behavior
+                    event.preventDefault();
+                    event.stopPropagation();
                 }
             });
             
             // Clear search button functionality
-            const clearSearchBtn = document.getElementById('clear-search');
             if (clearSearchBtn) {
                 clearSearchBtn.addEventListener('click', () => {
                     fontSearch.value = '';
@@ -368,7 +396,6 @@
                     fontSearch.value = '';
                     
                     // Hide clear button since search is now empty
-                    const clearSearchBtn = document.getElementById('clear-search');
                     if (clearSearchBtn) {
                         clearSearchBtn.style.display = 'none';
                     }
@@ -422,6 +449,39 @@
             
             // Save theme preference to localStorage
             localStorage.setItem('themePreference', isDarkTheme ? 'dark' : 'light');
+            
+            // Update background letters opacity for dark theme
+            updateBackgroundLettersForTheme();
+        }
+        
+        function updateBackgroundLettersForTheme() {
+            const isDark = document.body.classList.contains('dark-theme');
+            const cornerLetters = document.querySelectorAll('.corner-letter');
+            const patternLetters = document.querySelectorAll('.pattern-letter');
+            
+            if (isDark) {
+                // Dark theme - significantly reduce opacity for better readability
+                cornerLetters.forEach(letter => {
+                    letter.style.opacity = '0.3';
+                    letter.style.color = 'rgba(150, 150, 150, 0.2)';
+                });
+                
+                patternLetters.forEach(letter => {
+                    letter.style.opacity = '0.2';
+                    letter.style.color = 'rgba(180, 180, 180, 0.15)';
+                });
+            } else {
+                // Light theme - restore original opacity
+                cornerLetters.forEach(letter => {
+                    letter.style.opacity = '0.6';
+                    letter.style.color = 'rgba(220, 220, 220, 0.6)';
+                });
+                
+                patternLetters.forEach(letter => {
+                    letter.style.opacity = Math.random() * 0.2 + 0.1;
+                    letter.style.color = 'rgba(200, 200, 200, 0.6)';
+                });
+            }
         }
 
         function loadThemePreference() {
@@ -430,6 +490,9 @@
                 isDarkTheme = true;
                 document.body.classList.add('dark-theme');
                 themeToggleBtn.textContent = '☀️';
+                
+                // Update background letters for dark theme
+                updateBackgroundLettersForTheme();
             }
         }
 
@@ -440,14 +503,17 @@
                 previewTextElement.dataset.currentFont = fontName;
                 previewTextElement.dataset.currentFontCategory = fontCategory;
                 
+                // Use appropriate size array based on font category
+                currentSizeArray = previewFontSizes[fontCategory] || previewFontSizes['default'];
+                
                 // Update the preview text styling to show it's using the selected font
                 previewTextElement.style.fontFamily = `'${fontName}', ${getFallbackFont(fontCategory)}`;
-                previewTextElement.style.fontSize = fontSizeSteps[currentSizeIndex] + 'px';
+                previewTextElement.style.fontSize = currentSizeArray[0] + 'px';
                 previewTextElement.style.fontWeight = 'normal';
                 
-                // Reset size tracking to default (16px)
+                // Reset size tracking to default
                 currentSizeIndex = 0;
-                currentFontSize = fontSizeSteps[currentSizeIndex];
+                currentFontSize = currentSizeArray[currentSizeIndex];
                 
                 // Add a visual indicator
                 previewTextElement.classList.add('using-card-font');
@@ -520,9 +586,10 @@
                 delete previewTextElement.dataset.currentFont;
                 delete previewTextElement.dataset.currentFontCategory;
                 
-                // Reset font size tracking to default (16px)
+                // Reset font size tracking to default
                 currentFontSize = 16;
                 currentSizeIndex = 0;
+                currentSizeArray = previewFontSizes['default']; // Reset to default size array
                 
                 // Show reset notification
                 showFontResetNotification();
@@ -563,20 +630,35 @@
         }
 
         // Font size management for preview text
+        // Different size ranges for different font categories (same as card text)
+        const previewFontSizes = {
+            'cursive': [20, 22, 24, 28, 32], // Cursive fonts: start at 20px, go up to 32px
+            'default': [16, 18, 20, 22, 24, 28, 32] // Other fonts: standard sizes up to 32px
+        };
         let currentFontSize = 16; // Default size when using card font
-        const fontSizeSteps = [16, 18, 20, 22, 24]; // Available font sizes (increase by 2px)
-        let currentSizeIndex = 0; // Current index in fontSizeSteps
+        let currentSizeArray = previewFontSizes['default']; // Default size array
+        let currentSizeIndex = 0; // Current index in size array
         
         // Font size management for card text
-        const cardFontSizes = [16, 18, 20, 22]; // Card text sizes (max 22px)
+        // Different size ranges for different font categories
+        const cardFontSizes = {
+            'cursive': [20, 22, 24, 28, 32], // Cursive fonts: start at 20px, go up to 32px
+            'default': [16, 18, 20, 22, 24, 28, 32] // Other fonts: standard sizes up to 32px
+        };
         const cardSizeMap = new Map(); // Track individual card sizes
 
         function increasePreviewFontSize() {
             const previewTextElement = document.getElementById('preview-text');
             if (previewTextElement && previewTextElement.classList.contains('using-card-font')) {
+                // Get the current font category
+                const fontCategory = previewTextElement.dataset.currentFontCategory || 'default';
+                
+                // Use appropriate size array based on font category
+                currentSizeArray = previewFontSizes[fontCategory] || previewFontSizes['default'];
+                
                 // Cycle through font sizes
-                currentSizeIndex = (currentSizeIndex + 1) % fontSizeSteps.length;
-                currentFontSize = fontSizeSteps[currentSizeIndex];
+                currentSizeIndex = (currentSizeIndex + 1) % currentSizeArray.length;
+                currentFontSize = currentSizeArray[currentSizeIndex];
                 
                 previewTextElement.style.fontSize = currentFontSize + 'px';
                 
@@ -604,17 +686,24 @@
         function increaseCardTextSize(previewId) {
             const previewElement = document.getElementById(previewId);
             if (previewElement) {
-                // Get current size index for this card, default to 0 (16px)
+                // Get the font card to determine category
+                const fontCard = previewElement.closest('.font-card');
+                const fontCategory = fontCard ? fontCard.dataset.fontCategory : 'default';
+                
+                // Use appropriate size array based on font category
+                const sizeArray = cardFontSizes[fontCategory] || cardFontSizes['default'];
+                
+                // Get current size index for this card, default to 0
                 let currentIndex = cardSizeMap.get(previewId) || 0;
                 
                 // Increase size index, cycle back to 0 if at the end
-                currentIndex = (currentIndex + 1) % cardFontSizes.length;
+                currentIndex = (currentIndex + 1) % sizeArray.length;
                 
                 // Update the card size map
                 cardSizeMap.set(previewId, currentIndex);
                 
                 // Apply the new font size
-                const newSize = cardFontSizes[currentIndex];
+                const newSize = sizeArray[currentIndex];
                 previewElement.style.fontSize = newSize + 'px';
                 
                 // Show notification
@@ -725,19 +814,10 @@
             const fullSearchValue = fontSearch.value;
             let searchTerm = fullSearchValue.toLowerCase();
             
-            // Handle different prefix formats
-            if (currentCategory === 'caps') {
-                // CAPS prefix: "Search CAPS in All Fonts Category please..."
-                const capsPrefix = 'search caps in all fonts category please...';
-                if (fullSearchValue.toLowerCase().startsWith(capsPrefix)) {
-                    searchTerm = fullSearchValue.substring(capsPrefix.length).trim().toLowerCase();
-                }
-            } else {
-                // Other categories: "Searching in [Category]: "
-                const colonIndex = fullSearchValue.indexOf(':');
-                if (colonIndex !== -1) {
-                    searchTerm = fullSearchValue.substring(colonIndex + 1).trim().toLowerCase();
-                }
+            // Consistent prefix handling for all categories: "Search [Category]: "
+            const colonIndex = fullSearchValue.indexOf(':');
+            if (colonIndex !== -1) {
+                searchTerm = fullSearchValue.substring(colonIndex + 1).trim().toLowerCase();
             }
 
             // Show loading state
@@ -789,6 +869,29 @@
 
                 return true;
             });
+
+            // Sort filtered fonts by relevance (exact matches first, then partial matches)
+            if (searchTerm) {
+                filteredFonts.sort((a, b) => {
+                    const aName = a.name.toLowerCase();
+                    const bName = b.name.toLowerCase();
+                    
+                    // Calculate relevance scores
+                    const aStartsWith = aName.startsWith(searchTerm) ? 2 : 0;
+                    const aContains = aName.includes(searchTerm) ? 1 : 0;
+                    const aScore = aStartsWith + aContains;
+                    
+                    const bStartsWith = bName.startsWith(searchTerm) ? 2 : 0;
+                    const bContains = bName.includes(searchTerm) ? 1 : 0;
+                    const bScore = bStartsWith + bContains;
+                    
+                    // Sort by score (descending) and then by name (ascending)
+                    if (aScore !== bScore) {
+                        return bScore - aScore; // Higher score first
+                    }
+                    return aName.localeCompare(bName); // Alphabetical for same score
+                });
+            }
 
             // Update font counter with proper format: "Category: X fonts"
             const counterElement = document.getElementById('font-counter');
@@ -1442,10 +1545,19 @@ ${optimizedRules}
             localStorage.setItem('favoriteFonts', JSON.stringify(favoritesArray));
         }
         
-        // Start the app
-        init();
-        loadFavorites();
-        loadThemePreference();
+        // Start the app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            init();
+            loadFavorites();
+            loadThemePreference();
+        });
+        
+        // Also call it immediately in case DOM is already loaded
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            init();
+            loadFavorites();
+            loadThemePreference();
+        }
         
         // Force show favorites button for testing (remove this later)
         setTimeout(() => {
