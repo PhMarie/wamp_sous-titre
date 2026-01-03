@@ -756,43 +756,10 @@ body:not(.dark-theme) .container h1 {
     align-items: center;
     height: 48px; /* Adjusted to match new font size */
     /* Match font number height */
-}
-
-/* Adjust CAP category titles to be 1.5x longer (18px) */
-.font-card[data-font-category="caps"] .font-name {
-    font-size: 18px !important; /* 1.5x longer: 12px * 1.5 = 18px */
-    white-space: nowrap !important; /* Prevent text wrapping */
-    overflow: hidden !important; /* Hide overflow if necessary */
-    text-overflow: ellipsis !important; /* Add ellipsis if text overflows */
-    max-width: 100% !important; /* Ensure it doesn't exceed container width */
-    line-height: 1.2 !important; /* Consistent line height */
-    height: auto !important; /* Allow natural height */
-}
-
-/* Additional backup rule with even higher specificity */
-body .font-card[data-font-category="caps"] .font-name {
-    font-size: 18px !important;
-}
-
-/* Target the specific container structure */
-.fonts-grid .font-card[data-font-category="caps"] .font-name {
-    font-size: 18px !important;
-}
-
-/* Target CAP fonts with specific class - highest priority */
-.cap-font-name {
-    font-size: 18px !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    max-width: 100% !important;
-    line-height: 1.2 !important;
-    height: auto !important;
-}
-
-/* Target specific problematic CAP fonts by name - slightly smaller */
-.cap-font-name:where(:contains("Diplomata SC"), :contains("Holtwood One SC"), :contains("IM Fell Double Pica SC"), :contains("IM Fell French Canon SC"), :contains("IM Fell Great Primer SC"), :contains("Playfair Display SC")) {
-    font-size: 16px !important; /* 18px - 2px for extra-long names */
+    max-width: 85%; /* Limit width to 85% of container */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow if necessary */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
 }
 
 .font-category {

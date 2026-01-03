@@ -322,6 +322,8 @@
         function setupEventListeners() {
             // Search functionality
             fontSearch.addEventListener('input', () => {
+                // RESET TO PAGE 1 WHEN SEARCHING
+                currentPage = 1;
                 displayFonts();
                 // Show/hide clear button based on search input
                 if (clearSearchBtn) {
@@ -2475,7 +2477,7 @@ ${cssClasses}
                 or experimental features as it serves as a development and testing platform. 
             </p>
             <p class="last-updated">
-                Last updated: January 3, 2026
+                © sous-titre.com | Last updated: January 3, 2026
             </p>
             <div class="footer-links">
                 <!-- Footer links removed as requested -->
