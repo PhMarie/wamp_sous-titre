@@ -72,6 +72,10 @@
                         title="Type to search, press ESC to clear, click outside to reset">
                     <button id="clear-search" title="Clear search (or press ESC)">×</button>
                 </div>
+                <div class="search-controls">
+                    <button id="global-card-size-btn" class="category-btn" title="Increase all card text sizes">16px</button>
+                    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">🌓</button>
+                </div>
             </div>
 
             <div class="font-categories">
@@ -83,8 +87,6 @@
                 <button class="category-btn" data-category="monospace">Monospace</button>
                 <button class="category-btn" data-category="caps">CAPS</button>
                 <button class="category-btn" data-category="favorites">❤️ Favs</button>
-                <button id="global-card-size-btn" class="category-btn" title="Increase all card text sizes">16px</button>
-                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">🌓</button>
             </div>
 
             <div class="preview-text-input">
@@ -117,9 +119,22 @@
         let currentCategory = 'all';
         let previewText = "Gloire à l'été brûlant, à l'hiver glacé : voilà deux saisons bien différentes ! Être 123 Éléphants, ou 456 Ève ?";
         let currentPage = 1;
-        const fontsPerPage = 21; // Number of fonts to display per page (7x3 grid = 21)
+        // Dynamic fonts per page based on screen size
+        let fontsPerPage = getFontsPerPage();
         const favorites = new Set(); // Store favorite fonts
         let isDarkTheme = false; // Track dark theme state
+
+        // Function to determine fonts per page based on screen width
+        function getFontsPerPage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth >= 1200) {
+                return 21; // Large desktop: 3 columns, 21 fonts per page
+            } else if (screenWidth >= 769) {
+                return 18; // Medium screen: 2-3 columns, 18 fonts per page
+            } else {
+                return 15; // Mobile: 1 column, 15 fonts per page
+            }
+        }
 
         // DOM elements (will be initialized when DOM is ready)
         let fontsContainer, themeToggleBtn, fontSearch, previewTextInput, categoryButtons, clearSearchBtn;
@@ -1129,6 +1144,34 @@
                     return false;
                 }
 
+                // Exclude CAPS fonts from non-CAPS categories to maintain visual consistency
+                if (currentCategory !== 'all' && currentCategory !== 'caps' && currentCategory !== 'favorites') {
+                    // Check if font is a CAPS font using the same logic as the caps category
+                    const trulyAllCaps = [
+                        'Aboreto', 'Alegreya SC', 'Alegreya Sans SC', 'Almendra SC',
+                        'Amatic SC', 'Bowlby One SC', 'Bruno Ace SC',
+                        'Carrois Gothic SC', 'Cormorant SC', 'Diplomata SC',
+                        'Encode Sans SC', 'Graduate', 'Holtwood One SC',
+                        'IM Fell DW Pica SC', 'IM Fell Double Pica SC', 'IM Fell English SC',
+                        'IM Fell French Canon SC', 'IM Fell Great Primer SC', 'Marcellus SC',
+                        'Mate SC', 'Monoton', 'Overlock SC', 'Patrick Hand SC', 'Playfair Display SC',
+                        'Six Caps', 'Spectral SC', 'Shojumaru', 'Vollkorn SC', 'Ysabeau SC'
+                    ];
+
+                    const hasSCorCaps = /\b(SC|Caps)\b/i.test(font.name);
+                    const scExceptions = [
+                        'Noto Sans SC', 'Noto Serif SC',
+                        'Macondo Swash Caps', 'Oleo Script Swash Caps',
+                        'Bilbo Swash Caps', 'Delius Swash Caps', 'Elsie Swash Caps'
+                    ];
+
+                    const isSCFont = hasSCorCaps && !scExceptions.includes(font.name);
+
+                    if (trulyAllCaps.includes(font.name) || isSCFont) {
+                        return false; // Exclude CAPS fonts from non-CAPS categories
+                    }
+                }
+
                 // Filter by search term
                 if (searchTerm && !font.name.toLowerCase().includes(searchTerm)) {
                     return false;
@@ -1198,7 +1241,17 @@
             const paginatedFonts = filteredFonts.slice(startIndex, endIndex);
 
             // Generate font cards with numbering
-            fontsContainer.innerHTML = paginatedFonts.map((font, index) => createFontCard(font, startIndex + index + 1)).join('');
+            let fontCardsHTML = paginatedFonts.map((font, index) => createFontCard(font, startIndex + index + 1)).join('');
+
+            // Add special favorites summary card if in favorites category and has at least 2 favorites
+            if (currentCategory === 'favorites' && favorites.size >= 2) {
+                // Only show the summary card on the first page
+                if (currentPage === 1) {
+                    fontCardsHTML = createFavoritesSummaryCard(favorites) + fontCardsHTML;
+                }
+            }
+
+            fontsContainer.innerHTML = fontCardsHTML;
 
             // Add pagination controls at both top and bottom
             addPaginationControls(filteredFonts.length, totalPages, 'top');
@@ -1250,6 +1303,10 @@
                 if (currentPage > 1) {
                     currentPage--;
                     displayFonts();
+                    // Scroll to top after page change with small delay
+                    setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 100);
                 }
             });
             paginationContainer.appendChild(prevButton);
@@ -1270,6 +1327,10 @@
                 if (currentPage < totalPages) {
                     currentPage++;
                     displayFonts();
+                    // Scroll to top after page change with small delay
+                    setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 100);
                 }
             });
             paginationContainer.appendChild(nextButton);
@@ -1283,6 +1344,30 @@
             } else {
                 fontsContainer.parentNode.insertBefore(paginationContainer, fontsContainer.nextSibling);
             }
+        }
+
+        // Create special favorites summary card
+        function createFavoritesSummaryCard(favoriteFonts) {
+            const favoriteArray = Array.from(favoriteFonts).sort((a, b) => {
+                return a.localeCompare(b); // Tri alphabétique
+            });
+            const favoriteNames = favoriteArray.map(fontName => {
+                return fontName.length > 20 ? fontName.substring(0, 17) + '...' : fontName;
+            }).join(', ');
+
+            return `
+                <div class="font-card favorites-summary-card">
+                    <div class="font-name" style="font-family: inherit; color: inherit;">
+                        ❤️ ${favoriteFonts.size} Favorites
+                    </div>
+                    <div class="favorites-list-simple">
+                        ${favoriteNames}
+                    </div>
+                    <button class="btn btn-primary" onclick="copyAllFavoritesCSS(); event.stopPropagation();" style="margin-top: 15px;">
+                        Copy All Favs CSS
+                    </button>
+                </div>
+            `;
         }
 
         function createFontCard(font, index) {
@@ -2071,7 +2156,7 @@ async function detectAndShowFontVariants() {
                         switch(weight) {
                             case 100: weightNames.push('Thin (100)'); break;
                             case 200: weightNames.push('Extra Light (200)'); break;
-                            case 300: weightNames.push('Light (303)'); break;
+                            case 300: weightNames.push('Light (300)'); break;
                             case 400: weightNames.push('Regular (400)'); break;
                             case 500: weightNames.push('Medium (500)'); break;
                             case 600: weightNames.push('SemiBold (600)'); break;
@@ -2184,8 +2269,10 @@ async function detectAndShowFontVariants() {
         // Also call it immediately in case DOM is already loaded
         if (document.readyState === 'complete' || document.readyState === 'interactive') {
             init();
+            loadAndCacheFontData();
             loadFavorites();
             loadThemePreference();
+            enhanceTooltips();
         }
 
         // Force show favorites button for testing (remove this later)
@@ -2195,6 +2282,187 @@ async function detectAndShowFontVariants() {
                 favoritesBtn.style.display = 'inline-block';
             }
         }, 100);
+
+        // Handle copy all favorites CSS button click
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('copy-all-favorites-btn')) {
+                copyAllFavoritesCSS();
+            }
+        });
+
+        // Function to copy all favorites CSS to clipboard
+        function copyAllFavoritesCSS() {
+            if (favorites.size === 0) {
+                alert('No favorites to copy!');
+                return;
+            }
+
+            // Get all favorite fonts from the set
+            const favoriteFontNames = Array.from(favorites).sort(); // Sort alphabetically
+            
+            // Find the full font objects to get their CSS
+            const favoriteFonts = allFonts.filter(font => favoriteFontNames.includes(font.name));
+            
+            if (favoriteFonts.length === 0) {
+                alert('No favorite fonts found!');
+                return;
+            }
+
+            // Generate complete CSS for all favorite fonts with variables and classes
+            let completeCSS = `/* Google Fonts Showcase Favs Collection */
+/* Generated: ${favoriteFonts.length} favorite fonts */
+`;
+
+            // Generate CSS for each font using local data
+            favoriteFonts.forEach(font => {
+                const fontNameKebab = font.name.toLowerCase().replace(/ /g, '-');
+                const fontNameUrl = font.name.replace(/ /g, '+');
+                
+                // Get all available weights from variants
+                const availableWeights = new Set([400]); // Default to 400
+                const hasItalic = false;
+                
+                // Check variants to find all available weights
+                if (font.variants && font.variants.normal) {
+                    Object.keys(font.variants.normal).forEach(weight => {
+                        availableWeights.add(parseInt(weight));
+                    });
+                }
+                
+                if (font.variants && font.variants.italic) {
+                    Object.keys(font.variants.italic).forEach(weight => {
+                        availableWeights.add(parseInt(weight));
+                    });
+                }
+                
+                // Generate @font-face rules for each available weight
+                let fontFaceRules = '';
+                const sortedWeights = Array.from(availableWeights).sort((a, b) => a - b);
+                
+                sortedWeights.forEach(weight => {
+                    // Get WOFF2 URL for this weight
+                    const weightVariant = font.variants?.normal?.[weight];
+                    const italicVariant = font.variants?.italic?.[weight];
+                    
+                    if (weightVariant) {
+                        const woff2Url = weightVariant.url?.woff2;
+                        if (woff2Url) {
+                            fontFaceRules += `
+@font-face {
+    font-family: '${font.name}';
+    font-style: normal;
+    font-weight: ${weight};
+    font-display: swap;
+    src: url(${woff2Url}) format('woff2');
+}`;
+                        }
+                    }
+                    
+                    if (italicVariant) {
+                        const woff2Url = italicVariant.url?.woff2;
+                        if (woff2Url) {
+                            fontFaceRules += `
+@font-face {
+    font-family: '${font.name}';
+    font-style: italic;
+    font-weight: ${weight};
+    font-display: swap;
+    src: url(${woff2Url}) format('woff2');
+}`;
+                        }
+                    }
+                });
+                
+                // Generate CSS classes for all weights
+                let cssClasses = '';
+                const weightNames = {
+                    100: 'thin',
+                    200: 'extra-light',
+                    300: 'light',
+                    400: 'regular',
+                    500: 'medium',
+                    600: 'semibold',
+                    700: 'bold',
+                    800: 'extra-bold',
+                    900: 'black'
+                };
+                
+                sortedWeights.forEach(weight => {
+                    const weightName = weightNames[weight] || `weight-${weight}`;
+                    
+                    // Normal class
+                    cssClasses += `
+.${fontNameKebab}-${weightName} {
+    font-family: var(--font-${fontNameKebab});
+    font-weight: ${weight};
+}`;
+                    
+                    // Italic class if italic variant exists
+                    if (font.variants?.italic?.[weight]) {
+                        cssClasses += `
+.${fontNameKebab}-${weightName}-italic {
+    font-family: var(--font-${fontNameKebab});
+    font-weight: ${weight};
+    font-style: italic;
+}`;
+                    }
+                });
+                
+                // Add complete CSS for this font
+                completeCSS += `
+/* ${font.name} - ${font.category} */
+/* https://fonts.google.com/specimen/${fontNameUrl} */
+
+${fontFaceRules}
+
+/* CSS Variables */
+:root {
+    --font-${fontNameKebab}: "${font.name}", ${font.category};
+}
+
+/* CSS Classes */
+${cssClasses}
+`;
+            });
+
+            // Copy complete CSS to clipboard
+            navigator.clipboard.writeText(completeCSS).then(() => {
+                // Show success notification
+                const notification = document.createElement('div');
+                notification.className = 'font-selection-notification';
+                notification.textContent = `✅ Copied complete CSS for ${favoriteFonts.length} favorite fonts!`;
+                document.body.appendChild(notification);
+                
+                // Animate and remove notification
+                setTimeout(() => {
+                    notification.style.opacity = '1';
+                    notification.style.transform = 'translateY(0)';
+                }, 10);
+                
+                setTimeout(() => {
+                    notification.style.opacity = '0';
+                    notification.style.transform = 'translateY(20px)';
+                    setTimeout(() => notification.remove(), 300);
+                }, 2000);
+                
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy CSS to clipboard. Please try again.');
+            });
+        }
+
+        // Update fonts per page when window is resized
+        window.addEventListener('resize', () => {
+            const newFontsPerPage = getFontsPerPage();
+            if (newFontsPerPage !== fontsPerPage) {
+                fontsPerPage = newFontsPerPage;
+                // Reset to page 1 when changing page size to avoid empty pages
+                currentPage = 1;
+                if (allFonts.length > 0) {
+                    displayFonts();
+                }
+            }
+        });
     </script>
     
     <!-- Footer Disclaimer -->
