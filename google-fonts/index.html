@@ -482,6 +482,11 @@
                     
                     // Display fonts for selected category
                     displayFonts();
+                    
+                    // Scroll to top after changing category with small delay
+                    setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 100);
                 });
             });
 
