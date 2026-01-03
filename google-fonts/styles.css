@@ -54,10 +54,14 @@ body.dark-theme {
     color: #8ab4f8; /* Lighter blue for dark theme */
 }
 
-.dark-theme .font-category {
+.dark-theme .font-category,
+.dark-theme .weights-badge,
+.dark-theme .italic-badge {
     background-color: #4a5a6a;
     color: #8ab4f8;
 }
+
+
 
 .dark-theme .font-preview {
     color: #e0e0e0;
@@ -101,6 +105,58 @@ body.dark-theme {
     border-color: #5a7bc4;
 }
 
+/* Global card size button - matches category buttons but shows it's interactive */
+#global-card-size-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: #e8f0fe; /* Match font category tag color */
+    color: #4285F4; /* Match font category tag text color */
+}
+
+#global-card-size-btn::after {
+    content: '+';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+#global-card-size-btn:hover {
+    background-color: #d9e8fe; /* Slightly lighter blue on hover */
+    border-color: #4285F4;
+}
+
+#global-card-size-btn:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+#global-card-size-btn.active {
+    transform: scale(1.05);
+    background-color: #cce0fe; /* Slightly darker light blue for active state */
+    border-color: #4285F4;
+}
+
+.dark-theme #global-card-size-btn {
+    background-color: #2a2a2a; /* Slightly darker grey than other categories (#333) */
+    color: white; /* Keep text white as requested */
+    border-color: #4285F4; /* Blue border as requested */
+}
+
+.dark-theme #global-card-size-btn:hover {
+    background-color: #3a3a3a; /* Slightly lighter grey on hover */
+    border-color: #5a9cf8; /* Lighter blue border on hover */
+}
+
+.dark-theme #global-card-size-btn.active {
+    background-color: #4a4a4a; /* Even lighter grey for active state */
+    color: white;
+    border-color: #72b3ff; /* Even lighter blue border when active */
+}
+
 .dark-theme .pagination button {
     background-color: #333;
     border-color: #555;
@@ -116,11 +172,12 @@ body.dark-theme {
     background-color: #2a3a2a;
 }
 
-/* Theme toggle button */
+/* Theme toggle button - dark background to indicate dark mode functionality */
 .theme-toggle-btn {
     padding: 10px 20px;
-    background-color: #fff;
-    border: 2px solid #ddd;
+    background-color: #333;
+    color: white;
+    border: 2px solid #555;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s;
@@ -129,21 +186,21 @@ body.dark-theme {
 }
 
 .theme-toggle-btn:hover {
-    background-color: #4285F4;
+    background-color: #5a7bc4;
     color: white;
-    border-color: #4285F4;
+    border-color: #5a7bc4;
 }
 
 .dark-theme .theme-toggle-btn {
-    background-color: #333;
-    border-color: #555;
+    background-color: #444;
+    border-color: #666;
     color: #f5f5f5;
 }
 
 .dark-theme .theme-toggle-btn:hover {
-    background-color: #5a7bc4;
+    background-color: #6fa8dc;
     color: white;
-    border-color: #5a7bc4;
+    border-color: #6fa8dc;
 }
 
 /* Preview text using card font */
@@ -365,19 +422,53 @@ header {
 }
 
 h1 {
-    color: #4285F4;
+    background: linear-gradient(90deg, #4285F4 0%, #6A5ACD 25%, #9370DB 50%, #BA55D3 75%, #9932CC 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     margin-bottom: 10px;
     font-size: 28px;
+    display: inline-block;
 }
 
 @media (max-width: 768px) {
     h1 {
+        background: linear-gradient(90deg, #4285F4 0%, #6A5ACD 25%, #9370DB 50%, #BA55D3 75%, #9932CC 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         font-size: 24px;
+        display: inline-block;
     }
 }
 
 @media (max-width: 552px) {
     h1 {
+        background: linear-gradient(90deg, #4285F4 0%, #6A5ACD 25%, #9370DB 50%, #BA55D3 75%, #9932CC 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 20px;
+        display: inline-block;
+    }
+}
+
+/* Dark theme gradient variant - blue to violet for consistency */
+.dark-theme h1 {
+    background: linear-gradient(90deg, #8ab4f8 0%, #9370DB 25%, #BA55D3 50%, #DDA0DD 75%, #C71585 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 768px) {
+    .dark-theme h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 552px) {
+    .dark-theme h1 {
         font-size: 20px;
     }
 }
@@ -533,6 +624,91 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* Font variant badges - three separate tags */
+.font-variants {
+    display: inline-flex;
+    gap: 6px;
+    margin-left: 8px;
+    height: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.variant-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    color: #555;
+    border: 1px solid #e0e0e0;
+}
+
+.variant-badge.italic {
+    font-style: italic;
+    border-color: #ccc;
+}
+
+.variant-badge {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #e8f0fe;
+    color: #666;
+    opacity: 0.7;
+    transition: all 0.2s;
+    cursor: help;
+    position: relative;
+}
+
+.variant-badge:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+}
+
+/* Remove CSS pseudo-element tooltips - use browser native tooltips instead */
+.variant-badge {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #e8f0fe;
+    color: #666;
+    opacity: 0.7;
+    transition: all 0.2s;
+    cursor: help;
+    position: relative;
+}
+
+.variant-badge:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+}
+
+.variant-badge.active {
+    opacity: 1;
+    background-color: #e0e0e0;
+}
+
+.italic-badge {
+    font-style: italic;
+}
+
+.weight-badge {
+    font-weight: bold;
+}
+
 .font-name {
     font-size: 32px; /* Doubled from 16px for better visibility */
     font-weight: 600;
@@ -545,6 +721,43 @@ h1 {
     /* Match font number height */
 }
 
+/* Adjust CAP category titles to be 1.5x longer (18px) */
+.font-card[data-font-category="caps"] .font-name {
+    font-size: 18px !important; /* 1.5x longer: 12px * 1.5 = 18px */
+    white-space: nowrap !important; /* Prevent text wrapping */
+    overflow: hidden !important; /* Hide overflow if necessary */
+    text-overflow: ellipsis !important; /* Add ellipsis if text overflows */
+    max-width: 100% !important; /* Ensure it doesn't exceed container width */
+    line-height: 1.2 !important; /* Consistent line height */
+    height: auto !important; /* Allow natural height */
+}
+
+/* Additional backup rule with even higher specificity */
+body .font-card[data-font-category="caps"] .font-name {
+    font-size: 18px !important;
+}
+
+/* Target the specific container structure */
+.fonts-grid .font-card[data-font-category="caps"] .font-name {
+    font-size: 18px !important;
+}
+
+/* Target CAP fonts with specific class - highest priority */
+.cap-font-name {
+    font-size: 18px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+}
+
+/* Target specific problematic CAP fonts by name - slightly smaller */
+.cap-font-name:where(:contains("Diplomata SC"), :contains("Holtwood One SC"), :contains("IM Fell Double Pica SC"), :contains("IM Fell French Canon SC"), :contains("IM Fell Great Primer SC"), :contains("Playfair Display SC")) {
+    font-size: 16px !important; /* 18px - 2px for extra-long names */
+}
+
 .font-category {
     display: inline-block;
     padding: 4px 12px;
@@ -554,8 +767,71 @@ h1 {
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 15px;
+    /* Prevent overriding */
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
+/* Protective rules to prevent card tag issues */
+body .font-category,
+.font-card .font-category {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+/* UNIFIED TAG SYSTEM - All tags have same styling as category tag */
+
+/* Category Tag - Original */
+.font-category {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #e8f0fe;
+    color: #4285F4;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 8px;
+    margin-bottom: 0;
+    /* Prevent overriding */
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Weights Tag - Same style as category tag */
+.weights-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #e8f0fe;
+    color: #4285F4;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 4px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+/* Italic Tag - Same style as category tag */
+.italic-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #e8f0fe;
+    color: #4285F4;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 4px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+/* Caps Badge - Different color for CAPS (green) */
 .caps-badge {
     display: inline-flex;
     align-items: center;
@@ -569,6 +845,24 @@ h1 {
     border: 1px solid #2E7D32;
     height: 18px;
     vertical-align: middle;
+}
+
+/* Container for ALL tags - align them horizontally */
+.font-category-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;  /* Reduced gap for tighter spacing */
+    margin-bottom: 15px;
+}
+
+/* Container for variant badges only */
+.font-variants {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;  /* Reduced gap for tighter spacing */
+    margin-bottom: 0;  /* Remove margin since it's inside category container */
 }
 
 .font-preview {
@@ -714,13 +1008,57 @@ h1 {
     padding: 0 20px;
 }
 
+/* Global card size control */
+.global-card-controls {
+    margin: 10px auto 20px;
+    max-width: 1200px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.global-card-controls button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.global-card-controls button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.global-card-controls button:active {
+    transform: translateY(0);
+}
+
+.global-card-controls button.active {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+.dark-theme .global-card-controls button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dark-theme .global-card-controls button:hover {
+    background-color: #45a049;
+}
+
 #preview-text {
     padding: 12px 60px 12px 20px; /* Increased right padding to prevent overlap with buttons */
     width: 100%;
     max-width: 100%;
     border: 2px solid #ddd;
     border-radius: 25px;
-    font-size: 16px;
     outline: none;
     box-sizing: border-box;
     background-color: white; /* White background for light mode */
@@ -867,4 +1205,84 @@ h1 {
 
 .demo-info strong {
     font-weight: bold;
+}
+
+/* Footer Disclaimer Styles */
+.footer-disclaimer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 1px solid #e9ecef;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.disclaimer-text {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.disclaimer-text strong {
+    color: #495057;
+    font-weight: 600;
+}
+
+.last-updated {
+    color: #868e96;
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Footer link styles removed - no longer needed */
+
+/* Dark Theme Footer Styles */
+.dark-theme .footer-disclaimer {
+    background-color: #2d2d2d;
+    border-top: 1px solid #444;
+}
+
+.dark-theme .disclaimer-text {
+    color: #adb5bd;
+}
+
+.dark-theme .disclaimer-text strong {
+    color: #e9ecef;
+}
+
+.dark-theme .last-updated {
+    color: #8d99ae;
+}
+
+/* Dark theme footer link styles removed - no longer needed */
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-disclaimer {
+        padding: 15px 0;
+        margin-top: 30px;
+    }
+    
+    .disclaimer-text {
+        font-size: 13px;
+    }
+    
+    .last-updated {
+        font-size: 12px;
+    }
 }

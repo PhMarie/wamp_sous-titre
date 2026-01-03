@@ -4,32 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Fonts Showcase</title>
-    
-    <!-- Favicon with different colors -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234285F4'/><text x='50' y='60' font-family='Arial, sans-serif' font-size='50' fill='white' text-anchor='middle' font-weight='bold'>G</text></svg>" type="image/svg+xml">
-    
+    <meta name="description"
+        content="Explore and preview 1000+ Google Fonts with live CSS generation. Browse by category, search fonts, and get ready-to-use @font-face CSS code.">
+
+    <!-- OpenGraph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Google Fonts Showcase - Browse & Preview 1000+ Fonts">
+    <meta property="og:description"
+        content="Explore and preview 1000+ Google Fonts with live CSS generation. Browse by category, search fonts, and get ready-to-use @font-face CSS code.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sous-titre.com/google-fonts">
+    <meta property="og:image" content="images/google-fonts-showcase-logo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Google Fonts Showcase Logo - Large G with emerging F letter">
+    <meta property="og:site_name" content="Google Fonts Showcase">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Google Fonts Showcase - Browse & Preview 1000+ Fonts">
+    <meta name="twitter:description"
+        content="Explore and preview 1000+ Google Fonts with live CSS generation. Browse by category, search fonts, and get ready-to-use @font-face CSS code.">
+    <meta name="twitter:image" content="images/google-fonts-logo.jpg">
+    <meta name="twitter:image:alt" content="Google Fonts Showcase Logo - Large G with emerging F letter">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <meta name="twitter:creator" content="@yourtwitterhandle">
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Google Fonts Showcase - Philippe Marie">
+    <meta name="keywords"
+        content="Google Fonts, web fonts, CSS fonts, font preview, @font-face, typography, web design, font generator">
+    <meta name="theme-color" content="#4285F4">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/google-fonts-showcase">
+
+    <title>Google Fonts Showcase - Browse & Preview 1000+ Web Fonts</title>
+
+    <!-- Gradient Favicon with Blue-Violet colors -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='gradient' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' stop-color='%234285F4' /><stop offset='50%' stop-color='%239370DB' /><stop offset='100%' stop-color='%239932CC' /></linearGradient></defs><path d='M25 20 C25 10 35 5 45 5 C55 5 65 10 65 20 C65 30 60 35 55 40 C50 45 45 50 40 50 C35 50 30 45 30 40 C30 35 35 30 35 20 C35 15 32 12 30 15 C28 18 25 20 25 25 C25 30 28 35 30 40 C32 45 35 50 40 55 C45 60 55 60 60 55 C65 50 70 45 70 35 C70 25 65 20 60 20 C55 20 50 25 50 30 C50 35 45 40 40 45 C35 50 30 55 30 65 C30 75 35 80 45 80 C55 80 65 75 65 65 C65 55 60 50 55 50 C50 50 45 55 45 65 C45 75 50 80 60 80 C70 80 75 75 75 65 C75 55 70 50 65 50 C60 50 55 55 55 65 C55 75 60 80 70 80 C80 80 85 75 85 65 C85 55 80 50 75 50 C70 50 65 55 65 65 C65 75 70 80 80 80 C90 80 95 75 95 65 C95 55 90 50 85 50 C80 50 75 55 75 65 C75 75 80 80 90 80 Z' fill='url(%23gradient)' /></svg>"
+        type="image/svg+xml">
+
     <!-- External CSS file -->
     <link rel="stylesheet" href="styles.css">
-    
 
-    
+
+
     </style>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>🎨 Google Fonts Showcase</h1>
-            <p class="subtitle">Browse and preview beautiful Google Fonts</p>
+            <h1 aria-label="Google Fonts Showcase with paint palette emoji">🎨 Google Fonts Showcase</h1>
+            <h2 class="subtitle" aria-label="Browse and preview beautiful Google Fonts">Browse and preview beautiful
+                Google Fonts</h2>
         </header>
 
         <div class="sticky-controls">
-            <div class="font-counter" id="font-counter"><span id="category-name">All Fonts</span>: <span id="category-count">0</span> fonts</div>
+            <div class="font-counter" id="font-counter"><span id="category-name">All Fonts</span>: <span
+                    id="category-count">0</span> fonts</div>
             <div class="search-container">
                 <div class="search-input-wrapper">
-                    <input type="text" id="font-search" placeholder="🔍 Search fonts by name..." 
-                           title="Type to search, press ESC to clear, click outside to reset">
+                    <input type="text" id="font-search" placeholder="🔍 Search fonts by name..."
+                        title="Type to search, press ESC to clear, click outside to reset">
                     <button id="clear-search" title="Clear search (or press ESC)">×</button>
                 </div>
             </div>
@@ -43,7 +83,8 @@
                 <button class="category-btn" data-category="monospace">Monospace</button>
                 <button class="category-btn" data-category="caps">CAPS</button>
                 <button class="category-btn" data-category="favorites">❤️ Favs</button>
-                <button class="theme-toggle-btn" id="theme-toggle">🌓</button>
+                <button id="global-card-size-btn" class="category-btn" title="Increase all card text sizes">16px</button>
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">🌓</button>
             </div>
 
             <div class="preview-text-input">
@@ -51,11 +92,15 @@
                     <input type="text" id="preview-text" placeholder="Enter text to preview..."
                         value="Gloire à l'été brûlant, à l'hiver glacé : voilà deux saisons bien différentes ! Être 123 Éléphants, ou 456 Ève ?">
                     <div class="preview-text-controls">
-                        <button class="preview-text-control-btn" id="increase-font-size" title="Increase font size">+</button>
-                        <button class="preview-text-control-btn" id="reset-preview-font" title="Reset font">×</button>
+                        <button class="preview-text-control-btn" id="increase-font-size" title="Increase font size"
+                            aria-label="Increase preview text font size">+</button>
+                        <button class="preview-text-control-btn" id="reset-preview-font" title="Reset font"
+                            aria-label="Reset preview text to default font">×</button>
                     </div>
                 </div>
             </div>
+            
+
         </div>
 
         <div id="pagination-top-container">
@@ -86,11 +131,11 @@
             const body = document.body;
             const patternContainer = document.createElement('div');
             patternContainer.className = 'background-letters';
-            
+
             // Add 4 large cursive characters in corners (mix of letters and numbers)
             const allCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             const cornerCharacters = [];
-            
+
             // Generate 4 random characters (ensure at least 2 are numbers)
             for (let i = 0; i < 4; i++) {
                 if (i < 2 || Math.random() < 0.5) {
@@ -103,14 +148,14 @@
                     cornerCharacters.push(letters[Math.floor(Math.random() * letters.length)]);
                 }
             }
-            
+
             const cornerPositions = [
-                {top: 5, left: 3, size: 200, font: 'cursive'},
-                {top: 8, right: 5, size: 250, font: 'cursive'},
-                {bottom: 15, left: 2, size: 220, font: 'cursive'},
-                {bottom: 10, right: 4, size: 180, font: 'cursive'}
+                { top: 5, left: 3, size: 200, font: 'cursive' },
+                { top: 8, right: 5, size: 250, font: 'cursive' },
+                { bottom: 15, left: 2, size: 220, font: 'cursive' },
+                { bottom: 10, right: 4, size: 180, font: 'cursive' }
             ];
-            
+
             cornerCharacters.forEach((char, index) => {
                 const cornerElement = document.createElement('div');
                 cornerElement.className = 'background-letter corner-letter';
@@ -123,7 +168,7 @@
                     'fantasy'
                 ];
                 cornerElement.style.fontFamily = elegantFonts[index];
-                
+
                 // Add some font variation with CSS properties
                 if (index === 0) {
                     cornerElement.style.fontStyle = 'italic';
@@ -139,7 +184,7 @@
                 cornerElement.style.right = cornerPositions[index].right + '%';
                 cornerElement.style.bottom = cornerPositions[index].bottom + '%';
                 cornerElement.style.transform = `rotate(${Math.random() * 15 - 7.5}deg)`;
-                
+
                 // Apply theme-appropriate styles from the start
                 const isDarkTheme = document.body.classList.contains('dark-theme');
                 if (isDarkTheme) {
@@ -151,17 +196,17 @@
                     cornerElement.style.opacity = '0.6';
                     cornerElement.style.color = 'rgba(220, 220, 220, 0.6)';
                 }
-                
+
                 patternContainer.appendChild(cornerElement);
             });
-            
+
             // Add pattern of smaller letters and numbers
             const patternCount = 30;
-            
+
             for (let i = 0; i < patternCount; i++) {
                 const charElement = document.createElement('div');
                 charElement.className = 'background-letter pattern-letter';
-                
+
                 // Random character
                 const randomChar = characters[Math.floor(Math.random() * characters.length)];
                 // Make numbers slightly more likely (60% letters, 40% numbers)
@@ -171,18 +216,18 @@
                 } else {
                     charElement.textContent = randomChar;
                 }
-                
+
                 // Random positioning (avoid corners)
                 const top = 15 + Math.random() * 70; // 15% to 85% from top
                 const left = 10 + Math.random() * 80; // 10% to 90% from left
                 const size = 30 + Math.random() * 80; // 30px to 110px
                 const rotation = Math.random() * 40 - 20; // -20° to +20°
-                
+
                 charElement.style.top = top + '%';
                 charElement.style.left = left + '%';
                 charElement.style.fontSize = size + 'px';
                 charElement.style.transform = `rotate(${rotation}deg)`;
-                
+
                 // Apply theme-appropriate styles from the start
                 const isDarkTheme = document.body.classList.contains('dark-theme');
                 if (isDarkTheme) {
@@ -194,17 +239,17 @@
                     charElement.style.opacity = Math.random() * 0.2 + 0.1; // 0.1 to 0.3 opacity
                     charElement.style.color = 'rgba(200, 200, 200, 0.6)';
                 }
-                
+
                 patternContainer.appendChild(charElement);
             }
-            
+
             body.insertBefore(patternContainer, body.firstChild);
             console.log('Beautiful background pattern added!');
         }
 
         // Call the function when page loads
         document.addEventListener('DOMContentLoaded', addBackgroundLetters);
-        
+
         // Also call it immediately in case DOM is already loaded
         if (document.readyState === 'complete' || document.readyState === 'interactive') {
             addBackgroundLetters();
@@ -220,6 +265,13 @@
                 previewTextInput = document.getElementById('preview-text');
                 categoryButtons = document.querySelectorAll('.category-btn');
                 clearSearchBtn = document.getElementById('clear-search');
+
+                // Initialize global card size button text
+                const globalSizeBtn = document.getElementById('global-card-size-btn');
+                if (globalSizeBtn) {
+                    const currentSize = globalCardSizes['default'][globalCardSizeIndex];
+                    globalSizeBtn.textContent = currentSize + 'px';
+                }
 
                 // Load font data
                 const response = await fetch('google-fonts.json');
@@ -266,7 +318,7 @@
             fontSearch.addEventListener('click', () => {
                 // Ensure the search box has focus
                 fontSearch.focus();
-                
+
                 // Only add prefix if search box is empty
                 if (fontSearch.value === '') {
                     // Get category name from global variable
@@ -281,12 +333,12 @@
                         // Capitalize first letter for other categories
                         categoryName = currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
                     }
-                    
+
                     // Set search value with descriptive prefix (consistent for all categories)
                     fontSearch.value = 'Search ' + categoryName + ': ';
                     // Position cursor at the end
                     fontSearch.selectionStart = fontSearch.selectionEnd = fontSearch.value.length;
-                    
+
                     // Show the clear button since we now have content
                     if (clearSearchBtn) {
                         clearSearchBtn.style.display = 'block';
@@ -299,33 +351,33 @@
                 // Always reset search box to empty when clicking outside
                 // This provides the cleanest UX by completely clearing the field
                 fontSearch.value = '';
-                
+
                 // Hide clear button
                 if (clearSearchBtn) {
                     clearSearchBtn.style.display = 'none';
                 }
             });
-            
+
             // Add Escape key support for search reset
             fontSearch.addEventListener('keydown', (event) => {
                 if (event.key === 'Escape' || event.keyCode === 27) {
                     // Reset search on Escape key
                     fontSearch.value = '';
-                    
+
                     // Hide clear button
                     if (clearSearchBtn) {
                         clearSearchBtn.style.display = 'none';
                     }
-                    
+
                     // Trigger search to show all fonts
                     fontSearch.dispatchEvent(new Event('input'));
-                    
+
                     // Prevent default Escape behavior
                     event.preventDefault();
                     event.stopPropagation();
                 }
             });
-            
+
             // Clear search button functionality
             if (clearSearchBtn) {
                 clearSearchBtn.addEventListener('click', () => {
@@ -355,7 +407,7 @@
                     const copyCSSButton = e.target.closest('.btn-primary');
                     const viewGoogleButton = e.target.closest('.btn-secondary');
                     const cardSizeButton = e.target.closest('.card-size-increase-btn');
-                    
+
                     if (!copyCSSButton && !viewGoogleButton && !cardSizeButton) {
                         const fontName = fontCard.dataset.fontName;
                         const fontCategory = fontCard.dataset.fontCategory;
@@ -380,6 +432,14 @@
                 });
             }
 
+            // GLOBAL CARD SIZE INCREASE BUTTON
+            const globalCardSizeBtn = document.getElementById('global-card-size-btn');
+            if (globalCardSizeBtn) {
+                globalCardSizeBtn.addEventListener('click', () => {
+                    increaseGlobalCardTextSize();
+                });
+            }
+
             // Category buttons
             categoryButtons.forEach(button => {
                 button.addEventListener('click', () => {
@@ -394,22 +454,25 @@
 
                     // Clear search box when switching categories (reset to placeholder)
                     fontSearch.value = '';
-                    
+
                     // Hide clear button since search is now empty
                     if (clearSearchBtn) {
                         clearSearchBtn.style.display = 'none';
                     }
 
+                    // RESET TO PAGE 1 WHEN CHANGING CATEGORY
+                    currentPage = 1;
+                    
                     // Display fonts for selected category
                     displayFonts();
                 });
             });
-            
+
             // Favorite heart clicks
             document.addEventListener('click', (e) => {
                 if (e.target.classList.contains('favorite-heart')) {
                     const fontName = e.target.dataset.fontName;
-                    
+
                     // Toggle favorite status
                     if (favorites.has(fontName)) {
                         favorites.delete(fontName);
@@ -418,10 +481,10 @@
                         favorites.add(fontName);
                         e.target.classList.add('favorited');
                     }
-                    
+
                     // Save to localStorage
                     saveFavorites();
-                    
+
                     // Show favorites button immediately
                     const favoritesBtn = document.querySelector('.category-btn[data-category="favorites"]');
                     if (favoritesBtn) {
@@ -431,7 +494,7 @@
                             favoritesBtn.style.display = 'none';
                         }
                     }
-                    
+
                     // Update favorites count if favorites category is active
                     if (currentCategory === 'favorites') {
                         displayFonts();
@@ -443,29 +506,29 @@
         function toggleTheme() {
             isDarkTheme = !isDarkTheme;
             document.body.classList.toggle('dark-theme');
-            
+
             // Update button icon based on current theme
             themeToggleBtn.textContent = isDarkTheme ? '☀️' : '🌓';
-            
+
             // Save theme preference to localStorage
             localStorage.setItem('themePreference', isDarkTheme ? 'dark' : 'light');
-            
+
             // Update background letters opacity for dark theme
             updateBackgroundLettersForTheme();
         }
-        
+
         function updateBackgroundLettersForTheme() {
             const isDark = document.body.classList.contains('dark-theme');
             const cornerLetters = document.querySelectorAll('.corner-letter');
             const patternLetters = document.querySelectorAll('.pattern-letter');
-            
+
             if (isDark) {
                 // Dark theme - significantly reduce opacity for better readability
                 cornerLetters.forEach(letter => {
                     letter.style.opacity = '0.3';
                     letter.style.color = 'rgba(150, 150, 150, 0.2)';
                 });
-                
+
                 patternLetters.forEach(letter => {
                     letter.style.opacity = '0.2';
                     letter.style.color = 'rgba(180, 180, 180, 0.15)';
@@ -476,7 +539,7 @@
                     letter.style.opacity = '0.6';
                     letter.style.color = 'rgba(220, 220, 220, 0.6)';
                 });
-                
+
                 patternLetters.forEach(letter => {
                     letter.style.opacity = Math.random() * 0.2 + 0.1;
                     letter.style.color = 'rgba(200, 200, 200, 0.6)';
@@ -490,7 +553,7 @@
                 isDarkTheme = true;
                 document.body.classList.add('dark-theme');
                 themeToggleBtn.textContent = '☀️';
-                
+
                 // Update background letters for dark theme
                 updateBackgroundLettersForTheme();
             }
@@ -499,25 +562,69 @@
         function changePreviewFont(fontName, fontCategory) {
             const previewTextElement = document.getElementById('preview-text');
             if (previewTextElement) {
+                console.log(`🔄 changePreviewFont called: ${fontName} (${fontCategory})`);
+                console.log(`   Before: size=${currentFontSize}px, index=${currentSizeIndex}, hasCustomFont=${previewTextElement.classList.contains('using-card-font')}`);
+                
                 // Store the current font selection
                 previewTextElement.dataset.currentFont = fontName;
                 previewTextElement.dataset.currentFontCategory = fontCategory;
-                
+
                 // Use appropriate size array based on font category
                 currentSizeArray = previewFontSizes[fontCategory] || previewFontSizes['default'];
-                
+
                 // Update the preview text styling to show it's using the selected font
                 previewTextElement.style.fontFamily = `'${fontName}', ${getFallbackFont(fontCategory)}`;
-                previewTextElement.style.fontSize = currentSizeArray[0] + 'px';
+                
+                // PRESERVE the current font size when switching fonts
+                // Handle different size arrays for different font categories
+                let targetSizeIndex = currentSizeIndex;
+                let targetSizePx = currentFontSize; // Track the actual pixel size
+                
+                // If this is the first font selection, use enhanced default
+                if (currentSizeIndex === 0 && !previewTextElement.classList.contains('using-card-font')) {
+                    targetSizePx = fontCategory === 'cursive' ? 20 : 18; // 20px for cursive, 18px for others
+                }
+                
+                // Map the target pixel size to the appropriate index in the new size array
+                // Find the closest size in the new array to preserve the visual size
+                let closestSize = currentSizeArray[0]; // Default to first size
+                let smallestDiff = Math.abs(targetSizePx - closestSize);
+                
+                for (let i = 0; i < currentSizeArray.length; i++) {
+                    const diff = Math.abs(targetSizePx - currentSizeArray[i]);
+                    if (diff < smallestDiff) {
+                        smallestDiff = diff;
+                        closestSize = currentSizeArray[i];
+                        targetSizeIndex = i;
+                    }
+                }
+                
+                // Apply the closest matching size
+                previewTextElement.style.fontSize = closestSize + 'px';
+                currentSizeIndex = targetSizeIndex;
+                currentFontSize = closestSize;
+                
+                // Force style recalculation to ensure the font size is applied immediately
+                previewTextElement.offsetHeight; // Trigger reflow
+                
+                // Add a class to help with CSS specificity
+                previewTextElement.classList.add('custom-font-size');
+                
+                // Debug: Log the actual computed style
+                console.log('Applied font size:', previewTextElement.style.fontSize);
+                console.log('Computed font size:', window.getComputedStyle(previewTextElement).fontSize);
+                
                 previewTextElement.style.fontWeight = 'normal';
-                
-                // Reset size tracking to default
-                currentSizeIndex = 0;
+
+                // Update currentFontSize to match the applied size
                 currentFontSize = currentSizeArray[currentSizeIndex];
-                
+
                 // Add a visual indicator
                 previewTextElement.classList.add('using-card-font');
-                
+
+                console.log(`   After: size=${currentFontSize}px (index=${currentSizeIndex}), closest match for ${targetSizePx}px`);
+                console.log(`   Applied: ${previewTextElement.style.fontSize}, Computed: ${window.getComputedStyle(previewTextElement).fontSize}`);
+
                 // Show a temporary notification
                 showFontSelectionNotification(fontName);
             }
@@ -529,12 +636,12 @@
             if (existingNotification) {
                 existingNotification.remove();
             }
-            
+
             // Create notification
             const notification = document.createElement('div');
             notification.className = 'font-selection-notification';
             notification.textContent = `Preview text now uses: ${fontName}`;
-            
+
             // Style the notification
             notification.style.position = 'fixed';
             notification.style.bottom = '20px';
@@ -550,15 +657,15 @@
             notification.style.opacity = '0';
             notification.style.transform = 'translateY(20px)';
             notification.style.transition = 'opacity 0.3s, transform 0.3s';
-            
+
             document.body.appendChild(notification);
-            
+
             // Animate in
             setTimeout(() => {
                 notification.style.opacity = '1';
                 notification.style.transform = 'translateY(0)';
             }, 10);
-            
+
             // Remove after 3 seconds
             setTimeout(() => {
                 notification.style.opacity = '0';
@@ -576,21 +683,22 @@
             if (previewTextElement) {
                 // Remove the custom font styling
                 previewTextElement.style.fontFamily = '';
-                previewTextElement.style.fontSize = '';
+                previewTextElement.style.fontSize = '16px'; // Explicitly set to 16px
                 previewTextElement.style.fontWeight = '';
-                
-                // Remove the visual indicator class
+
+                // Remove the visual indicator classes
                 previewTextElement.classList.remove('using-card-font');
-                
+                previewTextElement.classList.remove('custom-font-size');
+
                 // Clear the stored font data
                 delete previewTextElement.dataset.currentFont;
                 delete previewTextElement.dataset.currentFontCategory;
-                
+
                 // Reset font size tracking to default
                 currentFontSize = 16;
                 currentSizeIndex = 0;
                 currentSizeArray = previewFontSizes['default']; // Reset to default size array
-                
+
                 // Show reset notification
                 showFontResetNotification();
             }
@@ -602,21 +710,21 @@
             if (existingNotification) {
                 existingNotification.remove();
             }
-            
+
             // Create notification
             const notification = document.createElement('div');
             notification.className = 'font-selection-notification';
             notification.textContent = 'Preview text reset to default font';
-            
+
             // Style the notification (already styled via CSS class)
             document.body.appendChild(notification);
-            
+
             // Animate in
             setTimeout(() => {
                 notification.style.opacity = '1';
                 notification.style.transform = 'translateY(0)';
             }, 10);
-            
+
             // Remove after 3 seconds
             setTimeout(() => {
                 notification.style.opacity = '0';
@@ -638,7 +746,15 @@
         let currentFontSize = 16; // Default size when using card font
         let currentSizeArray = previewFontSizes['default']; // Default size array
         let currentSizeIndex = 0; // Current index in size array
-        
+
+        // GLOBAL CARD TEXT SIZE MANAGEMENT
+        // Track global size for all font cards - PERSISTENT across all interactions
+        let globalCardSizeIndex = 0; // Start with default size (16px for most, 20px for cursive)
+        const globalCardSizes = {
+            'cursive': [20, 22, 24, 28, 32], // Cursive fonts
+            'default': [16, 18, 20, 22, 24, 28, 32] // Other fonts
+        };
+
         // Font size management for card text
         // Different size ranges for different font categories
         const cardFontSizes = {
@@ -647,24 +763,175 @@
         };
         const cardSizeMap = new Map(); // Track individual card sizes
 
+        // Function to increase global card text size
+        function increaseGlobalCardTextSize() {
+            // Cycle through available sizes
+            globalCardSizeIndex = (globalCardSizeIndex + 1) % globalCardSizes['default'].length;
+            
+            // Update button text to show current size
+            const currentSize = globalCardSizes['default'][globalCardSizeIndex];
+            const btn = document.getElementById('global-card-size-btn');
+            if (btn) {
+                btn.textContent = currentSize + 'px';
+            }
+            
+            // Check if fonts are still loading
+            const loadingElement = document.querySelector('.loading');
+            if (loadingElement) {
+                // Fonts are still loading, show message and wait
+                showGlobalSizeNotification(`Size set to ${currentSize}px (will apply when fonts load)`);
+                return; // Don't try to apply to non-existent cards
+            }
+            
+            // Update all visible font cards with the new global size
+            const fontCards = document.querySelectorAll('.font-card');
+            if (fontCards.length === 0) {
+                // No cards found, show error and return
+                showGlobalSizeNotification(`No font cards found. Please wait for fonts to load.`);
+                return;
+            }
+            
+            // Apply size to existing cards first for immediate feedback
+            fontCards.forEach(card => {
+                const previewElement = card.querySelector('.font-preview');
+                if (previewElement) {
+                    const fontCategory = card.dataset.fontCategory || 'default';
+                    const sizeArray = globalCardSizes[fontCategory] || globalCardSizes['default'];
+                    
+                    // Ensure index is valid for this font category
+                    const safeIndex = Math.min(globalCardSizeIndex, sizeArray.length - 1);
+                    const newSize = sizeArray[safeIndex];
+                    
+                    previewElement.style.fontSize = newSize + 'px';
+                }
+            });
+            
+            // Show immediate feedback
+            showGlobalSizeNotification(`All cards updated to ${currentSize}px`);
+            
+            // AUTO-RELOAD: Re-display fonts to ensure consistency
+            // Save current category and page
+            const currentCategoryBefore = currentCategory;
+            const currentPageBefore = currentPage;
+            
+            // Show loading state
+            fontsContainer.innerHTML = '<div class="loading">Reloading fonts with new size...</div>';
+            
+            // Re-display fonts (this will apply the global size automatically)
+            setTimeout(() => {
+                // Explicitly set the category and page to ensure they don't change
+                currentCategory = currentCategoryBefore;
+                currentPage = currentPageBefore;
+                
+                // Update category button active state
+                const categoryButtons = document.querySelectorAll('.category-btn');
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                const activeCategoryBtn = document.querySelector(`.category-btn[data-category="${currentCategory}"]`);
+                if (activeCategoryBtn) {
+                    activeCategoryBtn.classList.add('active');
+                }
+                
+                // Update the category counter to reflect the current category
+                const counterElement = document.getElementById('font-counter');
+                const categoryNameElement = document.getElementById('category-name');
+                const categoryCountElement = document.getElementById('category-count');
+                
+                if (counterElement && categoryNameElement && categoryCountElement) {
+                    const categoryName = currentCategory === 'caps' ? 'CAPS Fonts' :
+                        currentCategory === 'all' ? 'All Fonts' :
+                        currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1) + ' Fonts';
+                    
+                    categoryNameElement.textContent = currentCategory === 'caps' ? 'CAPS Fonts' :
+                        currentCategory === 'all' ? 'All Fonts' :
+                        currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
+                    
+                    // The actual count will be updated by displayFonts()
+                }
+                
+                // Display fonts with the preserved category and page
+                displayFonts();
+                
+                // Update button active state
+                updateGlobalSizeButtonState();
+            }, 100);
+        }
+
+        function showGlobalSizeNotification(size) {
+            // Remove any existing notification
+            const existingNotification = document.querySelector('.global-size-notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+
+            // Create notification
+            const notification = document.createElement('div');
+            notification.className = 'global-size-notification';
+            notification.textContent = `All card texts: ${size}`;
+
+            // Style the notification
+            notification.style.position = 'fixed';
+            notification.style.bottom = '80px';
+            notification.style.left = '20px';
+            notification.style.padding = '12px 20px';
+            notification.style.backgroundColor = '#4CAF50';
+            notification.style.color = 'white';
+            notification.style.borderRadius = '25px';
+            notification.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+            notification.style.zIndex = '1000';
+            notification.style.fontSize = '14px';
+            notification.style.fontWeight = '500';
+            notification.style.opacity = '0';
+            notification.style.transform = 'translateY(20px)';
+            notification.style.transition = 'opacity 0.3s, transform 0.3s';
+
+            document.body.appendChild(notification);
+
+            // Animate in
+            setTimeout(() => {
+                notification.style.opacity = '1';
+                notification.style.transform = 'translateY(0)';
+            }, 10);
+
+            // Remove after 2 seconds
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 2000);
+        }
+
+        function updateGlobalSizeButtonState() {
+            const button = document.getElementById('global-card-size-btn');
+            if (button) {
+                button.classList.add('active');
+                setTimeout(() => {
+                    button.classList.remove('active');
+                }, 300);
+            }
+        }
+
         function increasePreviewFontSize() {
             const previewTextElement = document.getElementById('preview-text');
             if (previewTextElement && previewTextElement.classList.contains('using-card-font')) {
                 // Get the current font category
                 const fontCategory = previewTextElement.dataset.currentFontCategory || 'default';
-                
+
                 // Use appropriate size array based on font category
                 currentSizeArray = previewFontSizes[fontCategory] || previewFontSizes['default'];
-                
+
                 // Cycle through font sizes
                 currentSizeIndex = (currentSizeIndex + 1) % currentSizeArray.length;
                 currentFontSize = currentSizeArray[currentSizeIndex];
-                
+
                 previewTextElement.style.fontSize = currentFontSize + 'px';
-                
+
                 // Update button active state
                 updateSizeButtonStates();
-                
+
                 // Show notification
                 showFontSizeNotification(currentFontSize);
             }
@@ -675,40 +942,40 @@
             if (increaseBtn) {
                 // Add active class to show current size
                 increaseBtn.classList.add('active');
-                
+
                 // Remove active class after a short delay
                 setTimeout(() => {
                     increaseBtn.classList.remove('active');
                 }, 500);
             }
         }
-        
+
         function increaseCardTextSize(previewId) {
             const previewElement = document.getElementById(previewId);
             if (previewElement) {
                 // Get the font card to determine category
                 const fontCard = previewElement.closest('.font-card');
                 const fontCategory = fontCard ? fontCard.dataset.fontCategory : 'default';
-                
+
                 // Use appropriate size array based on font category
                 const sizeArray = cardFontSizes[fontCategory] || cardFontSizes['default'];
-                
+
                 // Get current size index for this card, default to 0
                 let currentIndex = cardSizeMap.get(previewId) || 0;
-                
+
                 // Increase size index, cycle back to 0 if at the end
                 currentIndex = (currentIndex + 1) % sizeArray.length;
-                
+
                 // Update the card size map
                 cardSizeMap.set(previewId, currentIndex);
-                
+
                 // Apply the new font size
                 const newSize = sizeArray[currentIndex];
                 previewElement.style.fontSize = newSize + 'px';
-                
+
                 // Show notification
                 showCardSizeNotification(newSize);
-                
+
                 // Add visual feedback to the button
                 const button = event.target.closest('.card-size-increase-btn');
                 if (button) {
@@ -719,19 +986,19 @@
                 }
             }
         }
-        
+
         function showCardSizeNotification(size) {
             // Remove any existing notification
             const existingNotification = document.querySelector('.card-size-notification');
             if (existingNotification) {
                 existingNotification.remove();
             }
-            
+
             // Create notification
             const notification = document.createElement('div');
             notification.className = 'card-size-notification';
-            notification.textContent = `Card text size: ${size}px`;
-            
+            notification.textContent = `Card text size: ${size}`;
+
             // Style the notification
             notification.style.position = 'fixed';
             notification.style.bottom = '20px';
@@ -747,15 +1014,15 @@
             notification.style.opacity = '0';
             notification.style.transform = 'translateY(20px)';
             notification.style.transition = 'opacity 0.3s, transform 0.3s';
-            
+
             document.body.appendChild(notification);
-            
+
             // Animate in
             setTimeout(() => {
                 notification.style.opacity = '1';
                 notification.style.transform = 'translateY(0)';
             }, 10);
-            
+
             // Remove after 2 seconds
             setTimeout(() => {
                 notification.style.opacity = '0';
@@ -774,20 +1041,20 @@
             if (existingNotification) {
                 existingNotification.remove();
             }
-            
+
             // Create notification
             const notification = document.createElement('div');
             notification.className = 'font-selection-notification';
-            notification.textContent = `Font size: ${size}px`;
-            
+            notification.textContent = `Font size: ${size}`;
+
             document.body.appendChild(notification);
-            
+
             // Animate in
             setTimeout(() => {
                 notification.style.opacity = '1';
                 notification.style.transform = 'translateY(0)';
             }, 10);
-            
+
             // Remove after 2 seconds
             setTimeout(() => {
                 notification.style.opacity = '0';
@@ -813,7 +1080,7 @@
             // Extract actual search term (remove category prefix if present)
             const fullSearchValue = fontSearch.value;
             let searchTerm = fullSearchValue.toLowerCase();
-            
+
             // Consistent prefix handling for all categories: "Search [Category]: "
             const colonIndex = fullSearchValue.indexOf(':');
             if (colonIndex !== -1) {
@@ -875,16 +1142,16 @@
                 filteredFonts.sort((a, b) => {
                     const aName = a.name.toLowerCase();
                     const bName = b.name.toLowerCase();
-                    
+
                     // Calculate relevance scores
                     const aStartsWith = aName.startsWith(searchTerm) ? 2 : 0;
                     const aContains = aName.includes(searchTerm) ? 1 : 0;
                     const aScore = aStartsWith + aContains;
-                    
+
                     const bStartsWith = bName.startsWith(searchTerm) ? 2 : 0;
                     const bContains = bName.includes(searchTerm) ? 1 : 0;
                     const bScore = bStartsWith + bContains;
-                    
+
                     // Sort by score (descending) and then by name (ascending)
                     if (aScore !== bScore) {
                         return bScore - aScore; // Higher score first
@@ -897,18 +1164,18 @@
             const counterElement = document.getElementById('font-counter');
             const categoryNameElement = document.getElementById('category-name');
             const categoryCountElement = document.getElementById('category-count');
-            
+
             const categoryName = currentCategory === 'caps' ? 'CAPS Fonts' :
-                               currentCategory === 'all' ? 'All Fonts' : 
-                               currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1) + ' Fonts';
-            
+                currentCategory === 'all' ? 'All Fonts' :
+                    currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1) + ' Fonts';
+
             if (categoryNameElement && categoryCountElement) {
                 categoryNameElement.textContent = currentCategory === 'caps' ? 'CAPS Fonts' :
-                                               currentCategory === 'all' ? 'All Fonts' : 
-                                               currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
+                    currentCategory === 'all' ? 'All Fonts' :
+                        currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
                 categoryCountElement.textContent = filteredFonts.length;
             }
-            
+
             // Update the counter element to show "Category: X fonts"
             if (currentCategory === 'favorites') {
                 console.log('Favorites set:', Array.from(favorites));
@@ -940,9 +1207,21 @@
             // Small delay to allow DOM to update before loading fonts
             // Update favorite hearts after displaying fonts
             updateFavoriteHearts();
-            
+
             setTimeout(() => {
                 loadFontsForPreview(paginatedFonts);
+                
+                // Initialize card text sizes with global setting
+                setTimeout(() => {
+                    applyGlobalCardTextSize();
+                    
+                    // Update button text to show current size
+                    const btn = document.getElementById('global-card-size-btn');
+                    if (btn) {
+                        const currentSize = globalCardSizes['default'][globalCardSizeIndex];
+                        btn.textContent = currentSize + 'px';
+                    }
+                }, 50);
             }, 100);
         }
 
@@ -1014,22 +1293,31 @@
             // Determine preview text based on category
             const displayText = currentCategory === 'all-caps' ? previewText.toUpperCase() : previewText;
 
-            // Check if font is truly all-caps (for CAPS category)
+            // Check if font is truly all-caps (for CAPS category) - removed CAPS badge display
             const isAllCaps = checkIfAllCaps(font.name);
-            const capsBadge = isAllCaps ? '<div class="caps-badge">✅ CAPS</div>' : '';
+
+            // Get the appropriate size for this font category based on global setting
+            const sizeArray = globalCardSizes[font.category] || globalCardSizes['default'];
+            const safeIndex = Math.min(globalCardSizeIndex, sizeArray.length - 1);
+            const cardFontSize = sizeArray[safeIndex];
 
             return `
                 <div class="font-card ${fontClass}" data-font-name="${font.name}" data-font-category="${font.category}">
                     <div class="font-card-content">
                         <div style="position: relative; min-height: 24px; display: flex; align-items: center;">
-                            <div class="font-name" style="font-family: '${font.name}', ${getFallbackFont(font.category)}; line-height: normal; vertical-align: baseline;">${font.name}</div>
-                            ${capsBadge}
+                            <div class="font-name${isAllCaps ? ' cap-font-name' : ''}" style="font-family: '${font.name}', ${getFallbackFont(font.category)}; line-height: normal; vertical-align: baseline;">${font.name}</div>
                         </div>
                         <div class="favorite-heart" data-font-name="${font.name}">♥</div>
-                        <div class="font-category">${font.category}</div>
+                        <div class="font-category-container">
+                            <div class="font-category">${font.category}</div>
+                            <!-- Variant badges will be added dynamically -->
+                            <!-- Fallback badges in case JavaScript fails -->
+                            <span class="weights-badge" title="Loading..." style="opacity: 0.3;">weights</span>
+                            <span class="italic-badge" title="Loading..." style="opacity: 0.3;">italic</span>
+                        </div>
                         <div style="position: relative;">
                             <div class="font-preview" id="${previewId}"
-                                 style="font-family: '${font.name}', ${getFallbackFont(font.category)};"
+                                 style="font-family: '${font.name}', ${getFallbackFont(font.category)}; font-size: ${cardFontSize}px;"
                                  data-font-name="${font.name}"
                                  data-fallback-font="${getFallbackFont(font.category)}">
                                  ${displayText}
@@ -1087,12 +1375,13 @@
             console.log("Polices chargées :", fontsToLoad.map(f => f.name));
             console.log("Nombre total :", fontsToLoad.length);
 
-            // Load each font with multiple weights for better variant support
+            // Load each font with comprehensive weight support
             fontsToLoad.forEach(font => {
                 const fontName = font.name.replace(/ /g, '+');
                 const fontLink = document.createElement('link');
-                // Load regular (400) and bold (700) weights for better variant support
-                fontLink.href = `https://fonts.googleapis.com/css2?family=${fontName}:wght@400;700&display=swap`;
+                // Load comprehensive weight range including italics for full variant support
+                // This ensures all detected variants will be available for use
+                fontLink.href = `https://fonts.googleapis.com/css2?family=${fontName}:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap`;
                 fontLink.rel = 'stylesheet';
                 head.appendChild(fontLink);
             });
@@ -1105,6 +1394,23 @@
                     previewElement.classList.remove('fallback');
                 }
             });
+            
+            // Apply global card size after fonts are loaded
+            setTimeout(() => {
+                applyGlobalCardTextSize();
+                
+                // Update button text to show current size
+                const btn = document.getElementById('global-card-size-btn');
+                if (btn) {
+                    const currentSize = globalCardSizes['default'][globalCardSizeIndex];
+                    btn.textContent = currentSize + 'px';
+                }
+                
+                // Detect and show font variants after a short delay
+                setTimeout(() => {
+                    detectAndShowFontVariants();
+                }, 500);
+            }, 100);
         }
 
         function checkFontLoading(fontName) {
@@ -1160,15 +1466,36 @@
             });
         }
 
+        // Apply global card text size to all visible cards
+        function applyGlobalCardTextSize() {
+            const fontCards = document.querySelectorAll('.font-card');
+            fontCards.forEach(card => {
+                const previewElement = card.querySelector('.font-preview');
+                if (previewElement) {
+                    const fontCategory = card.dataset.fontCategory || 'default';
+                    const sizeArray = globalCardSizes[fontCategory] || globalCardSizes['default'];
+                    
+                    // Ensure index is valid for this font category
+                    const safeIndex = Math.min(globalCardSizeIndex, sizeArray.length - 1);
+                    const targetSize = sizeArray[safeIndex];
+                    
+                    // Only set size if it's different from current
+                    if (previewElement.style.fontSize !== targetSize + 'px') {
+                        previewElement.style.fontSize = targetSize + 'px';
+                    }
+                }
+            });
+        }
+
         // Robust clipboard copy function with fallback for unsupported environments
         function tryCopyToClipboard(text, fontName, isFallback = false) {
             // Check if clipboard API is available
             if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
                 navigator.clipboard.writeText(text).then(() => {
                     if (isFallback) {
-                        alert(`⚠️ Copied fallback CSS for ${fontName}. Could not extract @font-face rules.`);
+                        showNotification(`⚠️ Copied fallback CSS for ${fontName}. Could not extract @font-face rules.`);
                     } else {
-                        alert(`✅ CSS for ${fontName} copied to clipboard! Check console for debug details.`);
+                        showNotification(`✅ CSS for ${fontName} copied to clipboard!`);
                     }
                 }).catch(err => {
                     console.error('Clipboard API failed, trying fallback:', err);
@@ -1180,9 +1507,53 @@
                 copyToClipboardFallback(text, fontName, isFallback);
             }
         }
-        
+
+        // Show a notification without causing page reset
+        function showNotification(message) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.position = 'fixed';
+            notification.style.top = '20px';
+            notification.style.right = '20px';
+            notification.style.padding = '12px 20px';
+            notification.style.backgroundColor = '#4285F4';
+            notification.style.color = 'white';
+            notification.style.borderRadius = '4px';
+            notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+            notification.style.zIndex = '10001';
+            notification.style.fontSize = '14px';
+            notification.style.fontWeight = '500';
+            notification.style.opacity = '0';
+            notification.style.transform = 'translateY(-20px)';
+            notification.style.transition = 'opacity 0.3s, transform 0.3s';
+            
+            // Add notification to body
+            document.body.appendChild(notification);
+            
+            // Show notification with animation
+            setTimeout(() => {
+                notification.style.opacity = '1';
+                notification.style.transform = 'translateY(0)';
+            }, 10);
+            
+            // Remove notification after delay
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateY(-20px)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        document.body.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
         // Fallback clipboard copy method using textarea
         function copyToClipboardFallback(text, fontName, isFallback = false) {
+            // Preserve search box value to prevent reset
+            const searchValue = fontSearch.value;
+            
             try {
                 // Create a temporary textarea element
                 const textarea = document.createElement('textarea');
@@ -1191,16 +1562,16 @@
                 textarea.style.opacity = '0';
                 document.body.appendChild(textarea);
                 textarea.select();
-                
+
                 // Try to execute copy command
                 const success = document.execCommand('copy');
                 document.body.removeChild(textarea);
-                
+
                 if (success) {
                     if (isFallback) {
-                        alert(`✅ Copied fallback CSS for ${fontName} to clipboard (using fallback method).`);
+                        showNotification(`✅ Copied fallback CSS for ${fontName} to clipboard (using fallback method).`);
                     } else {
-                        alert(`✅ CSS for ${fontName} copied to clipboard (using fallback method)!`);
+                        showNotification(`✅ CSS for ${fontName} copied to clipboard (using fallback method)!`);
                     }
                 } else {
                     // If copy command fails, show the CSS in a modal
@@ -1211,10 +1582,20 @@
                 // Show CSS in modal as last resort
                 showCSSInModal(text, fontName, isFallback);
             }
+            
+            // Restore search box value after clipboard operation
+            fontSearch.value = searchValue;
+            // Show/hide clear button based on restored search value
+            if (clearSearchBtn) {
+                clearSearchBtn.style.display = searchValue.length > 0 ? 'block' : 'none';
+            }
         }
-        
+
         // Show CSS in a modal dialog for manual copying
         function showCSSInModal(css, fontName, isFallback = false) {
+            // Preserve search box value to prevent reset
+            const searchValue = fontSearch.value;
+            
             // Create modal overlay
             const modal = document.createElement('div');
             modal.style.position = 'fixed';
@@ -1229,7 +1610,7 @@
             modal.style.alignItems = 'center';
             modal.style.padding = '20px';
             modal.style.boxSizing = 'border-box';
-            
+
             // Create modal content
             const content = document.createElement('div');
             content.style.backgroundColor = 'white';
@@ -1240,7 +1621,7 @@
             content.style.maxHeight = '80vh';
             content.style.overflow = 'auto';
             content.style.position = 'relative';
-            
+
             // Create close button
             const closeButton = document.createElement('button');
             closeButton.textContent = '×';
@@ -1252,24 +1633,30 @@
             closeButton.style.fontSize = '24px';
             closeButton.style.cursor = 'pointer';
             closeButton.style.color = '#666';
-            closeButton.onclick = function() {
+            closeButton.onclick = function () {
                 document.body.removeChild(modal);
+                // Restore search box value after modal is closed
+                fontSearch.value = searchValue;
+                // Show/hide clear button based on restored search value
+                if (clearSearchBtn) {
+                    clearSearchBtn.style.display = searchValue.length > 0 ? 'block' : 'none';
+                }
             };
-            
+
             // Create title
             const title = document.createElement('h3');
             title.textContent = `CSS for ${fontName}`;
             title.style.marginTop = '0';
             title.style.color = '#4285F4';
-            
+
             // Create subtitle
             const subtitle = document.createElement('p');
-            subtitle.textContent = isFallback ? 
-                'Could not copy automatically. Please manually copy the CSS below:' : 
+            subtitle.textContent = isFallback ?
+                'Could not copy automatically. Please manually copy the CSS below:' :
                 'Could not copy automatically. Please manually copy the CSS below:';
             subtitle.style.color = '#666';
             subtitle.style.marginBottom = '15px';
-            
+
             // Create CSS textarea
             const cssTextarea = document.createElement('textarea');
             cssTextarea.value = css;
@@ -1282,7 +1669,7 @@
             cssTextarea.style.borderRadius = '4px';
             cssTextarea.style.resize = 'vertical';
             cssTextarea.style.marginBottom = '15px';
-            
+
             // Create copy instructions
             const instructions = document.createElement('p');
             instructions.innerHTML = '<strong>To use this CSS:</strong><br>' +
@@ -1292,7 +1679,7 @@
                 '4. Use the provided class names in your HTML';
             instructions.style.color = '#666';
             instructions.style.fontSize = '14px';
-            
+
             // Assemble modal
             content.appendChild(closeButton);
             content.appendChild(title);
@@ -1300,20 +1687,28 @@
             content.appendChild(cssTextarea);
             content.appendChild(instructions);
             modal.appendChild(content);
-            
+
             // Add modal to body
             document.body.appendChild(modal);
             
+            // Prevent modal from interfering with search box
+            modal.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
             // Auto-select CSS text
             cssTextarea.select();
         }
-        
+
         async function copyCSS(fontName, category, event) {
             // Prevent event bubbling if event is passed
             if (event) {
                 event.stopPropagation();
             }
-            
+
+            // Preserve search box value to prevent reset
+            const searchValue = fontSearch.value;
+
             const fontNameUrl = fontName.replace(/ /g, '+');
             const fontNameKebab = fontName.toLowerCase().replace(/ /g, '-');
 
@@ -1329,38 +1724,68 @@
                     // Fallback to comprehensive individual weights format
                     response = await fetch(`https://fonts.googleapis.com/css2?family=${fontNameUrl}:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap`);
                 }
-                
+
                 if (!response.ok) {
                     throw new Error('Failed to fetch font CSS');
                 }
 
                 const fontCSS = await response.text();
-                
-                // Simple and reliable extraction: get all @font-face rules from the CSS
+
+                // Enhanced CSS extraction: get all @font-face rules and analyze variants
                 console.log('Starting CSS extraction for:', fontName);
                 console.log('Full CSS length:', fontCSS.length);
-                
+
+                // Extract all @font-face rules
                 const ruleMatches = fontCSS.match(/@font-face[^}]+}/g);
-                
                 console.log('Total @font-face rules found:', ruleMatches ? ruleMatches.length : 0);
-                
+
                 let fontFaceRulesText = '';
-                
+                let availableWeights = new Set([400]); // Default weight
+                let hasItalic = false;
+                let hasVariableFont = false;
+
                 if (ruleMatches && ruleMatches.length > 0) {
                     // Filter to only include latin subset rules
                     const latinRules = ruleMatches.filter(rule => {
                         // Check if this rule is likely part of latin subset
-                        // (Google Fonts puts latin rules after /* latin */ comment)
-                        const isLatin = rule.includes('unicode-range') && 
-                                      (rule.includes('U+0000-00FF') || rule.includes('U+0041-007A'));
+                        const isLatin = rule.includes('unicode-range') &&
+                            (rule.includes('U+0000-00FF') || rule.includes('U+0041-007A'));
+                        
+                        // Analyze the rule to detect available variants
                         if (isLatin) {
-                            console.log('Found latin rule:', rule.substring(0, 100) + '...');
+                            const weightMatch = rule.match(/font-weight:\s*(\d+(?:\.\d+)?(?:\s*\d+(?:\.\d+)?)?)/);
+                            const styleMatch = rule.match(/font-style:\s*(\w+)/);
+                            
+                            if (weightMatch) {
+                                const weightStr = weightMatch[1];
+                                // Handle variable fonts (e.g., "100 900")
+                                if (weightStr.includes(' ')) {
+                                    hasVariableFont = true;
+                                    // Add range endpoints
+                                    const [start, end] = weightStr.split(' ').map(Number);
+                                    availableWeights.add(start);
+                                    availableWeights.add(end);
+                                } else {
+                                    const weight = parseInt(weightStr);
+                                    if (!isNaN(weight)) {
+                                        availableWeights.add(weight);
+                                    }
+                                }
+                            }
+                            
+                            if (styleMatch && styleMatch[1] === 'italic') {
+                                hasItalic = true;
+                            }
                         }
+                        
                         return isLatin;
                     });
-                    
+
                     console.log('Latin rules found:', latinRules.length);
-                    
+                    console.log('Available weights:', Array.from(availableWeights).sort((a, b) => a - b));
+                    console.log('Has italic:', hasItalic);
+                    console.log('Has variable font:', hasVariableFont);
+
                     if (latinRules.length > 0) {
                         fontFaceRulesText = latinRules.join('\n\n');
                     } else {
@@ -1384,22 +1809,19 @@
 
                 if (fontFaceRulesText) {
                     // Check if we can optimize for variable fonts
-                    const hasVariableFont = fontFaceRulesText.includes('font-weight: 100 900');
-                    
                     let optimizedRules = fontFaceRulesText;
-                    
+
                     // For variable fonts, we can often consolidate multiple weight rules
                     if (hasVariableFont) {
                         // Keep only the variable font rules and remove individual weight rules
                         const lines = fontFaceRulesText.split('\n');
                         const filteredLines = [];
                         let inVariableRule = false;
-                        let currentFontStyle = '';
-                        
+
                         for (const line of lines) {
                             if (line.includes('@font-face')) {
                                 // Start of a new rule - check if it's a variable font
-                                if (line.includes('font-weight: 100 900')) {
+                                if (line.includes('font-weight: 100 900') || line.includes('font-weight: 1 999')) {
                                     inVariableRule = true;
                                     filteredLines.push(line);
                                 } else {
@@ -1412,71 +1834,119 @@
                                 }
                             }
                         }
-                        
+
                         // If we found variable fonts, use them
                         if (filteredLines.length > 0) {
                             optimizedRules = filteredLines.join('\n');
                         }
                     }
+
+                    // Create CSS in the exact requested format
+                    // Convert availableWeights Set to sorted array
+                    const sortedWeights = Array.from(availableWeights).sort((a, b) => a - b);
+
+                    let additionalClasses = '';
                     
-                    // Create comprehensive CSS with the actual @font-face rules
+                    // Generate CSS classes for all available weights
+                    sortedWeights.forEach(weight => {
+                        const weightName = getWeightName(weight);
+                        
+                        // Normal style
+                        additionalClasses += `
+.${fontNameKebab}-${weightName} {
+    font-family: var(--font-${fontNameKebab});
+    font-weight: ${weight};
+}`;
+                        
+                        // Italic style if available
+                        if (hasItalic) {
+                            additionalClasses += `
+.${fontNameKebab}-${weightName}-italic {
+    font-family: var(--font-${fontNameKebab});
+    font-weight: ${weight};
+    font-style: italic;
+}`;
+                        }
+                    });
+                    
+                    // Helper function to convert weight numbers to names
+                    function getWeightName(weight) {
+                        switch(weight) {
+                            case 100: return 'thin';
+                            case 200: return 'extra-light';
+                            case 300: return 'light';
+                            case 400: return 'regular';
+                            case 500: return 'medium';
+                            case 600: return 'semibold';
+                            case 700: return 'bold';
+                            case 800: return 'extra-bold';
+                            case 900: return 'black';
+                            default: return 'weight-' + weight;
+                        }
+                    }
+
                     const css = `
 /* ${fontName} - ${category} */
-/* 🎯 EXCLUSIVE: Latin subset @font-face rules from Google Fonts */
-/* Note: Some fonts use individual weight files, others use variable fonts */
-/* Includes ALL available weights and style variants from Google Fonts */
-/* No Cyrillic, Greek, Latin-Ext, or other subsets included */
+/* https://fonts.google.com/specimen/${fontName.replace(/ /g, '+')} */
+
 ${optimizedRules}
 
-/* 📋 CSS Usage Examples */
-.${fontNameKebab}-regular {
-    font-family: '${fontName}', ${category};
-    font-weight: 400;
-}
-
-.${fontNameKebab}-bold {
-    font-family: '${fontName}', ${category};
-    font-weight: 700;
-}
-
-/* 💡 CSS Variables (optional) */
+/* CSS Variables */
 :root {
     --font-${fontNameKebab}: "${fontName}", ${category};
 }
 
-.${fontNameKebab} {
-    font-family: var(--font-${fontNameKebab});
-}
-
-/* 🎨 Usage Examples:
-   <div class="${fontNameKebab}-regular">Regular text</div>
-   <div class="${fontNameKebab}-bold">Bold text</div>
-   <div class="${fontNameKebab}" style="font-weight: 400;">Using CSS variable</div>
-*/
-
-/* ⚠️  Note: These are the actual @font-face rules from Google Fonts.
-   The URLs point to the real font files hosted on Google's CDN.
-   For self-hosting, you would need to download these font files.
-*/
+/* CSS Classes */
+${additionalClasses}
                     `;
 
                     // Try to copy to clipboard with fallback for unsupported environments
                     tryCopyToClipboard(css, fontName);
                 } else {
                     // Fallback to the original method if extraction fails
+                    // Try to load more comprehensive font weights including italics
                     const fallbackCSS = `
 /* ${fontName} - ${category} */
-/* Fallback: Use Google Fonts CDN */
-<link href="https://fonts.googleapis.com/css2?family=${fontNameUrl}:wght@400;700&display=swap" rel="stylesheet">
+/* https://fonts.google.com/specimen/${fontName.replace(/ /g, '+')} */
 
+<link href="https://fonts.googleapis.com/css2?family=${fontNameUrl}:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+/* CSS Variables */
+:root {
+    --font-${fontNameKebab}: "${fontName}", ${category};
+}
+
+/* CSS Classes */
 .${fontNameKebab}-regular {
-    font-family: '${fontName}', ${category};
+    font-family: var(--font-${fontNameKebab});
     font-weight: 400;
 }
 
 .${fontNameKebab}-bold {
-    font-family: '${fontName}', ${category};
+    font-family: var(--font-${fontNameKebab});
     font-weight: 700;
+}
+
+.${fontNameKebab}-italic {
+    font-family: var(--font-${fontNameKebab});
+    font-weight: 400;
+    font-style: italic;
+}
+
+.${fontNameKebab}-italic-bold {
+    font-family: var(--font-${fontNameKebab});
+    font-weight: 700;
+    font-style: italic;
+}
+
+.${fontNameKebab}-medium {
+    font-family: var(--font-${fontNameKebab});
+    font-weight: 500;
+}
+
+.${fontNameKebab}-semibold {
+    font-family: var(--font-${fontNameKebab});
+    font-weight: 600;
 }
                     `;
 
@@ -1485,24 +1955,161 @@ ${optimizedRules}
                 }
             } catch (error) {
                 console.error('Error copying CSS:', error);
-                
+
                 // Fallback to simple CSS if API call fails
                 const simpleCSS = `
 /* ${fontName} - ${category} */
+/* https://fonts.google.com/specimen/${fontName.replace(/ /g, '+')} */
+
 <link href="https://fonts.googleapis.com/css2?family=${fontNameUrl}:wght@400;700&display=swap" rel="stylesheet">
 
+/* CSS Variables */
+:root {
+    --font-${fontNameKebab}: "${fontName}", ${category};
+}
+
+/* CSS Classes */
 .${fontNameKebab} {
-    font-family: '${fontName}', ${category};
+    font-family: var(--font-${fontNameKebab});
 }
                 `;
 
                 // Try to copy simple CSS to clipboard
                 tryCopyToClipboard(simpleCSS, fontName, true);
             }
+            
+            // Restore search box value after CSS copy operation
+            fontSearch.value = searchValue;
+            // Show/hide clear button based on restored search value
+            if (clearSearchBtn) {
+                clearSearchBtn.style.display = searchValue.length > 0 ? 'block' : 'none';
+            }
         }
 
         function viewOnGoogle(fontName) {
             window.open(`https://fonts.google.com/specimen/${fontName.replace(/ /g, '+')}`, '_blank');
+        }
+
+        // Font variant detection and badge management
+async function detectAndShowFontVariants() {
+    console.log('🔍 Detecting font variants using local data...');
+    
+    // Get all visible font cards
+    const fontCards = document.querySelectorAll('.font-card:not(.hidden)');
+    console.log(`Found ${fontCards.length} visible font cards`);
+    
+    if (fontCards.length === 0) {
+        console.warn('⚠️ No visible font cards found');
+        return;
+    }
+    
+    // Load font data from JSON file
+    fetch('google-fonts.json')
+        .then(response => response.json())
+        .then(fontData => {
+            fontCards.forEach(card => {
+                const fontName = card.dataset.fontName;
+                if (!fontName) return;
+                
+                const fontInfo = fontData[fontName];
+                if (!fontInfo) {
+                    console.warn(`❌ ${fontName} not found in local data`);
+                    return;
+                }
+                
+                const variants = fontInfo.variants || {};
+                const availableWeights = new Set([400]); // Default weight
+                let hasItalic = false;
+                
+                // Extract weights and styles from local data
+                for (const style in variants) {
+                    for (const weight in variants[style]) {
+                        const weightNum = parseInt(weight);
+                        if (!isNaN(weightNum)) {
+                            availableWeights.add(weightNum);
+                            if (style === 'italic') hasItalic = true;
+                        }
+                    }
+                }
+                
+                // Determine if we have multiple weights (always true if we have any weights)
+                const hasMultipleWeights = availableWeights.size > 1;
+                const hasOnlyDefaultWeight = availableWeights.size === 1 && availableWeights.has(400);
+                
+                // Update variant badges
+                const fontCategoryContainer = card.querySelector('.font-category-container');
+                if (fontCategoryContainer) {
+                    // Remove existing variant badges
+                    const existingBadges = fontCategoryContainer.querySelectorAll('.weights-badge, .italic-badge');
+                    existingBadges.forEach(badge => badge.remove());
+                    
+                    // Create weight badge with text (e.g., "2 weights", "1 weight")
+                    const weightCount = availableWeights.size;
+                    const weightBadge = document.createElement('span');
+                    weightBadge.className = 'weights-badge' + (weightCount > 1 ? ' active' : '');
+                    weightBadge.textContent = weightCount + (weightCount > 1 ? ' weights' : ' weight');
+                    weightBadge.title = getWeightTooltip(availableWeights);
+                    fontCategoryContainer.appendChild(weightBadge);
+                    
+                    // Create italic badge with text if available
+                    if (hasItalic) {
+                        const italicBadge = document.createElement('span');
+                        italicBadge.className = 'italic-badge active';
+                        italicBadge.textContent = 'italic';
+                        italicBadge.style.fontStyle = 'italic';
+                        italicBadge.title = 'Italic style available';
+                        fontCategoryContainer.appendChild(italicBadge);
+                    }
+                }
+                
+                // Helper function to generate weight tooltip
+                function getWeightTooltip(weights) {
+                    const sortedWeights = Array.from(weights).sort((a, b) => a - b);
+                    const weightNames = [];
+                    
+                    sortedWeights.forEach(weight => {
+                        switch(weight) {
+                            case 100: weightNames.push('Thin (100)'); break;
+                            case 200: weightNames.push('Extra Light (200)'); break;
+                            case 300: weightNames.push('Light (303)'); break;
+                            case 400: weightNames.push('Regular (400)'); break;
+                            case 500: weightNames.push('Medium (500)'); break;
+                            case 600: weightNames.push('SemiBold (600)'); break;
+                            case 700: weightNames.push('Bold (700)'); break;
+                            case 800: weightNames.push('Extra Bold (800)'); break;
+                            case 900: weightNames.push('Black (900)'); break;
+                            default: weightNames.push(`${weight}`);
+                        }
+                    });
+                    
+                    return `Available: ${weightNames.join(', ')}`;
+                    
+                    console.log(`✅ ${fontName}: Weights: ${Array.from(availableWeights).sort((a, b) => a - b).join(', ')}, Italic: ${hasItalic}`);
+                }
+            });
+            
+            const allBadges = document.querySelectorAll('.weights-badge, .italic-badge');
+            console.log(`📊 Total variant badges added: ${allBadges.length}`);
+        })
+        .catch(error => {
+            console.error('❌ Error loading font data:', error);
+        });
+}
+
+        // Load and cache font data for better performance
+        function loadAndCacheFontData() {
+            try {
+                // Check if we already have cached data
+                const cachedData = localStorage.getItem('googleFontsData');
+                if (!cachedData) {
+                    console.log('No cached font data found - will cache as we detect variants');
+                    return;
+                }
+                
+                console.log('Found cached font data');
+            } catch (error) {
+                console.error('Error accessing cached font data:', error);
+            }
         }
 
         // Load favorites from localStorage
@@ -1514,7 +2121,7 @@ ${optimizedRules}
                     if (Array.isArray(parsed)) {
                         parsed.forEach(fontName => favorites.add(fontName));
                         console.log('Loaded ' + favorites.size + ' favorites');
-                        
+
                         // Update heart icons to reflect loaded favorites
                         updateFavoriteHearts();
                     }
@@ -1525,7 +2132,7 @@ ${optimizedRules}
                 console.log('No favorites found in localStorage');
             }
         }
-        
+
         function updateFavoriteHearts() {
             // Update all heart icons based on current favorites
             const heartIcons = document.querySelectorAll('.favorite-heart');
@@ -1538,27 +2145,49 @@ ${optimizedRules}
                 }
             });
         }
-        
+
         // Save favorites to localStorage
         function saveFavorites() {
             const favoritesArray = Array.from(favorites);
             localStorage.setItem('favoriteFonts', JSON.stringify(favoritesArray));
         }
-        
+
+        // Enhance tooltips for better visibility
+        function enhanceTooltips() {
+            const badges = document.querySelectorAll('.weights-badge, .italic-badge');
+            badges.forEach(badge => {
+                // Ensure title attribute is set
+                if (!badge.title && badge.hasAttribute('data-tooltip')) {
+                    badge.title = badge.getAttribute('data-tooltip');
+                }
+                
+                // Add hover effect for better UX
+                badge.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1)';
+                });
+                
+                badge.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        }
+
         // Start the app when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
             init();
+            loadAndCacheFontData();
             loadFavorites();
             loadThemePreference();
+            enhanceTooltips();
         });
-        
+
         // Also call it immediately in case DOM is already loaded
         if (document.readyState === 'complete' || document.readyState === 'interactive') {
             init();
             loadFavorites();
             loadThemePreference();
         }
-        
+
         // Force show favorites button for testing (remove this later)
         setTimeout(() => {
             const favoritesBtn = document.querySelector('.category-btn[data-category="favorites"]');
@@ -1567,4 +2196,24 @@ ${optimizedRules}
             }
         }, 100);
     </script>
-</body></html>
+    
+    <!-- Footer Disclaimer -->
+    <footer class="footer-disclaimer">
+        <div class="footer-content">
+            <p class="disclaimer-text">
+                <strong>Google Fonts Showcase</strong> is a personal demo project designed to test and demonstrate 
+                <strong>Mistral Vibe AI</strong> coding capabilities using the <strong>Google Fonts API</strong>. 
+                This project is not affiliated with or endorsed by Google. It may contain errors, inaccuracies, 
+                or experimental features as it serves as a development and testing platform. 
+            </p>
+            <p class="last-updated">
+                Last updated: January 3, 2026
+            </p>
+            <div class="footer-links">
+                <!-- Footer links removed as requested -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
