@@ -1,23 +1,28 @@
 # Google Fonts Showcase
 
 A web interface for browsing and previewing Google Fonts with enhanced CSS generation capabilities.
-Online demo : https://www.sous-titre.com/google-fonts/
+Online demo : https://www.sous-titre.com/google-fonts-showcase/
 ## Features
 
 ### Core Features
 - **Browse 1000+ Google Fonts** organized by category (Sans Serif, Serif, Cursive, Monospace, Display)
 - **Advanced Search** with real-time filtering
 - **Live Preview** with customizable preview text
-- **Enhanced CSS Generation** with automatic variant detection
+- **WOFF2-Oriented CSS Generation** with automatic variant detection
 - **Direct Google Fonts links** for detailed information
 - **Responsive Design** optimized for all screen sizes
-- **Performance Optimized** with dynamic font loading
+- **Performance Optimized** with dynamic font loading and WOFF2 format support
 
 ### Enhanced CSS Output
 - **Automatic Variant Detection**: Detects italic, medium, semibold, and other weights
 - **Comprehensive CSS Classes**: Generates classes for all available font variants
 - **Smart Class Generation**: Creates `.font-italic`, `.font-medium`, `.font-italic-bold`, etc.
 - **Professional Format**: Clean, organized CSS with proper comments and structure
+
+### WOFF2 Support
+- **Modern Font Format**: Exclusively uses WOFF2 format for optimal performance
+- **Automatic WOFF2 Extraction**: Intelligently extracts WOFF2 URLs from Google Fonts API
+- **Performance Optimized**: WOFF2 provides better compression and faster loading than legacy formats
 
 ### Special Features
 - **CAP Font Optimization**: Special handling for all-caps fonts with size adjustments
