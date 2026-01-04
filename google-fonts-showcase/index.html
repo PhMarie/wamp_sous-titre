@@ -8,7 +8,7 @@
         content="Explore and preview 1000+ Google Fonts with WOFF2-oriented CSS generation. Browse by category, search fonts, and get ready-to-use @font-face CSS code optimized for modern web performance.">
 
     <!-- OpenGraph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Google Fonts Showcase - Browse & Preview 1000+ Web Fonts with Copy CSS">
+    <meta property="og:title" content="Google Fonts Showcase - Browse & Preview 1000+ Web Fonts and Copy CSS">
     <meta property="og:description"
         content="Explore and preview 1000+ Google Fonts with WOFF2-oriented CSS generation. Browse by category, search fonts, and get ready-to-use @font-face CSS code optimized for modern web performance.">
     <meta property="og:type" content="website">
@@ -22,7 +22,7 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Google Fonts Showcase - Browse & Preview 1000+ Web Fonts with Copy CSS">
+    <meta name="twitter:title" content="Google Fonts Showcase - Browse & Preview 1000+ Web Fonts and Copy CSS">
     <meta name="twitter:description"
         content="Explore and preview 1000+ Google Fonts with WOFF2-oriented CSS generation. Browse by category, search fonts, and get ready-to-use @font-face CSS code optimized for modern web performance.">
     <meta name="twitter:image" content="images/google-fonts-showcase-logo.jpg">
@@ -40,7 +40,7 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://yourdomain.com/google-fonts-showcase">
 
-    <title>Google Fonts Showcase - Browse & Preview 1000+ Web Fonts with Copy CSS</title>
+    <title>Google Fonts Showcase - Browse & Preview 1000+ Web Fonts</title>
 
     <!-- Gradient Favicon with Blue-Violet colors -->
     <link rel="icon"
@@ -59,8 +59,8 @@
     <div class="container">
         <header>
             <h1 aria-label="Google Fonts Showcase with paint palette emoji">🎨 Google Fonts Showcase</h1>
-            <h2 class="subtitle" aria-label="Browse and preview beautiful Google Fonts with copy CSS functionality">Browse and preview beautiful
-                Google Fonts with Copy CSS</h2>
+            <h2 class="subtitle" aria-label="Browse and preview beautiful Google Fonts with copy CSS functionality">
+                Browse and preview beautiful Google Fonts</h2>
         </header>
 
         <div class="sticky-controls">
@@ -369,13 +369,13 @@
                 // Only reset search box if it contains only the prefix (no actual search term)
                 // This preserves active searches while cleaning up empty search boxes
                 const currentValue = fontSearch.value;
-                const hasSearchTerm = currentValue && currentValue.includes(':') && 
-                                     currentValue.split(':')[1].trim().length > 0;
-                
+                const hasSearchTerm = currentValue && currentValue.includes(':') &&
+                    currentValue.split(':')[1].trim().length > 0;
+
                 if (!hasSearchTerm) {
                     // Reset only if no active search term
                     fontSearch.value = '';
-                    
+
                     // Hide clear button
                     if (clearSearchBtn) {
                         clearSearchBtn.style.display = 'none';
@@ -496,6 +496,8 @@
                     setTimeout(() => {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                     }, 100);
+                    
+
                 });
             });
 
@@ -816,34 +818,41 @@
 
             // Update all visible font cards with the new global size
             const fontCards = document.querySelectorAll('.font-card');
-            if (fontCards.length === 0) {
+            
+            // Apply size to existing cards first for immediate feedback
+            if (fontCards.length > 0) {
+                fontCards.forEach(card => {
+                    const previewElement = card.querySelector('.font-preview');
+                    if (previewElement) {
+                        const fontCategory = card.dataset.fontCategory || 'default';
+                        const sizeArray = globalCardSizes[fontCategory] || globalCardSizes['default'];
+
+                        // Ensure index is valid for this font category
+                        const safeIndex = Math.min(globalCardSizeIndex, sizeArray.length - 1);
+                        const newSize = sizeArray[safeIndex];
+
+                        // Apply the new size and add a class to prevent media query override
+                        previewElement.style.fontSize = newSize + 'px';
+                        previewElement.classList.add('global-size-applied');
+                        previewElement.closest('.font-card').classList.add('global-size-applied');
+                        previewElement.closest('.font-card').setAttribute('data-global-font-size', newSize);
+                        console.log(`Applied global size ${newSize}px to ${previewElement.dataset.fontName || 'unknown'}, classList:`, previewElement.classList);
+                    }
+                });
+                showGlobalSizeNotification(`All cards updated to ${currentSize}px`);
+            } else {
                 // No cards found, show error and return
                 showGlobalSizeNotification(`No font cards found. Please wait for fonts to load.`);
                 return;
             }
 
-            // Apply size to existing cards first for immediate feedback
-            fontCards.forEach(card => {
-                const previewElement = card.querySelector('.font-preview');
-                if (previewElement) {
-                    const fontCategory = card.dataset.fontCategory || 'default';
-                    const sizeArray = globalCardSizes[fontCategory] || globalCardSizes['default'];
-
-                    // Ensure index is valid for this font category
-                    const safeIndex = Math.min(globalCardSizeIndex, sizeArray.length - 1);
-                    const newSize = sizeArray[safeIndex];
-
-                    previewElement.style.fontSize = newSize + 'px';
-                }
-            });
-
             // Show immediate feedback
             showGlobalSizeNotification(`All cards updated to ${currentSize}px`);
 
             // AUTO-RELOAD: Re-display fonts to ensure consistency
-            // Save current category and page
-            const currentCategoryBefore = currentCategory;
-            const currentPageBefore = currentPage;
+            // Save current category and page (with fallback to 'all' if undefined)
+            const currentCategoryBefore = currentCategory || 'all';
+            const currentPageBefore = currentPage || 1;
 
             // Show loading state
             fontsContainer.innerHTML = '<div class="loading">Reloading fonts with new size...</div>';
@@ -880,6 +889,9 @@
                 }
 
                 // Display fonts with the preserved category and page
+                // Set the global currentCategory to ensure consistency
+                currentCategory = currentCategoryBefore;
+                currentPage = currentPageBefore;
                 displayFonts();
 
                 // Update button active state
@@ -1115,7 +1127,7 @@
             // More robust search term extraction
             if (fullSearchValue && fullSearchValue.trim()) {
                 const trimmedValue = fullSearchValue.trim();
-                
+
                 // Check if it has the expected prefix format "Search [Category]: [term]"
                 const colonIndex = trimmedValue.indexOf(':');
                 if (colonIndex !== -1 && colonIndex < trimmedValue.length - 1) {
@@ -1253,14 +1265,16 @@
             const categoryNameElement = document.getElementById('category-name');
             const categoryCountElement = document.getElementById('category-count');
 
-            const categoryName = currentCategory === 'caps' ? 'CAPS Fonts' :
-                currentCategory === 'all' ? 'All Fonts' :
-                    currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1) + ' Fonts';
+            // Ensure currentCategory is defined (fallback to 'all' if undefined)
+            const effectiveCategory = currentCategory || 'all';
+            const categoryName = effectiveCategory === 'caps' ? 'CAPS Fonts' :
+                effectiveCategory === 'all' ? 'All Fonts' :
+                    effectiveCategory.charAt(0).toUpperCase() + effectiveCategory.slice(1) + ' Fonts';
 
             if (categoryNameElement && categoryCountElement) {
-                categoryNameElement.textContent = currentCategory === 'caps' ? 'CAPS Fonts' :
-                    currentCategory === 'all' ? 'All Fonts' :
-                        currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
+                categoryNameElement.textContent = effectiveCategory === 'caps' ? 'CAPS Fonts' :
+                    effectiveCategory === 'all' ? 'All Fonts' :
+                        effectiveCategory.charAt(0).toUpperCase() + effectiveCategory.slice(1);
                 categoryCountElement.textContent = filteredFonts.length;
             }
 
@@ -1285,8 +1299,18 @@
             const endIndex = Math.min(startIndex + fontsPerPage, filteredFonts.length);
             const paginatedFonts = filteredFonts.slice(startIndex, endIndex);
 
+
+
+
+
             // Generate font cards with numbering
             let fontCardsHTML = paginatedFonts.map((font, index) => createFontCard(font, startIndex + index + 1)).join('');
+
+
+
+
+
+
 
             // Add special favorites summary card if in favorites category and has at least 2 favorites
             if (currentCategory === 'favorites' && favorites.size >= 2) {
@@ -1434,11 +1458,19 @@
             const safeIndex = Math.min(globalCardSizeIndex, sizeArray.length - 1);
             const cardFontSize = sizeArray[safeIndex];
 
+            // Special handling for fonts with long names on mobile
+            let fontNameClass = '';
+            if (font.category === 'serif' && font.name.length > 15) {
+                fontNameClass = 'long-serif-name';
+            } else if ((font.category === 'monospace' || font.category === 'caps') && font.name.length > 18) {
+                fontNameClass = 'long-mono-caps-name';
+            }
+
             return `
                 <div class="font-card ${fontClass}" data-font-name="${font.name}" data-font-category="${font.category}">
                     <div class="font-card-content">
                         <div style="position: relative; min-height: 24px; display: flex; align-items: center;">
-                            <div class="font-name${isAllCaps ? ' cap-font-name' : ''}" style="font-family: '${font.name}', ${getFallbackFont(font.category)}; line-height: normal; vertical-align: baseline;">${font.name}</div>
+                            <div class="font-name${isAllCaps ? ' cap-font-name' : ''} ${fontNameClass}" style="font-family: '${font.name}', ${getFallbackFont(font.category)}; line-height: normal; vertical-align: baseline;">${font.name}</div>
                         </div>
                         <div class="favorite-heart" data-font-name="${font.name}">♥</div>
                         <div class="font-category-container">
@@ -1452,7 +1484,9 @@
                             <div class="font-preview" id="${previewId}"
                                  style="font-family: '${font.name}', ${getFallbackFont(font.category)}; font-size: ${cardFontSize}px;"
                                  data-font-name="${font.name}"
-                                 data-fallback-font="${getFallbackFont(font.category)}">
+                                 data-fallback-font="${getFallbackFont(font.category)}"
+                                 data-global-font-size="${cardFontSize}"
+                                 class="${globalCardSizeIndex > 0 ? 'global-size-applied' : ''}">
                                  ${displayText}
                             </div>
                         </div>
@@ -1612,10 +1646,9 @@
                     const safeIndex = Math.min(globalCardSizeIndex, sizeArray.length - 1);
                     const targetSize = sizeArray[safeIndex];
 
-                    // Only set size if it's different from current
-                    if (previewElement.style.fontSize !== targetSize + 'px') {
-                        previewElement.style.fontSize = targetSize + 'px';
-                    }
+                    // Always apply the target size to ensure consistency
+                    // Remove any existing inline size first to avoid conflicts
+                    previewElement.style.fontSize = targetSize + 'px';
                 }
             });
         }
@@ -2510,6 +2543,8 @@ ${cssClasses}
                     displayFonts();
                 }
             }
+            
+
         });
     </script>
 

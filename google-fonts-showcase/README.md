@@ -33,18 +33,20 @@ Online demo : https://www.sous-titre.com/google-fonts-showcase/
 ## Installation & Usage
 
 ### Prerequisites
-- Python 3.x (for development)
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 
 ### Running the Web Interface
 
-1. **Start the web server:**
-   ```bash
-   python3 -m http.server 8000
-   ```
+1. **Start a simple web server:**
+   - Using Python (if available):
+     ```bash
+     python3 -m http.server 8000
+     ```
+   - Or using any other simple HTTP server
 
 2. **Access the interface:**
-   - Open `http://localhost:8000/index.html` in your browser
+   - Open `http://localhost:8000` in your browser
+   - The `index.html` file will load automatically
 
 3. **Using the interface:**
    - **Search**: Type in the search box to filter fonts by name
@@ -58,12 +60,11 @@ Online demo : https://www.sous-titre.com/google-fonts-showcase/
 ## Project Structure
 
 - `index.html` - Main web interface with enhanced features
-- `styles.css` - CSS styles with CAP font optimizations
+- `styles.css` - CSS styles with CAP font optimizations and responsive fixes
 - `google-fonts.json` - Comprehensive font metadata database
-- `get_font_details.py` - Font details extraction script
-- `parse_fonts.py` - Font data parsing script
-- `simple_server.py` - Simple development server
 - `README.md` - Project documentation
+- `favicon_gradient.svg` - Gradient favicon for modern browsers
+- `google_fonts_favicon.ico` - Traditional favicon format
 
 ## Technical Details
 
@@ -109,6 +110,17 @@ The enhanced "Copy CSS" feature generates comprehensive `@font-face` declaration
 - **Button Styling**: Proper dark theme colors for global size button
 - **Consistent Design**: Matches font category tag colors
 - **Hover States**: Interactive feedback in dark mode
+
+### Responsive Design Fixes
+- **Consistent Card Heights**: All mobile breakpoints now maintain 280px minimum height
+- **Font Size Consistency**: Uniform font sizes across all breakpoints
+- **Overflow Prevention**: No scrollbars in CAPS category at small screen sizes
+- **Button Spacing**: Proper spacing in global size button between text and "+" sign
+
+### Code Cleanup
+- **Removed Unused CSS**: Eliminated unused `:root` variables and `@font-face` definitions
+- **Simplified Project Structure**: Removed unnecessary test files and scripts
+- **Optimized Performance**: Cleaner CSS with no redundant properties
 
 ## Limitations
 

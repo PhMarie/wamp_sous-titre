@@ -1,25 +1,6 @@
 /* Main Styles for Google Fonts Showcase */
 
-/* Alex Brush — Latin only (weights range, normal+italic) */
-/* Demo: https://fonts.google.com/specimen/Alex+Brush */
 
-@font-face {
-  font-family: 'Alex Brush';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/alexbrush/v22/SZc83FzrJKuqFbwMKk6EhUXz7Q.woff2) format('woff2');
-}
-
-:root {
-  --font-alex-brush: "Alex Brush", cursive;
-}
-
-.font-alex-brush-regular {
-  font-family: var(--font-alex-brush);
-  font-weight: 400;
-  font-style: normal;
-}
 
 * {
     margin: 0;
@@ -111,6 +92,9 @@ body.dark-theme {
     overflow: hidden;
     background-color: #e8f0fe; /* Match font category tag color */
     color: #4285F4; /* Match font category tag text color */
+    padding-right: 25px !important; /* Ensure space for the + sign */
+    min-width: 60px; /* Minimum width to prevent text overlap */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 #global-card-size-btn::after {
@@ -122,6 +106,44 @@ body.dark-theme {
     font-size: 12px;
     font-weight: bold;
     opacity: 0.7;
+    line-height: 1; /* Prevent vertical misalignment */
+}
+
+/* Responsive fixes for the global size button */
+@media (max-width: 768px) {
+    #global-card-size-btn {
+        padding-right: 22px !important; /* Slightly less padding on tablets */
+        min-width: 55px; /* Slightly smaller minimum width */
+    }
+    
+    #global-card-size-btn::after {
+        right: 6px; /* Move + sign slightly left */
+        font-size: 11px; /* Slightly smaller + sign */
+    }
+}
+
+@media (max-width: 552px) {
+    #global-card-size-btn {
+        padding-right: 20px !important; /* Less padding on mobile */
+        min-width: 50px; /* Smaller minimum width */
+        font-size: 13px !important; /* Ensure text fits */
+    }
+    
+    #global-card-size-btn::after {
+        right: 5px; /* Move + sign closer */
+        font-size: 10px; /* Smaller + sign for mobile */
+    }
+}
+
+@media (max-width: 474px) {
+    #global-card-size-btn {
+        padding-right: 18px !important; /* Even less padding */
+        min-width: 45px; /* Minimum width for small screens */
+    }
+    
+    #global-card-size-btn::after {
+        right: 4px; /* + sign very close to edge */
+    }
 }
 
 #global-card-size-btn:hover {
@@ -513,7 +535,6 @@ body:not(.dark-theme) .container h1 {
 
 .font-card {
     position: relative; /* Needed for absolute positioning of font-number */
-    min-height: 280px; /* Increased to accommodate larger font names */
 }
 
 .search-container {
@@ -647,13 +668,20 @@ body:not(.dark-theme) .container h1 {
 .font-card {
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 20px 15px; /* Reduced bottom padding for better button fit */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     height: 100%;
+    flex-shrink: 0 !important; /* Prevent flex shrinking to maintain card size */
+}
+
+@media (max-width: 552px) {
+    .font-card {
+        min-height: 280px !important; /* Maintain consistent height at 552px and above mobile */
+    }
 }
 
 .font-card:hover {
@@ -949,6 +977,8 @@ body .font-category,
     gap: 10px;
     margin-top: 15px;
     justify-content: center;
+    padding-bottom: 15px; /* Ensure space below buttons */
+    flex-wrap: wrap; /* Allow wrapping if needed */
 }
 
 .favorite-heart {
@@ -1073,7 +1103,7 @@ body .font-category,
 
 /* Ensure all cards have same height and buttons at bottom */
 .font-card {
-    min-height: 220px;
+    min-height: 280px; /* Unified min-height for all cards */
 }
 
 .font-card-content {
@@ -1402,3 +1432,279 @@ body .font-category,
         font-size: 12px;
     }
 }
+
+/* Mobile-specific fixes for font display */
+@media (max-width: 768px) {
+    /* Fix for Serif category - handle longer font names */
+    .font-card[data-font-category="serif"] .font-name {
+        font-size: 28px; /* Slightly smaller for Serif on mobile */
+        line-height: 1.3;
+        max-width: 90%; /* More restrictive for Serif fonts */
+        word-break: break-word; /* Allow breaking long words */
+    }
+    
+    /* Fix for CAPS category as well */
+    .font-card[data-font-category="caps"] .font-name {
+        font-size: 26px; /* Slightly smaller for CAPS on mobile */
+        line-height: 1.3;
+        max-width: 95%; /* Slightly more restrictive for CAPS fonts */
+        word-break: break-word; /* Allow breaking long words */
+    }
+    
+    /* Fix for Monospace category - often has technical names */
+    .font-card[data-font-category="monospace"] .font-name {
+        font-size: 24px; /* Slightly smaller for Monospace on mobile */
+        line-height: 1.3;
+        max-width: 92%; /* More restrictive for Monospace fonts */
+        word-break: break-word; /* Allow breaking long words */
+    }
+}
+
+/* Additional fixes for smaller screens */
+@media (max-width: 552px) {
+    /* More aggressive fixes for very small screens */
+    .font-card .font-name {
+        font-size: 22px !important; /* Consistent smaller size for all categories */
+        line-height: 1.2 !important;
+        max-width: 85% !important; /* More restrictive for all */
+        white-space: nowrap !important; /* Prevent wrapping */
+        overflow: hidden !important; /* Hide overflow */
+        text-overflow: ellipsis !important; /* Add ellipsis */
+    }
+    
+    /* Specific adjustments for Serif and CAPS */
+    .font-card[data-font-category="serif"] .font-name {
+        max-width: 80% !important; /* Even more restrictive for Serif */
+    }
+    
+    .font-card[data-font-category="caps"] .font-name {
+        max-width: 82% !important; /* More restrictive for CAPS */
+    }
+    
+    /* Ensure font cards don't overflow on very small screens - maintain consistent height */
+    .font-card {
+        min-height: 280px !important; /* Maintain same height as 552px */
+        max-height: 320px !important; /* Allow slight expansion if needed */
+    }
+    
+    /* Adjust font preview for small screens - only if no global size applied */
+    .font-preview:not([style*="font-size"]):not(.global-size-applied) {
+        font-size: 14px !important; /* Smaller preview text */
+        min-height: 60px !important; /* Reduced preview height */
+    }
+    
+    /* Ensure cards fit in small screens */
+    .fonts-grid {
+        grid-template-columns: 1fr !important; /* Single column on very small screens */
+        gap: 15px !important; /* Reduced gap */
+    }
+}
+
+/* Consistent behavior for small screens (474px and below) */
+@media (max-width: 474px) {
+    .font-card .font-name {
+        font-size: 22px !important; /* Maintain same size as 552px for consistency */
+        max-width: 85% !important; /* Less restrictive for better readability */
+    }
+    
+    .font-card[data-font-category="caps"] .font-name {
+        max-width: 82% !important; /* Consistent with 552px behavior */
+    }
+    
+    .font-card {
+        min-height: 280px !important; /* Maintain consistent height */
+        max-height: 320px !important;
+    }
+    
+    .font-preview:not([style*="font-size"]):not(.global-size-applied) {
+        font-size: 14px !important; /* Slightly larger for better readability */
+        min-height: 60px !important; /* More space for text */
+    }
+}
+
+/* Consistent behavior for very small screens (442px and below) */
+@media (max-width: 442px) {
+    .font-card .font-name {
+        font-size: 22px !important; /* Maintain same size as larger breakpoints */
+        max-width: 80% !important; /* Less restrictive for better consistency */
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+    
+    /* Special handling for Serif fonts - maintain consistency */
+    .font-card[data-font-category="serif"] .font-name {
+        font-size: 22px !important; /* Same as other categories */
+        max-width: 75% !important; /* Less restrictive for better consistency */
+        letter-spacing: normal; /* Normal spacing */
+    }
+    
+    /* Handling for long Serif font names */
+    .font-card[data-font-category="serif"] .font-name.long-serif-name {
+        font-size: 20px !important; /* Slightly smaller but still readable */
+        max-width: 70% !important;
+        letter-spacing: normal;
+    }
+    
+    /* Extra restrictive for long Monospace and CAPS font names */
+    .font-card[data-font-category="monospace"] .font-name.long-mono-caps-name,
+    .font-card[data-font-category="caps"] .font-name.long-mono-caps-name {
+        font-size: 15px !important;
+        max-width: 65% !important;
+        letter-spacing: -0.6px;
+        font-weight: 500; /* Slightly lighter to save space */
+    }
+    
+    /* Special handling for CAPS and Monospace categories */
+    .font-card[data-font-category="caps"] .font-name,
+    .font-card[data-font-category="monospace"] .font-name {
+        max-width: 72% !important; /* More restrictive for CAPS and Monospace */
+        font-size: 17px !important; /* Slightly smaller for better fit */
+    }
+    
+    .font-card {
+        min-height: 280px !important; /* Maintain consistent height */
+        max-height: 320px !important;
+    }
+    
+    .font-preview:not([style*="font-size"]) {
+        font-size: 12px !important;
+        min-height: 40px !important;
+    }
+    
+    /* Button fixes for small screens - prevent overflow */
+    .font-actions {
+        flex-wrap: wrap; /* Allow buttons to wrap if needed */
+        gap: 8px; /* Reduced gap for tighter spacing */
+        margin-top: 8px; /* Reduced margin for tighter spacing */
+        padding-bottom: 8px; /* Add padding to prevent buttons from touching bottom */
+    }
+    
+    .btn {
+        padding: 6px 12px !important; /* Smaller buttons */
+        font-size: 13px !important; /* Smaller text */
+        min-width: auto; /* Allow buttons to shrink */
+        margin-bottom: 4px; /* Reduced margin between buttons */
+    }
+    
+    /* Ensure consistent card height and button positioning */
+    .font-card {
+        min-height: 280px !important; /* Maintain consistent height */
+        max-height: 320px !important;
+        display: flex !important; /* Ensure flex layout */
+        flex-direction: column !important; /* Vertical layout */
+    }
+    
+    .font-card-content {
+        padding: 15px 20px 8px !important; /* Reduced bottom padding, consistent top/bottom */
+        flex-grow: 1; /* Allow content to grow */
+        overflow: hidden; /* Prevent content overflow */
+    }
+    
+    /* Special adjustments for categories with potentially larger content */
+    .font-card[data-font-category="monospace"],
+    .font-card[data-font-category="caps"] {
+        min-height: 280px !important; /* Maintain consistent height */
+    }
+    
+    /* Ensure buttons stay within card boundaries */
+    .font-actions {
+        margin-top: auto !important; /* Push buttons to bottom */
+        padding-top: 6px !important; /* Add some spacing above buttons */
+        border-top: 1px solid rgba(0, 0, 0, 0.05) !important; /* Subtle separator */
+    }
+    
+    /* Dark theme adjustments for button separator */
+    .dark-theme .font-actions {
+        border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+    
+    /* Reduce grid gap for better space utilization */
+    .fonts-grid {
+        gap: 12px !important;
+    }
+}
+
+/* Consistent behavior for screens around 436px */
+@media (max-width: 436px) {
+    .font-card .font-name {
+        font-size: 20px !important; /* Larger for better consistency */
+        max-width: 75% !important; /* Less restrictive */
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+    
+    .font-card[data-font-category="serif"] .font-name {
+        font-size: 20px !important; /* Same as other categories */
+        max-width: 70% !important; /* Less restrictive for better consistency */
+        letter-spacing: normal;
+    }
+    
+    .font-card[data-font-category="caps"] .font-name {
+        max-width: 75% !important; /* More space for CAPS fonts */
+        font-size: 20px !important; /* Consistent size */
+    }
+    
+    .font-card {
+        min-height: 280px !important; /* Maintain consistent height */
+        max-height: 320px !important;
+        overflow: hidden; /* Prevent scrollbars */
+    }
+    
+    .font-preview:not([style*="font-size"]):not(.global-size-applied) {
+        font-size: 13px !important; /* More readable */
+        min-height: 50px !important; /* More space */
+        overflow: hidden; /* Prevent overflow */
+    }
+    
+    /* Special handling for CAPS category to prevent overflow */
+    .font-card[data-font-category="caps"] .font-preview {
+        font-size: 12px !important; /* Slightly smaller for CAPS */
+        min-height: 45px !important;
+        overflow: hidden;
+    }
+    
+    /* Ensure card content doesn't overflow */
+    .font-card-content {
+        overflow: hidden; /* Prevent content overflow */
+        max-height: 260px; /* Leave room for buttons */
+    }
+}
+
+/* Extremely aggressive fixes for tiny screens (374px and below) */
+@media (max-width: 374px) {
+    .font-card .font-name {
+        font-size: 18px !important; /* Smallest size */
+        max-width: 75% !important; /* Most restrictive */
+    }
+    
+    .font-card[data-font-category="caps"] .font-name {
+        max-width: 72% !important; /* Most restrictive for CAPS */
+    }
+    
+    .font-card {
+        min-height: 280px !important; /* Maintain consistent height */
+        max-height: 320px !important;
+    }
+    
+    /* Only apply mobile font size if global size hasn't been applied */
+    .font-preview:not([style*="font-size"]):not(.global-size-applied) {
+        font-size: 12px !important;
+        min-height: 40px !important;
+    }
+    
+    /* Ensure global size takes precedence over media queries */
+    .font-preview.global-size-applied {
+        font-size: inherit !important; /* Use the inline style */
+        min-height: auto !important;
+    }
+    
+    /* Extra specificity to ensure inline style wins */
+    body .font-card .font-preview.global-size-applied,
+    .font-card-content .font-preview.global-size-applied {
+        font-size: inherit !important;
+        min-height: auto !important;
+    }
+    
+
